@@ -20,6 +20,7 @@
       rel="icon"
       href="https://kaipuolono.ksbe.edu//kaipuolono-assets/site-images/favicon.png"
     />
+
     <!-- CSS -->
     <link
       rel="stylesheet"
@@ -87,6 +88,10 @@
       is:inline
       src="https://kaipuolono.ksbe.edu/assets-scripts/olelo_mahina_phrases"
       type="text/javascript"></script>
+
+    <!--[if lt IE 9]>
+<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<![endif]-->
   </head>
   <body class="kaipu_body_general">
     <header class="kaipu_header">
@@ -123,9 +128,9 @@
                 <button
                   id="kaipu_search_button"
                   style="background:none;border:0;outline:none;outline-style:none;box-shadow:none;border-color:transparent;"
-                >
-                  <img
-                    src="http://kaipuolono.ksbe.edu/kaipuolono-assets/site-images/icon-search.png"
+                  ><img
+                    src="/kaipuolono-assets/site-images/icon-search.png"
+                    border="0"
                     class="kaipu_search-icon"
                     onclick="kaipuSearchInputFunction();return false;"
                   />
@@ -153,10 +158,11 @@
                       <input
                         type="hidden"
                         name="csrf_token"
-                        value="7d1263edd233a4e272c97d1c7967d856b11fd7a0"
+                        value="80189ad8b979f7c3936fd10be36815f9d6f0f7f5"
                         data-updated="true"
                       />
                     </div>
+
                     <input type="hidden" name="limit" value="50" />
                     <div id="search">
                       <input
@@ -166,7 +172,7 @@
                         class="searchfield"
                         value=""
                       />
-                      <input type="hidden" name="cb" value="1791860495" />
+                      <input type="hidden" name="cb" value="1791951751" />
                       <input
                         name="sa"
                         type="image"
@@ -181,8 +187,7 @@
               </nav>
             </div>
             <!-- end kaipu_mini_nav -->
-            <!-- -->
-            <script is:inline>
+            <script is:inline type="text/javascript">
               $(document).ready(function () {
                 $("#kaipu_search_button").click(function () {
                   $("#kaipu_search_input").toggle();
@@ -718,30 +723,65 @@
 
         <div class="kaipu_frontpage_main-photo">
           <a
-            href="https://kaipuolono.ksbe.edu/article/building-on-a-gift-jonathan-kuas-journey-from-construction-site-to-woodshop-kumu"
+            href="https://kaipuolono.ksbe.edu/article/ola-ka-inoa-i-mua-magazine-celebrates-ke-alii-keelikolanis-200th-la-hanau"
           >
             <img
-              src="https://kaipuolono.ksbe.edu/kaipuolono-assets/article-channel-images/24315/pic_w_moYopuna__full-width-1000px.jpeg"
+              src="https://kaipuolono.ksbe.edu/kaipuolono-assets/article-channel-images/24316/i-mua-cover-2026-issue2__full-width-1000px.jpg"
               width="792px"
+              border="0"
             />
           </a>
         </div>
-        <div class="kaipu_stamp">October 12, 2026</div>
+        <div class="kaipu_stamp">October 13, 2026</div>
         <div class="kaipu_frontpage_main-photo_copy">
           <a
-            href="https://kaipuolono.ksbe.edu/article/building-on-a-gift-jonathan-kuas-journey-from-construction-site-to-woodshop-kumu"
-            >Building on a gift: Jonathan Kua’s journey from construction site
-            to woodshop kumu</a
-          >
+            href="https://kaipuolono.ksbe.edu/article/ola-ka-inoa-i-mua-magazine-celebrates-ke-alii-keelikolanis-200th-la-hanau"
+            >Ola ka inoa: I Mua magazine celebrates Ke Aliʻi Keʻelikōlani’s
+            200th lā hānau
+          </a>
           <p>
-            In the Pauahi Foundation’s earliest years, a scholarship helped a
-            young father realize his education, career pathway.
+            I Mua 2026 issue 2 has just been posted online. This edition has all
+            the alumni news and happenings you’ve come to expect. The pages are
+            also full of fascinating moʻolelo.
           </p>
         </div>
       </div><!-- end kaipu_frontpage_main-photo_container -->
       <div class="kaipu_frontpage_daily-news_container">
         <h2>N&#257; mo&#8216;olelo &#8216;&#275; a&#8216;e</h2>
         <h3>Other stories</h3>
+
+        <div class="newsentry">
+          <table>
+            <tr
+              ><td valign="top">
+                <div class="newsphoto">
+                  <a
+                    href="https://kaipuolono.ksbe.edu/article/building-on-a-gift-jonathan-kuas-journey-from-construction-site-to-woodshop-kumu"
+                  >
+                    <img
+                      src="https://kaipuolono.ksbe.edu/kaipuolono-assets/article-channel-images/24315/pic_w_moYopuna__thumbnail.jpeg"
+                      width="130"
+                      height="auto"
+                      class="newsphoto"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td valign="top"
+                ><span class="blue_link">
+                  <a
+                    href="https://kaipuolono.ksbe.edu/article/building-on-a-gift-jonathan-kuas-journey-from-construction-site-to-woodshop-kumu"
+                    target="_self"
+                    >Building on a gift: Jonathan Kua’s journey from
+                    construction site to woodshop kumu</a
+                  >
+                </span>
+                <span class="kaipu_stamp"> (Oct.&nbsp;12)</span></td
+              >
+            </tr>
+          </table>
+        </div>
+        <!-- end newsentry -->
 
         <div class="newsentry">
           <table>
@@ -906,38 +946,6 @@
         </div>
         <!-- end newsentry -->
 
-        <div class="newsentry">
-          <table>
-            <tr
-              ><td valign="top">
-                <div class="newsphoto">
-                  <a
-                    href="https://kaipuolono.ksbe.edu/article/art-connects-culture-community-at-waianuenue"
-                  >
-                    <img
-                      src="https://kaipuolono.ksbe.edu/kaipuolono-assets/article-channel-images/24265/20260626_waianuenue_089_ksc04301__thumbnail.jpg"
-                      width="130"
-                      height="auto"
-                      class="newsphoto"
-                    />
-                  </a>
-                </div>
-              </td>
-              <td valign="top"
-                ><span class="blue_link">
-                  <a
-                    href="https://kaipuolono.ksbe.edu/article/art-connects-culture-community-at-waianuenue"
-                    target="_self"
-                    >Art connects culture, community at Waiānuenue</a
-                  >
-                </span>
-                <span class="kaipu_stamp"> (Sept.&nbsp;24)</span></td
-              >
-            </tr>
-          </table>
-        </div>
-        <!-- end newsentry -->
-
         <div>
           <div class="blue_dash_more">
             &#8212;&nbsp;
@@ -959,42 +967,27 @@
     <div class="kaipu_frontpage_4col_container">
       <div class="row">
         <div class="col-md-8">
-          <h2 class="subsection-head">Ke Ki‘i o ka Lā</h2>
-          <h3 class="subsection-subhead">Photo of the day</h3>
-          <div class="mb-2">
-            <a
-              href="https://kaipuolono.ksbe.edu/kaipuolono-assets/photo-of-the-day/_webp/dinner_.jpg_webp_40cd750bba9870f18aada2478b24840a.webp"
-              data-fancybox="single"
-              data-caption="A warm welcome for our newest freshman boarders! Poʻo Kula Punihei Lipe KSK'01 hosted haumāna for a special dinner as they begin their journey at Kapālama, with Monte McComber KSK'94 sharing words of encouragement for the year ahead."
-              data-options='{"idleTime" : "false"}'
-              ><img
-                src="https://kaipuolono.ksbe.edu/kaipuolono-assets/photo-of-the-day/_webp/dinner_.jpg_webp_40cd750bba9870f18aada2478b24840a.webp"
-                loading="lazy"
-                class="img-fluid"
-                style="width:100%;"
-              /></a
-            >
+          <h2 class="subsection-head">Nā wikiō</h2>
+          <h3 class="subsection-subhead">Video</h3>
+          <div class="mb-2 bg-black">
+            <iframe
+              loading="lazy"
+              width="792"
+              height="445"
+              src="//www.youtube.com/embed/mO4ERJOahuU"
+              frameborder="0"
+              allowfullscreen></iframe>
           </div>
           <p>
-            A warm welcome for our newest freshman boarders! Po&#699;o Kula
-            Punihei Lipe KSK'01 hosted haum&#257;na for a special dinner as they
-            begin their journey at Kap&#257;lama, with Monte McComber
-            KSK'94&nbsp;sharing words of encouragement for the year ahead.
-          </p>
-          <p class="mb-3">
-            —&nbsp;<a
-              href="https://kaipuolono.ksbe.edu/photo_of_the_day/archive"
-              class="blue_link_more"
-              target="_self"><strong>More&nbsp;»</strong></a
+            <strong
+              >ʻOhana perspectives on the Kamehameha Schools Preschools
+              experience</strong
             >
-          </p>
-          <p>
-            <a
-              href="https://kaipuolono.ksbe.edu/photo_of_the_day/submission"
-              class="blue_link_more"
-              ><strong>Send us your photos&nbsp;»</strong></a
-            >
-          </p>
+          </p>Kamehameha Schools Preschools families share their manaʻo on what
+          makes their experience special, from Hawaiian culture-based education
+          to caring relationships with kumu and fellow ʻohana. Hear how these
+          connections help keiki grow with confidence, a sense of belonging and
+          a strong foundation for lifelong learning.
 
           <hr style="border:1px dotted;border-bottom:0;margin:20px 0;" />
           <div class="row">
@@ -1175,7 +1168,6 @@
     </div>
 
     <!-- end content -->
-
     <!--start footer-->
     <footer class="kaipu_footer">
       <div class="kaipu_footer_container">

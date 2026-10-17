@@ -1,0 +1,822 @@
+---
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
+---
+
+<Header />
+<style>
+  /*Smooth*/
+  body {
+    overscroll-behavior: none;
+    overflow-x: hidden;
+    font-family: "Ringside Regular SSm A", "Ringside Regular SSm B";
+    color: #000000;
+  }
+  #smooth-wrapper {
+    overflow: hidden !important;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  #smooth-content {
+    overflow: visible;
+    width: 100%;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.07) 2px, transparent 2px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.07) 2px, transparent 2px),
+      linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size:
+      100px 100px,
+      100px 100px,
+      20px 20px,
+      20px 20px;
+    background-position:
+      -2px -2px,
+      -2px -2px,
+      -1px -1px,
+      -1px -1px;
+    padding: 0;
+  }
+  @media (max-width: 767px) {
+    #smooth-content {
+      padding: 0;
+    }
+  }
+  /*Default Header & Footer*/
+  .typicalCont,
+  .topfooter,
+  .footer,
+  .typical {
+    display: none;
+  }
+  .header {
+    position: relative;
+  }
+  .header #___gcse_0 {
+    display: none;
+  }
+  .topfooter-alt {
+    position: relative;
+    padding: 150px 0px 60px;
+    float: none;
+  }
+  .topfooter-alt .socialIcons ul li a {
+    width: 40px;
+  }
+  .topfooter-alt .socialIcons {
+    margin: 20px 0 30px;
+  }
+  .footer-alt {
+    background-color: #19325a;
+    padding: 30px 0px;
+    bottom: 0;
+    position: absolute;
+  }
+</style>
+
+<div id="smooth-wrapper">
+  <div id="smooth-content">
+    <main>
+      <div class="container-fluid p-0">
+        <div class="row gx-0">
+          <style type="text/css">
+            .kapa-background {
+              background-image: url("https://www.ksbe.edu/images/about-kapa-background.webp");
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: left;
+            }
+            .container-background {
+              padding-top: 55px;
+            }
+            .lei-background {
+              background-image: url("https://www.ksbe.edu/images/about-lei-08.webp");
+              background-blend-mode: multiply;
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-size: 50%;
+              background-position-x: right;
+              background-position-y: top;
+            }
+            .about-background {
+              background-image: url("https://www.ksbe.edu/images/about-hero-image-04.webp");
+              background-position: center top;
+              background-repeat: no-repeat;
+              background-size: cover;
+              min-height: 700px;
+            }
+
+            /* .about-01 {background-image:url('https://www.ksbe.edu/images/about-hero-image-04.webp');background-position:right top;background-repeat:no-repeat;background-size:cover;padding:5%;clip-path:polygon(0 0, 100% 0, 100% calc(100% - 40px), 0 100%);} */
+            .about-01 h3,
+            .about-end h3,
+            .about-01 h2 {
+              text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.87);
+              color: #ffffff;
+            }
+            .about-01 p,
+            .about-end p {
+              text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.87);
+              color: #ffffff;
+            }
+            .about-end h3 {
+              text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.57);
+              color: #ffffff;
+            }
+            .our-mission,
+            .our-vision {
+              padding: 0 0 0 0;
+              position: relative;
+            }
+            .left-border {
+              border-left: 5px solid #efefef;
+              padding: 20px 0 10px 30px;
+            }
+            .left-border p {
+            }
+            .about-pauahi-background {
+              padding: 0 0 0 0;
+              position: relative;
+            }
+            .about-pauahi-row {
+              top: 0;
+              position: relative;
+            }
+            .our-mission-row,
+            .our-vision-row {
+              top: 50%;
+              transform: translate(0%, -50%);
+            }
+            .our-mission-row p,
+            .our-vision-row p {
+            }
+            .imua-background {
+            }
+            .imua-background p,
+            .our-mission p,
+            .our-vision p,
+            .about-pauahi-background p,
+            .about-pauahi-background li {
+              color: #000000;
+            }
+            .about-pauahi-image {
+              top: 0;
+              position: absolute;
+            }
+            .about-pauahi-background {
+            }
+            .about-background p,
+            .about-background h3,
+            .about-background h5,
+            .about-background ol li {
+              color: #ffffff;
+            }
+            .about-head {
+              font-size: 60px;
+              line-height: 40px;
+              letter-spacing: -3px;
+              color: #785a3e;
+              font-family:
+                Ringside Wide A,
+                Ringside Wide B;
+              font-weight: 900;
+              margin-bottom: 16px;
+            }
+            .about-subhead {
+            }
+            .about-end {
+              background-image: url("https://www.ksbe.edu/images/about-background.webp");
+              background-size: cover;
+              clip-path: polygon(0 0, 100% 40px, 100% 100%, 0 100%);
+              padding: 5% 5% 5% 5%;
+            }
+            .top-about-spacer {
+              background-color: #19325a;
+              height: 180px;
+              width: 100%;
+            }
+
+            @media (max-width: 1199px) {
+              .about-01 {
+                background-position: center;
+              }
+            }
+            @media (max-width: 991px) {
+              .top-about-spacer {
+                height: 0;
+              }
+            }
+            @media (max-width: 950px) {
+              .our-mission-row p,
+              .our-vision-row p {
+              }
+              .kapa-background {
+                background: none;
+              }
+            }
+            @media (max-width: 767px) {
+              .top-about-spacer {
+                height: 0;
+              }
+              .about-01 {
+                background-image: url("https://www.ksbe.edu/images/about-hero-image-02.webp");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 7% 5% 5% 5%;
+              }
+              .about-background {
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                min-height: 300px;
+              }
+              .our-mission,
+              .our-vision {
+                padding: 0 0 0 0;
+                position: relative;
+              }
+              .our-mission-image {
+                padding-bottom: 80px;
+              }
+              .our-vision-image {
+                padding-bottom: 80px;
+              }
+              .about-pauahi-image {
+                position: relative;
+              }
+              .our-mission-row,
+              .our-vision-row {
+                bottom: 0;
+                top: auto;
+                transform: translate(0, 0);
+                padding-right: 0;
+              }
+              .about-pauahi-row {
+                position: relative;
+                padding-left: 0;
+                top: -40px;
+              }
+              .our-mission-row p,
+              .our-vision-row p {
+                font-size: inherit;
+                line-height: inherit;
+                font-weight: 400;
+              }
+              .about-background p,
+              .about-end p {
+              }
+              .left-border {
+                border-left: 0;
+                padding: inherit;
+              }
+            }
+            @media (max-width: 600px) {
+              .our-mission-image {
+                padding-bottom: 120px;
+              }
+              .our-vision-image {
+                padding-bottom: 140px;
+              }
+            }
+            @media (max-width: 520px) {
+              .lei-background {
+                background-size: 80%;
+              }
+            }
+            @media (max-width: 470px) {
+              .our-mission-image {
+                padding-bottom: 140px;
+              }
+              .our-vision-image {
+                padding-bottom: 160px;
+              }
+            }
+            @media (max-width: 420px) {
+            }
+          </style>
+
+          <div class="about-background">&nbsp;</div>
+          <div class="ks_blue boxs p-3">
+            <div class="container">
+              <div class="kame_inner boxs">
+                <h2>About us</h2>
+              </div>
+            </div>
+          </div>
+          <div class="lei-background">
+            <div class="container-background">
+              <div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-3 pe-4">
+                      <div class="inner_left boxs">
+                        <div class="mobile_only">
+                          <nav class="navbar navbar-dark">
+                            <div class="container-fluid">
+                              <button
+                                class="navbar-toggler shadow-none"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbar6"
+                                aria-expanded="false"
+                                aria-controls="navbar6"
+                                aria-label="Toggle navigation"
+                                style="border: none"
+                              >
+                                <span
+                                  class="navbar-toggler-icon"
+                                  style="float:left"></span>
+                                <div class="navbar-menu">MENU</div>
+                              </button>
+                            </div>
+                          </nav>
+                          <div
+                            class="collapse"
+                            id="navbar6"
+                            style="width: 200%;"
+                          >
+                            <div>
+                              <ul>
+                                <li class="imua_left_nav_section_top">
+                                  <a href="/about-us">About us home</a>
+                                </li>
+                                <li class="imua_left_nav_section_top">
+                                  <a href="/about-us/about-pauahi"
+                                    >Pauahi: The legacy of a princess</a
+                                  >
+                                </li>
+                                <li class="imua_left_nav_section_top">
+                                  <a href="/our-faith">Our faith</a>
+                                </li>
+                                <li class="imua_left_nav_section_top">
+                                  <a
+                                    href="/about-us/trustees-and-executives/the-board-of-trustees"
+                                    >The Board of Trustees</a
+                                  >
+                                </li>
+                                <li class="imua_left_nav_section_top">
+                                  <a
+                                    href="/about-us/trustees-and-executives/executive-leadership-team"
+                                    >Executive Leadership Team</a
+                                  >
+                                </li>
+                                <li class="imua_left_nav_section_top">
+                                  <a href="/about-us/publications-and-resources"
+                                    >Publications and resources</a
+                                  >
+                                </li>
+                                <li class="imua_left_nav_section_top">
+                                  <a href="/about-us/join-our-mailing-list"
+                                    >Join our mailing list</a
+                                  >
+                                </li>
+                                <li class="imua_left_nav_section_top">
+                                  <a href="/news">News</a>
+                                </li>
+                                <li class="imua_left_nav_section_top">
+                                  <a href="/about-us/contact-us">Contact us</a>
+                                </li>
+                                <li class="imua_left_nav_section_top">
+                                  <a href="/careers">Find a job at KS</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end mobile_only -->
+                        <div class="desktop_only">
+                          <h4 class="menu-h4">Menu</h4>
+                          <ul>
+                            <li class="imua_left_nav_section_top">
+                              <a href="/about-us">About us home</a>
+                            </li>
+                            <li class="imua_left_nav_section_top">
+                              <a href="/about-us/about-pauahi"
+                                >Pauahi: The legacy of a princess</a
+                              >
+                            </li>
+                            <li class="imua_left_nav_section_top">
+                              <a href="/our-faith">Our faith</a>
+                            </li>
+                            <li class="imua_left_nav_section_top">
+                              <a
+                                href="/about-us/trustees-and-executives/the-board-of-trustees"
+                                >The Board of Trustees</a
+                              >
+                            </li>
+                            <li class="imua_left_nav_section_top">
+                              <a
+                                href="/about-us/trustees-and-executives/executive-leadership-team"
+                                >Executive Leadership Team</a
+                              >
+                            </li>
+                            <li class="imua_left_nav_section_top">
+                              <a href="/about-us/publications-and-resources"
+                                >Publications and resources</a
+                              >
+                            </li>
+                            <li class="imua_left_nav_section_top">
+                              <a href="/about-us/join-our-mailing-list"
+                                >Join our mailing list</a
+                              >
+                            </li>
+                            <li class="imua_left_nav_section_top">
+                              <a href="/news">News</a>
+                            </li>
+                            <li class="imua_left_nav_section_top">
+                              <a href="/about-us/contact-us">Contact us</a>
+                            </li>
+                            <li class="imua_left_nav_section_top">
+                              <a href="/careers">Find a job at KS</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- end desktop_only -->
+                      </div>
+                    </div>
+                    <div class="col-sm-9">
+                      <h2>I&nbsp;mua Kamehameha!</h2>
+                      <p>
+                        Since 1887, Ke Kula &#8216;o Kamehameha has honored our
+                        founder, Ke Ali&#8216;i Bernice Pauahi Pākī Bishop, who
+                        passed to us a kuleana to care for her &#8216;āina and
+                        prepare future generations, through education, to lead,
+                        compete, and restore and sustain her people’s
+                        well-being.&nbsp;
+                      </p>
+                      <p>
+                        Guided by this kāhea, we place keiki at the center of
+                        all we do, investing in our kaiāulu and nurturing
+                        Hawai&#8216;i’s next generation of leaders and
+                        changemakers.&nbsp;
+                      </p>
+                      <p class="mb-5" style="margin-bottom:0 !important;">
+                        Whether through culturally rooted &#8216;āina
+                        stewardship, Hawaiian culture-based education or work
+                        done in partnership with our communities, we uphold the
+                        wisdom of our kūpuna while caring for the Kānaka Maoli
+                        of the future.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-xl our-mission mb-5">
+                <div
+                  class="row z-4 position-relative justify-content-end our-mission-image gx-0"
+                >
+                  <div class="col-md-7">
+                    <img
+                      class="img-fluid"
+                      src="https://www.ksbe.edu/images/about-image-02g.webp"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="row position-absolute z-5 our-mission-row col-12 gx-0"
+                >
+                  <div>
+                    <div class="row ms-md-5 ps-md-5">
+                      <div class="col-md-6 ms-md-5 ps-md-5 fadein">
+                        <div class="left-border" data-speed="1.08">
+                          <h3 class="about-subhead">Our mission</h3>
+                          <p>
+                            To fulfill Ke Ali‘i Pauahi’s vision of empowering
+                            Native Hawaiians and improving the well-being of our
+                            people through education.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-xl our-vision mb-5">
+                <div
+                  class="row z-4 position-relative justify-content-end our-vision-image gx-0"
+                >
+                  <div class="col-md-7">
+                    <img
+                      class="img-fluid"
+                      src="https://www.ksbe.edu/images/about-image-03e.webp"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="row position-absolute z-5 our-vision-row col-12 gx-0"
+                >
+                  <div>
+                    <div class="row ms-md-5 ps-md-5">
+                      <div class="col-md-6 ms-md-5 ps-md-5 fadein">
+                        <div class="left-border" data-speed="1.08">
+                          <h3 class="about-subhead">Our vision</h3>
+                          <p>
+                            Grounded in Native Hawaiian and Christian values,
+                            our haumāna will succeed in postsecondary education
+                            and contribute, through &#8216;ōiwi leadership, to a
+                            thriving and self-determined lāhui.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container mb-5">
+                <div>
+                  <div class="about-pauahi-background">
+                    <div class="row z-4 about-pauahi-image">
+                      <div class="col-md-9">
+                        <img
+                          class="img-fluid"
+                          src="https://www.ksbe.edu/images/about-pauahi-04.webp"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="z-5 about-pauahi-row justify-content-end col-12"
+                    >
+                      <div>
+                        <div
+                          class="row ms-md-5 ps-md-5 justify-content-end fadein"
+                        >
+                          <div class="col-md-8 ms-md-5 ps-md-5">
+                            <div data-speed="1.08">
+                              <h3 class="about-subhead">
+                                The will of a princess
+                              </h3>
+                              <p>
+                                Upon her passing on October 16, 1884, our
+                                founder Ke Ali&#8216;i Bernice Pauahi Bishop,
+                                through Article 13 of her will, established the
+                                Kamehameha Schools. This will, as our enduring
+                                legacy, provides, in relevant parts, that we
+                              </p>
+                              <ol>
+                                <li>
+                                  operate two schools, one for boys, one for
+                                  girls, with boarding and day students,
+                                </li>
+                                <li>
+                                  devote a portion of our budget to orphans and
+                                  others in indigent circumstances,
+                                </li>
+                                <li>
+                                  give preference to Native Hawaiians, and
+                                </li>
+                                <li>
+                                  provide a good education in the common English
+                                  branches, with instruction in morals and in
+                                  such other useful knowledge as may tend to
+                                  make good and industrious men and women.
+                                </li>
+                              </ol>
+                              <div class="button mb-0">
+                                <a href="/about_us/about_pauahi"
+                                  >HONORING PRINCESS PAUAHI’S LEGACY</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-end">
+        <div class="container mt-5">
+          <div class="row justify-content-end">
+            <div class="col-sm-9 pb-5 mb-5 fadein" data-speed="1.08">
+              <h3>Our E Ola! identity</h3>
+              <p>
+                Native Hawaiian keiki are at the center of everything we do at
+                Kamehameha Schools. Our goal is to inspire E Ola! learners who
+                are connected to their Hawaiian identity and contribute to their
+                communities as ‘ōiwi leaders. We believe that such haumāna are
+                best nurtured in engaging, robust Hawaiian culture-based
+                education learning environments.
+              </p>
+              <div class="button mb-5">
+                <a href="/images/site_content_block/KS_E_Ola_Poster.pdf"
+                  >E OLA! LEARNER OUTCOMES</a
+                >
+              </div>
+
+              <h3><strong>E holomua</strong></h3>
+              <p style="margin-bottom:1rem;padding-bottom:1rem;">
+                Since launching our Vision 2040 in 2015, Kamehameha Schools has
+                deepened its commitment to cultivating &#8216;ōiwi, supporting
+                the growth of our people and places through E Ola! As we carry
+                this kuleana forward through Strategic Plan 2030, Ke Kula
+                &#8216;o Kamehameha remains focused on inspiring haumāna,
+                cultivating &#8216;āina momona, and uplifting our lāhui — now
+                and for generations to come.
+              </p>
+              <div class="button mb-0">
+                <a href="/our-commitment-to-ea"
+                  >CARRYING OUR KULEANA THROUGH SP2030</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end row no-gutters -->
+
+      <style>
+        .kame,
+        .typicalCont {
+          display: none;
+        } /*.typicalCont {display:none;}*/
+        .about-01 h3 {
+          font-size: 2.75rem;
+          line-height: 2.75rem;
+        }
+        /*.about-01 h3 {font-family: noka, sans-serif;letter-spacing: .25rem;}*/ /*.about-01 h3 {font-family:"Ringside Regular SSm A", "Ringside Regular SSm B";letter-spacing: .25rem;}*/
+        .about-01 h3 {
+          letter-spacing: 0.25rem;
+        }
+        @media (max-width: 520px) {
+          .about-01 h3 {
+            font-size: 2.15rem;
+            line-height: 2.3rem;
+          }
+        }
+      </style>
+
+      <script
+        is:inline
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+      ></script>
+      <script
+        is:inline
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+      ></script>
+      <script
+        is:inline
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"
+      ></script>
+      <script
+        is:inline
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"
+      ></script>
+
+      <!--DIVIDER-->
+      <script is:inline type="text/javascript">
+        // ScrollSmoother setup
+        const smoother = ScrollSmoother.create({
+          wrapper: "#smooth-wrapper",
+          content: "#smooth-content",
+          smooth: 1,
+          effects: true,
+        });
+      </script>
+
+      <script is:inline type="text/javascript">
+        // Fade-in animations
+        [
+          {
+            selector: ".fadein",
+            from: { autoAlpha: 0 },
+            to: { duration: 2, autoAlpha: 1, delay: 0.2 },
+          },
+          {
+            selector: ".fadein-intro",
+            from: { autoAlpha: 0, y: 70 },
+            to: { duration: 2, autoAlpha: 1, y: 0, delay: 0.5 },
+          },
+          {
+            selector: ".fadein-intro-sub",
+            from: { autoAlpha: 0, y: 70 },
+            to: { duration: 2, autoAlpha: 1, y: 0, delay: 0.5 },
+          },
+        ].forEach(({ selector, from, to }) => {
+          gsap.utils.toArray(selector).forEach((el) => {
+            const anim = gsap.fromTo(el, from, to);
+            ScrollTrigger.create({
+              trigger: el,
+              animation: anim,
+              toggleActions: "play none none none",
+              once: true,
+            });
+          });
+        });
+      </script>
+
+      <!--DIVIDER-->
+      <link href="https://use.typekit.net/uva8yew.css" rel="stylesheet" />
+      <script is:inline type="text/javascript">
+        document.addEventListener("DOMContentLoaded", () => {
+          gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
+
+          // Hide sticky nav on load
+          const navbarSticky = document.querySelector(".navbar-sticky");
+          if (navbarSticky) navbarSticky.classList.add("hidden");
+
+          // Scroll nav links
+          gsap.utils.toArray(".nav-link").forEach((button) => {
+            button.addEventListener("click", (e) => {
+              e.preventDefault();
+              const id = button.getAttribute("href");
+              const navOffset = getNavOffset();
+
+              if (id === "#top") {
+                smoother.scrollTo(0, true);
+              } else {
+                const targetElem = document.querySelector(id);
+                if (targetElem) {
+                  const targetY =
+                    smoother.offset(targetElem, "top top") - navOffset;
+                  smoother.scrollTo(targetY, true);
+                }
+              }
+              // close mobile nav after click
+              $(".navbar .collapse").collapse("hide");
+            });
+          });
+
+          function getNavOffset() {
+            return window.innerWidth <= 991
+              ? document.querySelector(".navbar-start").offsetHeight
+              : document.querySelector(".navbar").offsetHeight;
+          }
+
+          // Scroll navbar behavior
+          window.addEventListener("scroll", () => {
+            const scrolled = window.scrollY > 144;
+            if (navbarSticky) {
+              navbarSticky.classList.toggle("visible", scrolled);
+              navbarSticky.classList.toggle("hidden", !scrolled);
+            }
+            document
+              .querySelector(".navbar")
+              .classList.toggle("scrolled", scrolled);
+          });
+
+          // Rotate on scroll animations
+          document.querySelectorAll(".edu-kalo-animate").forEach((elem) => {
+            const rotation = parseFloat(elem.dataset.rotation) || 0;
+            const duration = parseFloat(elem.dataset.duration) || 2;
+
+            ScrollTrigger.create({
+              trigger: elem,
+              start: "top 80%",
+              onEnter: () => {
+                elem.classList.add("animated");
+                gsap.to(elem, {
+                  rotation,
+                  duration,
+                  transformOrigin: "50% 50%",
+                });
+              },
+              once: true,
+            });
+          });
+
+          // Example static scroll trigger for background image (if needed)
+          ScrollTrigger.create({
+            trigger: ".edu-kalo-back",
+            start: "top 80%",
+            onEnter: () => {
+              gsap.to(".edu-kalo-back", {
+                rotation: 25,
+                duration: 2.5,
+                transformOrigin: "50% 50%",
+              });
+            },
+            once: true,
+          });
+
+          // Load hash target if present on page load
+          const urlHash = window.location.hash;
+          if (urlHash) {
+            const scrollElem = document.querySelector(urlHash);
+            if (scrollElem) {
+              gsap.to(smoother, {
+                scrollTop: smoother.offset(scrollElem, "top top"),
+                duration: 1,
+                delay: 0.5,
+              });
+            }
+          }
+        });
+      </script>
+    </main>
+  </div>
+</div>
+<Footer />

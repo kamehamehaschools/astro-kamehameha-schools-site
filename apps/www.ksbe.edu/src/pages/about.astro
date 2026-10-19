@@ -1,9 +1,9 @@
 ---
-import Header from "../components/header.astro";
-import Footer from "../components/footer.astro";
+import BaseLayout from '../layouts/BaseLayout.astro';
+const siteTitle = "About | Kamehameha Schools";
 ---
 
-<Header />
+<BaseLayout siteTitle={siteTitle}></BaseLayout>
 <style>
   /*Smooth*/
   body {
@@ -819,4 +819,4 @@ import Footer from "../components/footer.astro";
     </main>
   </div>
 </div>
-<Footer />
+</BaseLayout>

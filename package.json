@@ -9,9 +9,8 @@
     "dev:www": "npm run dev --workspace=www.ksbe.edu",
     "build:www": "npm run build --workspace=www.ksbe.edu",
     "dev:kiol": "npm run dev --workspace=kaipuolono.ksbe.edu",
-    "build:kiol": "npm run build --workspace=kaipuolono.ksbe.edu"
-  },
-  "dependencies": {
-    "@astrojs/netlify": "^8.2.9"
+    "build:kiol": "npm run build --workspace=kaipuolono.ksbe.edu",
+    "dev:investments": "npm run dev --workspace=investments.ksbe.edu",
+    "build:investments": "npm run build --workspace=investments.ksbe.edu"
   }
 }

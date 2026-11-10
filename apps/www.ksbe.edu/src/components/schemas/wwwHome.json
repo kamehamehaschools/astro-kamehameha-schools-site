@@ -1,5 +1,4 @@
-  <script is:inline type="application/ld+json">
-      {
+     {
         "@context": "https://schema.org",
         "@type": "EducationalOrganization",
         "name": "Kamehameha Schools",
@@ -84,4 +83,3 @@
           }
         ]
       }
-    </script>

@@ -1,0 +1,74 @@
+---
+import Layout from '../../layouts/wwwArticleLayout.astro';
+
+export const prerender = true;
+export async function getStaticPaths() {
+  console.log("BUILDING PATHS...");
+  // Simulated response from a Sanity GROQ query: 
+  // *[_type == "article"]{ _id, title, slug, publishedAt, author, excerpt, body }
+  const sanityArticles = [
+    {
+      _id: "drafts.b3b9e4a1",
+      title: "‘O ‘oe wale nō: Turning testimony into worship",
+      slug: {
+        current: "o-oe-wale-no-turning-testimony-into-worship"
+      },
+      publishedAt: "2026-11-09T10:00:00Z",
+      author: "Communications Group",
+      excerpt: "A reflection on the power of shared testimony and its role in our daily worship.",
+      body: "When we share our stories, we uplift the community. This article explores the cultural and spiritual significance of testimony..."
+    },
+    {
+      _id: "drafts.c7d1f5a2",
+      title: "Upcoming Campus Events for the Fall Semester",
+      slug: {
+        current: "upcoming-campus-events-fall-semester"
+      },
+      publishedAt: "2026-10-15T08:30:00Z",
+      author: "Student Activities",
+      excerpt: "Mark your calendars for these important dates across all three campuses.",
+      body: "From Founder's Day preparations to regional alumni gatherings, here is what to expect..."
+    }
+  ];
+
+  return sanityArticles.map((article) => {
+    return {
+      params: { slug: article.slug.current },
+      props: { article },
+    };
+  });
+}
+
+const { article } = Astro.props;
+console.log(article);
+---
+
+<Layout title={article.title}>
+  <article class="container my-5">
+    <header class="mb-4">
+      <h1 class="display-4 fw-bold">{article.title}</h1>
+      <div class="text-secondary mt-2">
+        <span>By {article.author}</span> | 
+        <time datetime={article.publishedAt}>
+          {new Date(article.publishedAt).toLocaleDateString('en-US', { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+          })}
+        </time>
+      </div>
+    </header>
+    
+    <div class="lead mb-4 fw-medium text-dark">
+      {article.excerpt}
+    </div>
+
+    <div class="article-body">
+      {/* 
+        Note: When connecting live to Sanity, article.body is usually an array of Portable Text blocks.
+        You will likely use something like the `astro-portabletext` package to render it. 
+      */}
+      <p>{article.body}</p>
+    </div>
+  </article>
+</Layout>

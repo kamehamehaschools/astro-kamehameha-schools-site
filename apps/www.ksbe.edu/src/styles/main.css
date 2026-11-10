@@ -1,0 +1,2010 @@
+@font-face {font-family:RingsideWideMed;src:url(https://www.ksbe.edu/assets/brand/fonts/RingsideWideMed.ttf)}
+@font-face {font-family:Ringside Wide A,Ringside Wide B;font-weight:700;src:url(https://www.ksbe.edu/assets/brand/fonts/RingsideWideBold.ttf)}
+@font-face {font-family: Ringside Wide A,Ringside Wide B; src: url(https://www.ksbe.edu/assets/brand/fonts/RingsideWideBook.ttf);}
+@font-face {font-family: "Chronicle Display A", "Chronicle Display B";font-weight:800;src: url(https://www.ksbe.edu/assets/brand/fonts/ChronicleDisplayBlack.ttf);}
+a:hover{color:#19325a;text-decoration:underline}
+body{overflow-x:hidden;color:#000}
+.noleft{padding-left:0}
+.noright{padding-right:0}
+.nopadding{padding:0!important}
+.container{width:1200px}
+a,button{transition:.35s}
+a{outline:0!important;text-decoration:none}
+a.anchor-offset{display:block;position:relative;top:90px;visibility:hidden}
+.width1{width:100%}
+.boxs{width:100%;display:block;float:left}
+hr{margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid rgba(0,0,0,.2);clear:both;opacity:100%}
+hr.clear_5px-padding{clear:both;display:block}
+h1,h2,h3,h4,h5,h6,li,p,ul{list-style:none;padding:0;margin:0}
+h1{font-size:56px;color:#000;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;line-height:59px;margin-bottom:16px}
+h2{font-size:46px;line-height:49px;color:#000;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;margin-bottom:16px}
+h3{font-size:36px;line-height:39px;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;color:#000;margin-bottom:16px}
+h4{font-size:30px;line-height:33px;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;color:#000;margin-bottom:16px}
+h5{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:30px;line-height:33px;font-weight:800;color:#000;margin-bottom:16px}
+h6{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:24px;line-height:27px;font-weight:800;margin-bottom:16px}
+ul li{list-style:disc}
+ul li li{list-style:circle}
+ul li li li{list-style:square}
+ol{padding:0 0 1rem 34px}
+ol li{list-style:decimal}
+ol li ol li{list-style-type:lower-alpha}
+ol li ol li ol li{list-style-type:lower-roman}
+ol ol,ol ol ol,ol ol ol ol,ul ul,ul ul ul,ul ul ul ul{padding:0 0 0 34px}
+.header .hamburger{display:block;float:right;height:25px;padding:0;width:30px}
+.hamburger--squeeze.is-active .hamburger-inner::after,.header .hamburger.is-active .hamburger-inner{background:#19325a}
+button:focus{outline:0}
+.hamburger-inner,.hamburger-inner::after,.hamburger-inner::before{background:#636466;border-radius:0;width:25px;height:3px}
+.hamburger-inner::before{content:'';top:-8px}
+.hamburger:hover{opacity:1}
+.hamburger-box{width:25px}
+.hamburger-inner::after{bottom:-8px}
+.fixed_header .head,.logores,.serachicon{display:none}
+.fixed_header .menulists{display:block;transition:.5s}
+.fixed_header .menulists .brand_hover_blue,.fixed_header .menulists .brand_hover_gold,.fixed_header .menulists .brand_hover_green{top:58px}
+.sidenav{background-color:#fff;left:0;right:0;overflow-x:hidden;position:fixed;top:-100%;transition:.5s;width:100%;z-index:99;height:100%;padding:50px 40px}
+.sidemenu li a{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;font-size:17px;color:#19325a;padding:10px;display:block;border-bottom:1px solid #ccc}
+.sidemenu li ul li a{font-size:15px;color:#636466;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;padding:0 10px}
+.menuCont{display:none}
+.sidemenu li ul li a,.sidemenu li:last-child a.active{border-bottom:none}
+.sidemenu li a img{display:inline-block;}
+.sidemenu li a img.downarrow{transform:rotate(90deg)}
+.sidecontact{padding:15px 0}
+.sidecontact ul li{padding:10px 0;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:15px}
+.sidecontact ul li a{float:right;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:15px}
+.sidecontact ul li span{font-weight:800}
+.sidebuttons ul li{display:block;margin-bottom:7px}
+.sidebuttons ul li a{padding:15px 22px;font-size:15px;text-transform:uppercase;background:#e8e8e8;color:#636466;display:block;text-align:center;font-family:"Ringside Regular SSm A","Ringside Regular SSm B"}
+.sidebuttons ul li a:hover{background:#19325a;color:#fff}
+.slick-initialized .slick-slide{outline:0!important}
+.header{position:fixed;width:100%;top:0;left:0;background-color:#fff;z-index:99}
+.head{display:flex;align-items:center;justify-content:space-between;padding:10px 30px}
+.head_lft a img{width:276px}
+.head_rht li{display:inline-block}
+.head_rht li a{font-family:RingsideWideMed;font-size:17px;color:#fff;text-decoration:none;position:relative;z-index:2}
+.head_rht.rightmenu li a{font-size:15px}
+.brand_hover_blue{position:absolute;right:0;top:58px;display:none;width:100%;background:#4682f0;padding:15px}
+.brand_hover_gold{position:absolute;right:0;top:58px;display:none;width:100%;background:#d2964b;padding:15px}
+.brand_hover_green{position:absolute;right:0;top:58px;display:none;width:100%;background:#325550;padding:15px}
+.bluecolor:before{border-bottom-color:#19325a!important;right:290px}
+.brand_lft h2{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;font-size:36px;color:#4682f0}
+.brand_rht li{display:block;padding:0 0 5px}
+.brand_rht li a{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;font-size:21px}
+.head_rht li.abouks:hover .aboutmenu,.head_rht li.aina:hover .ainamenu,.head_rht li.brand:hover .bluecolor,.head_rht li.design:hover .redcolor,.head_rht li.edublock:hover .educationmenu,.head_rht li.education:hover .educationmenu,.head_rht li.mission:hover .missionmenu,.head_rht li.resources:hover .greencolor{display:block}
+.redcolor{background-color:#d24632;bottom:-285px}
+.redcolor .brand_lft h2{color:#6e1432}
+.redcolor:before{border-bottom-color:#d24632!important;right:185px}
+.greencolor{background-color:#325550}
+.greencolor:before{border-bottom-color:#325550!important;right:60px}
+.greencolor .brand_lft h2{color:#d2964b}
+.main{margin-top:179px;position:relative}
+.home{background:url('(https://www.ksbe.edu/assets/brand/img/homeBg021621c.jpg') center center/cover no-repeat;padding:150px 0 120px;position:relative}
+.home2{background:url('(https://www.ksbe.edu/assets/brand/img/slide2.jpg') center center/cover no-repeat}
+.home3{background:url('(https://www.ksbe.edu/assets/brand/img/slide3.jpg') center center/cover no-repeat}
+.main .type-right{background:url('(https://www.ksbe.edu/assets/brand/img/homepattern.png');bottom:-77px;height:150px;left:initial;right:0;z-index:1}
+.home_inn{padding:0}
+.homeslider{height:555px}
+.bannerCont{text-align:right}
+.video-container{position:relative;width:100%;overflow:hidden;height:550px}
+.home2 .bannerCont{text-align:left}
+.home3 .bannerCont{text-align:center}
+.homeslider h5{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;font-size:21px;color:#d24631;margin-bottom:60px}
+.homeslider h1{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;font-size:68px;color:#19325a;line-height:71px}
+#wwwHomepageHero .mcp__homeslider h1{font-family:"Ringside Wide A","Ringside Wide B";font-weight:900;font-size:68px;line-height:71px;letter-spacing:-3px}
+.homeslider p{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:17px;color:#19325a;margin:5px 0;text-transform:uppercase}
+.homeslider h4{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:36px;color:#fff;margin-top:20px}
+.homeslider ul li{display:inline-block;margin-right:10px}
+.homeslider ul li:last-child{margin-right:0}
+.homeslider ul{float:right;margin-top:0}
+.homeslider.home2 ul{float:left}
+.homeslider a{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;display:inline-block;color:#fff;font-size:16px;padding:15px 20px;text-decoration:none;margin-top:20px;text-transform:uppercase}
+.home_inn .slick-prev:before{content:url('(https://www.ksbe.edu/assets/brand/img/sliderlft.png');opacity:1}
+.home_inn .slick-next:before{content:url('(https://www.ksbe.edu/assets/brand/img/sliderrht.png');opacity:1}
+.home_inn .slick-prev{left:60px;z-index:1}
+.home_inn .slick-next{right:60px;z-index:1}
+.home_inn .slick-dots li button:before{content:url('(https://www.ksbe.edu/assets/brand/img/sliderbtn.png');opacity:1}
+.home_inn .slick-dots li.slick-active button:before{content:url('(https://www.ksbe.edu/assets/brand/img/sliderbtnwhite.png');opacity:1}
+.home_inn .slick-dots{bottom:40px;right:0;text-align:left;width:100%}
+.slider_inn{width:90%;margin:0 60px}
+.foundation{background-color:#d2964b;position:relative}
+.found{padding:0 40px}
+.found_rht{padding:50px 0}
+.found_rht h4{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;font-size:36px;color:#fff;margin-top:20px}
+.found_rht h6{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;font-size:21px;color:#952846;margin-top:15px}
+.found_rht p{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:17px;color:#fff;margin-top:20px}
+.found_rht a{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;display:inline-block;background-color:#4682ef;color:#19325a;font-size:16px;padding:15px 20px;text-decoration:none;margin-top:30px}
+.found_rht a:hover{background-color:#19325a;color:#4682ef}
+.yellowpattern{width:30%;height:270px;background:url('(https://www.ksbe.edu/assets/brand/img/pattern-maroonLt.png') center center/cover no-repeat;position:absolute;top:0;left:0}
+.videostream{background:url('(https://www.ksbe.edu/assets/brand/img/summer.png') center center/cover no-repeat;padding:90px 0 200px}
+.streaming{padding:0 40px}
+.arrowdown{margin-top:-90px}
+.streaming h5{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;font-size:21px;color:#fff;padding:40px 60px}
+.video_content{padding:0 60px;display:flex}
+.video_content h1{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;font-size:68px;color:#fff;margin-left:30px}
+.popup .modal-dialog{width:70%;display:flex;align-items:center;justify-content:center;margin:0 auto;height:100%}
+.popup .modal-content{background-color:transparent;box-shadow:none;outline:0;border-radius:0;border:none}
+.vedio{width:100%;height:500px}
+.video_close{width:15px}
+.modal-close{width:30px;height:30px;background:#d24631;border-radius:50%;display:flex;align-items:center;justify-content:center;float:right;margin-bottom:-10px;z-index:9;position:relative}
+.footer{background-color:#19325a;padding:30px 0}
+.foot_inn ul{text-align:center}
+.foot_inn li{display:inline-block;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:12px;color:#fff;padding:0 15px;border-right:1px solid #fff;line-height:12px}
+.foot_inn li a{color:#fff}
+.foot_inn li:last-child{border-right:none}
+.Fpatern{background:url(https://www.ksbe.edu/assets/brand/img/footer-patern.png);position:absolute;width:100%;height:150px;left:0;right:0;top:-45px}
+.topfooter .socialIcons{margin:20px 0 30px}
+.topfooter .socialIcons ul li a{width:40px}
+img.footerlogo.img-responsive{margin:0 auto 13px;float:unset}
+.btnfooter ul li,.btnfooter ul li a{display:block}
+.btnfooter ul li a{width:220px;padding:15px 0;text-align:center;border:1px solid #636466;color:#636466;margin:0 auto;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800}
+.btnfooter ul li a:hover{color:#fff;background:#636466;text-decoration:none}
+.btnfooter li{margin-bottom:7px}
+.topfooter{padding:150px 0 60px;position:relative}
+.topfootcont h4{font-size:20px;line-height:23px;color:#666;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800}
+.topfootcont p{font-size:15px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";padding:0;color:#646464}
+.topfootcont{border-bottom:1px solid #636466;padding:0 0 30px}
+.topfootcont .morefeat{padding:0}
+.botmfootCont{padding:30px 0}
+.footerlist p{font-size:15px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;text-transform:uppercase;color:#666}
+.footerlist2 p{font-size:15px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;text-transform:uppercase;padding-top:18px;color:#666}
+ul.listMenuf{padding:0 0 0 2px}
+.listMenuf li{position:relative;padding-left:15px;line-height:15px;margin-bottom:12px;list-style-type:none}
+.listMenuf li a{font-size:14px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B"}
+.listMenuf li:before{content:url(https://www.ksbe.edu/assets/brand/img/menuarrow.png);position:absolute;left:0}
+.typical{margin-top:180px}
+.typBanner{background:#9b693c;position:relative}
+.heroimg{z-index:2}
+.heroimg,.typeheading{position:relative}
+.heroimg p{margin-bottom:1.5rem!important;margin-top:1rem}
+.ks_blue .heroimg p,.ks_light_blue .heroimg p{color:#fff}
+.typeheading .type-right{left:initial;right:0;bottom:initial;top:0;height:144px;position:absolute;z-index:1}
+.typeheading{background:#d2964b;padding:15px 0 20px}
+.typeheading h1{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;color:#fff;font-size:56px;margin:0;position:relative;z-index:2}
+.typeheading p a{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";position:relative;font-size:16px;padding:5px 10px 5px 0;margin-right:10px;color:#000}
+.typeheading p a:before{position:absolute;right:0;content:'';height:15px;width:1px;transform:rotate(24deg);background:#000;top:5px}
+.typeheading p a:last-child:before{content:none}
+.typicalCont{padding:55px 0 80px}
+.maintypcont{border-bottom:1px solid #000;padding:30px 0}
+.typicalCont .maintypcont:last-child{border-bottom:none}
+.maintypcont h2{font-size:42px;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;padding-bottom:20px}
+.maintypcont h3{font-size:24px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;padding-bottom:10px}
+.linksRel p,.linksRel ul li a,.maintypcont p{font-size:16px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B"}
+.gray-font-color,.maintypcont p{color:#646464}
+.relatedlinks{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;font-size:20px;padding-top:60px}
+.linksRel ul{border-top:1px solid #939495}
+.linksRel p,.linksRel ul li a{color:#636466;padding:0;display:block}
+.relatedlinks h4{position:relative;font-size:20px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;padding:25px 0 10px}
+.relatedlinks h4:before{content:'';position:absolute;top:0;height:8px;width:100%;background:#19325a}
+.bottomlinkR li{border-bottom:1px solid #939495}
+.linksRel ul.bottomlinkR li a{padding:7px 0}
+.intro-text-wide{font-size:20px;font-weight:300;line-height:33px}
+.intro-text-wide-bold{font-weight:600}
+.voice{background-color:#4682f0;padding:100px 0}
+.voice_inn{padding:0 40px}
+.voice_inn h1{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;font-size:68px;color:#fff}
+.voice_inn p{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:17px;color:#fff;padding-top:20px}
+.pattren{position:absolute;left:0;top:115px;width:10%}
+.brandvoice{padding:100px 0 70px}
+.strong_lft h5{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;font-size:30px;color:#4682ef}
+.strong_rht p{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:17px;color:#231f20}
+.strong_mid{width:50%;display:inline-block;float:left}
+.strong_lft{padding-right:30px;text-align:right}
+.strong_rht{padding-left:30px;border-left:2px solid #a7a7a9}
+.voicesound h3{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;font-size:36px;color:#19325a;padding:70px 0;text-align:center}
+.sound_like .row{margin:0 -7px}
+.sound_like .col-md-4,.sound_like .col-sm-4{padding:0 7px}
+.pattern_img img{height:50px;width:100%;object-fit:cover}
+.bluesound{background-color:#19325a}
+.sound_content{padding:20px 30px}
+.sound_content h3{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;font-size:36px;color:#fff;text-align:center}
+.sound_content h6{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;font-size:17px;color:#fff;text-align:center;padding-top:20px}
+.sound_content p{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:17px;color:#fff!important;padding:20px 0;text-align:center;margin-bottom:0!important}
+.maroonsound{background-color:#6d1331}
+.greensound{background-color:#315450}
+.itsounds{padding:30px 30px 60px;text-align:center}
+.lightblue{background-color:#4682ef}
+.itsounds h3{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;font-size:36px;padding-bottom:20px}
+.lightblue h3{color:#19325a}
+.itsounds p{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;font-size:36px;color:#fff}
+.lightoraange{background-color:#d24631}
+.lightoraange h3{color:#6d1331}
+.lightgreen{background-color:#1e826d}
+.lightgreen h3{color:#315450}
+.secPadding{padding:0 40px}
+.strategy{padding:100px 0 62px;background:#19325a;position:relative}
+.strgy_tp{padding-left:52px}
+.strgy_inner h1{color:#4682f0;font-size:74px;text-transform:uppercase;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800}
+.strgy_inner p{color:#fff;font-size:18px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";margin-top:42px}
+.strategy img.pattren{position:absolute;left:0;top:115px}
+.menuSec{padding:95px 0 160px;background:#fff}
+.menubx{text-align:center}
+.menubx a{text-transform:uppercase;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;display:inline-block;color:#231f20;font-size:16px;padding:15px 20px;text-decoration:none;width:155px;border:1px solid #19325a}
+.menubx a:last-child{margin-right:0}
+.menubx a.active,.menubx a:hover{background:#19325a;border:1px solid #19325a;color:#fff}
+.memuBtm{padding-top:162px}
+.menutxt h2{color:#19325a;font-size:42px;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;text-transform:uppercase}
+.accordion-container{position:relative;max-width:100%;height:auto;margin:10px auto}
+.accordion-container>h2{text-align:center;color:#fff;margin-bottom:20px;padding-bottom:15px;border-bottom:1px solid #ddd}
+.set{position:relative;width:100%;height:auto;background-color:#f5f5f5;margin-bottom:10px}
+.set>a{display:block;padding:15px 20px;text-decoration:none;color:#636466;-webkit-transition:.2s linear;-moz-transition:.2s linear;transition:.2s linear;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;text-transform:uppercase;font-size:26px}
+.set>a i{float:left;margin-top:9px;margin-right:13px;font-weight:400;font-size:20px}
+.set>a.active{background-color:#6e1432;color:#d2964b}
+.content{background-color:#962846;display:none;width:100%}
+.cont_lft{width:60%;padding:24px 26px 0 28px;display:block;float:left}
+.cont_lft h3{color:#d2964b;font-size:16px;font-family:RingsideWideMed;margin-bottom:5px}
+.cont_lft p{color:#fff;font-size:14px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B"}
+.cont_rht{width:40%;float:left;display:block}
+.content:after{content:'';display:block;clear:both}
+.ourmlo{background:#325550;padding:142px 0 120px;position:relative}
+.ourml_inner h2{font-size:42px;color:#fff;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;text-transform:uppercase}
+.ourml_inner h3{font-size:24px;color:#4682f0;text-transform:uppercase;margin:38px 0 28px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800}
+.ourml_inner p{font-size:20px;color:#fff;font-family:"Ringside Regular SSm A","Ringside Regular SSm B"}
+.ourmlo img.greenpattrn{position:absolute;top:-64px;right:0}
+.brand1{padding:100px 0 110px;background:#fff}
+.menutxt2 h2{margin-bottom:40px}
+.menutxt2 h4{font-size:24px;color:#646464;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;text-transform:uppercase}
+.menutxt2 p{font-size:20px;color:#646464;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";margin-top:30px}
+.bstatmnt{background:#4682ef}
+.commbx{padding:30px}
+.commbx h3{font-family:RingsideWideMed;font-size:18px;color:#fff;margin-bottom:32px}
+.commbx p{font-size:42px;color:#fff;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800}
+.smplidea{background:#1e826d;margin-top:20px}
+.bran_prin{background:#d2d2d2;padding:68px 0 100px}
+.bran_prin_inn .menutxt{text-align:center}
+.bran_prin_inn h4{font-size:24px;color:#646464;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;text-align:center;margin:60px 0 20px}
+.bran_prin_inn p{font-size:20px;color:#646464;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";text-align:center;margin-bottom:60px}
+.brand_found{background:#fff;padding-top:98px}
+.brand_found_in .menutxt{text-align:center}
+.brand_found_in .menutxt h2{margin-bottom:56px}
+.photo{padding:100px 0;background-color:#d2d2d2}
+.photo_inn{padding:0 40px}
+.photo_inn h1{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;font-size:68px;color:#d2964b}
+.photo_inn p{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";color:#646464;font-size:17px}
+.pho_style{padding:100px 40px}
+.pho_style h3{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;font-size:36px;color:#19325a;margin-bottom:30px}
+.photo_lft{padding-right:50px;border-right:1px solid #19325a}
+.pho_style p{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";color:#646464;font-size:17px;margin-bottom:30px}
+.pho_style p:last-child{margin-bottom:0}
+.photo_rht{padding-left:50px}
+.photo_rht h6{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;font-size:20px;color:#19325a;margin-bottom:30px}
+.gallery{margin:60px 0}
+.gallery .row{margin:0 -7px;display:none}
+.gallery .col-sm-4{padding:0 7px}
+.gallery_img{margin-bottom:14px}
+.gallery_img img{width:100%;object-fit:cover}
+.heritage{padding:120px 0;background-color:#19325a;position:relative}
+.heri_inn{padding:0 40px}
+.heri_inn h3{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;font-size:36px;color:#fff;margin-bottom:20px}
+.heri_inn p{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";color:#fff;font-size:17px}
+.patternfull{position:absolute;right:0;top:-100px}
+.gallery_out{padding:0 40px}
+.head_resp{display:none}
+.graphic{background:#325550}
+.graphic_inner h1{color:#d2964b}
+.ksymbol{background:#fff;padding:120px 0 110px}
+.ksymbol_lft img{margin:0 auto;width:270px}
+.ksymbol_rht{padding-top:40px}
+.ksymbol_rht h2{color:#19325a;font-size:36px;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;margin-bottom:30px}
+.ksymbol_rht p{font-size:17px;color:#646464;font-family:"Ringside Regular SSm A","Ringside Regular SSm B"}
+.grpahic1{background:url(https://www.ksbe.edu/assets/brand/img/graphicelements-backgroundImg01.jpg) center center/cover no-repeat fixed}
+.rainmain{background:url(https://www.ksbe.edu/assets/brand/img/graphicelements-backgroundImg02.jpg) center center/cover no-repeat fixed}
+.ainamain_in .ksymbol_rht h2,.ainamain_in .ksymbol_rht p,.rainmain .ksymbol_rht h2,.rainmain .ksymbol_rht p{color:#fff}
+.rowflex{display:flex;align-items:center}
+.ainamain{background:url(https://www.ksbe.edu/assets/brand/img/graphicelements-backgroundImg03.jpg) center center/cover no-repeat fixed}
+.lahuiimain{background:url(https://www.ksbe.edu/assets/brand/img/graphicelements-backgroundImg04.jpg) center center/cover no-repeat fixed}
+.graphicpattern{padding:110px 0 115px;background:#fff}
+.gpattren_in .ksymbol_rht h2,.gpattren_in .ksymbol_rht p{text-align:center}
+.pattrenbox{padding:80px 0 52px}
+.pattrenbox img{width:100%}
+.pattrenbx{background:#d14430;width:95%;min-height:444px}
+.marpattern{background:#6d1331;position:relative}
+.marpattern img{position:absolute;bottom:0;right:0}
+.bluepattern{background:#4682ef;margin:30px 0 25px}
+.blupttrnbx{padding-right:26px}
+.bluepattern img{float:right}
+.darkbluepttrnbx .bluepattern{margin:0;background:#18315a}
+.patternuse{background:#962846}
+.pattlft{width:70%;float:left;padding-top:92px;padding-left:8%}
+.pattrht{float:left;width:30%}
+.pattrht img{float:right}
+.pattlft h2{font-size:36px;color:#fff;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;text-transform:uppercase}
+.more_btn{background:#d2954a;color:#fff;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:20px;padding:7px 21px 10px;display:inline-block;margin-top:35px}
+.more_btn:hover{color:rgba(210,149,74,.5);background:#fff}
+.image-right-pic{float:right;margin:0 0 10px 10px;max-width:240px;clear:both}
+.image-right-pic img{margin:0 0 40px}
+.image-left-pic-400 p,.image-right-pic p,.image-right-pic-400 p{margin:-35px 0 40px}
+.image-right-pic-400{float:right;margin:0 0 10px 10px;width:400px}
+.image-left-pic-400 img,.image-right-pic-400 img{max-width:100%}
+.image-left-pic-400{float:left;margin:0 10px 10px 0;width:400px}
+.color{background:#d2d2d2}
+.color_inner h1{color:#325550}
+.color_inner p{color:#646464}
+.colors_bx{padding:100px 0 70px}
+.colorboxx{padding:25px 19px 25px 20px}
+.ksblue{background:#18315a}
+.colorsbx_in .col-sm-2{padding:0}
+.colorboxx h2{color:#fff;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:14px;margin-bottom:15px}
+.colorcode_lft,.colorcode_rht{width:50%;float:left}
+.colorcode h4{color:#fff;font-size:15px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;margin-bottom:5px}
+.colorcode h4 span{font-family:RingsideWideMed;font-weight:400}
+.colorboxx h3{color:#fff;font-size:16px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";margin:12px 0 30px}
+.colorboxx h5{color:#fff;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;font-size:17px}
+.colorsbx_in{padding:0 80px}
+.lblue{background:#4682ef}
+.white{background:#fff}
+.grey h2,.white h2{color:#000;font-weight:800}
+.grey .colorcode h4,.grey h3,.grey h5,.white .colorcode h4,.white h3,.white h5{color:#000}
+.grey{background:#d2d2d2}
+.gold{background:#9b693b}
+.light_gld{background:#d2954a}
+.orange{background:#b43b28}
+.light_orng{background:#d64631}
+.maroon{background:#6d1331}
+.light_mrn{background:#952846}
+.green{background:#315450}
+.light_grn{background:#1e826d}
+.pairing_section{background:#fff;padding:0 0 100px;text-align:center}
+.pair_sec h3{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;font-size:35px;color:#19325a;margin-bottom:15px}
+.pair_sec p{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:17px;color:#646464;padding:0 213px;margin-bottom:15px}
+.pair_sec img{margin:0 auto}
+.pattern_yellow{background-color:#d2964b}
+.more_btn1{background-color:#6d1331}
+.logo_sec{background-color:#fff;position:relative}
+.logo_section h2{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;font-size:68px;color:#19325a;margin-bottom:30px}
+.logo_section p{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";color:#646464;font-size:17px}
+.blue_img{width:131px;height:400px;position:absolute;top:80px;left:0}
+.blue_img img{width:100%;height:100%}
+.permiss_section{background-color:#fff;padding:100px 0 80px}
+.per_sec{padding:0 40px}
+.imgsection img{float:right;margin-right:50px}
+.logo_para p{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";color:#646464;font-size:17px;margin-bottom:40px}
+.but_sec ul li{list-style:none;display:inline-block;margin-right:15px}
+.but_sec ul li a{color:#6d1331;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;font-size:20px;background-color:#d2954a;padding:18px 55px;display:block}
+.but_sec ul li a:hover{background-color:#6d1331;color:#d2954a}
+.lock_sec h3{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;font-size:42px;color:#19325a;text-align:center;margin-bottom:35px}
+.lock_sec p{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";color:#646464;font-size:17px;text-align:center}
+.lock_sec{padding:0 40px}
+.lock_section{background-color:#fff;padding:0}
+.logo_section{padding:0 40px}
+.logo_sec{padding:100px 0}
+.sidepadd{padding:0 120px}
+.logo_img{text-align:center;margin-bottom:100px}
+.logo_img img{margin:0 auto 10px}
+.logo_img h3.left_h,.logo_img img.left_img{display:inline-block}
+.logo_img h3{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;font-size:27px;color:#404040}
+.logo_img h3 span{display:block}
+.logo_img h3.center_hd span{text-align:left;padding-left:78px}
+.logo_img h3 span.sp_h{text-align:left}
+.logo_img p{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";color:#000;font-size:16px;text-align:center}
+.logo_img p .horizontal{text-align:center}
+.main_logo{min-height:210px}
+.bt_logo img{margin:0}
+.bt_logo h3,.bt_logo p{text-align:left}
+.bt_logo h3.center_hd span{padding-left:0}
+.bottom_lo{text-align:left;padding-left:107px}
+.main_btlogo{min-height:150px;display:flex;align-items:center;align-content:center}
+.main_D_logo{display:flex;align-items:center;align-content:center}
+.blue_line{height:2px;width:100%;background-color:#19325a}
+.color_sec{background-color:#fff;padding:40px 0 100px}
+.col_sec{padding:0 213px}
+.col_sec h4{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:24px;color:#7f7f7f;margin-bottom:10px}
+.col_sec p{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;font-size:17px;color:#7f7f7f}
+.color_hd{margin-bottom:40px}
+.ex_section{background-color:#325550;padding:100px 0;position:relative}
+.exp_sec{padding:0 40px}
+.exp_sec h3{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;color:#fff;font-size:42px;margin-bottom:40px}
+.exp_sec a{background:#d2954a;color:#231f20;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:20px;padding:7px 21px 10px;display:inline-block;margin-top:10px}
+.exp_sec a:hover{color:#d2954a;background:#231f20}
+.yel_lo_sec{background-color:#d2964b}
+.yel_section h2{color:#6e1432}
+.yel_section p{color:#fff}
+.chronic_section{background-color:#fff;padding:100px 0}
+.chro_sec{padding:0 40px}
+.albha_sec h3{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;font-size:25px;color:#646464;margin-bottom:25px}
+.albha_rg h4{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;font-size:24px;color:#646464;margin-bottom:10px}
+.albha_rg p{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:22px;color:#646464}
+.albha_rg a{background-color:#4682ef;padding:12px 16px;color:#231f20;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;font-size:16px;display:inline-block;margin-top:30px;text-decoration:none}
+.albha_rg a:hover{background-color:#231f20;color:#4682ef}
+.black_line{width:100%;height:2px;background-color:#000;margin:60px 0}
+.albha_sec1 h3{color:#646464;font-size:25px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";margin-bottom:25px}
+.ring_img{margin-bottom:15px}
+.ring_img img{width:100%}
+.ring_blue{height:806.83px}
+.ring_blue img{height:100%}
+.ring_img1{height:570px}
+.ring_img1 img{height:100%}
+.ring_sec{background-color:#fff;padding:0 0 80px}
+.ex_sec1{background-color:#d24632}
+.patternboximg{position:absolute;width:500px;height:124px;left:-390px;bottom:0}
+.graphicgreen{background:url('(https://www.ksbe.edu/assets/brand/img/greenpattern.png')}
+.strategyblue{background:url('(https://www.ksbe.edu/assets/brand/img/pattern-blueLt.png')}
+.voiceblue{background:url('(https://www.ksbe.edu/assets/brand/img/bluepattern.png')}
+.colorblue{background:url('(https://www.ksbe.edu/assets/brand/img/patterncolor.png')}
+.logoblue{background:url('(https://www.ksbe.edu/assets/brand/img/pattern-blue_otl.png')}
+.type-right{background:url('(https://www.ksbe.edu/assets/brand/img/footer-patern.png')}
+.type-right-light-gold{left:initial;right:0;bottom:initial;top:681px;height:150px;background:url('(https://www.ksbe.edu/assets/brand/img/kalo-heart-outline-tile-ltgold.png');position:absolute;width:500px}
+.type-right-light-gold-subpage{left:initial;right:0;bottom:initial;top:181px;height:150px;background:url('(https://www.ksbe.edu/assets/brand/img/kalo-heart-outline-tile-ltgold.png');position:absolute;width:500px}
+.ksymbol_lft{display:none}
+.scrolltop{position:fixed;right:30px;top:85%;display:none;z-index:1}
+.scrolltop img{transform:rotate(90DEG)}
+.headstu{float:right;width:205px}
+.stuDrop{position:relative}
+.stuDrop p{display:inline-block;color:#4682ef;font-size:16px;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800}
+.cusDD_default{position:relative;width:160px;margin:auto;display:inline-block;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-style:italic;font-size:16px;cursor:pointer;background:#e8e8e8;text-align:left;border-radius:3px;z-index:9}
+.cusDD_default .cusDD_select{line-height:24px;position:relative;z-index:0;margin:0 8px;padding:5px 20px 5px 0}
+.cusDD_default .cusDD_select:before{content:'';position:absolute;height:1px;width:100%;background:#636466;bottom:3px;left:0}
+.cusDD_default .cusDD_arrow{position:absolute;right:0;top:0;bottom:2px;width:20px;background:url("(https://www.ksbe.edu/assets/brand/img/dropDown.png") 50% 50% no-repeat;transform:rotate(90deg)}
+.cusDD_default .cusDD_options{background:#fff;border-left:1px solid #f0f0f0;border-right:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;position:absolute;top:32px;left:-46%;right:0;z-index:1;display:none}
+.cusDD_default .cusDD_opt{line-height:20px;width:100%;display:block;border-top:1px solid #f0f0f0;background:#e8e8e8;float:left;padding:8px 10px}
+.cusDD_default .cusDD_opt:hover{background:rgba(0,0,0,.2);color:#fff}
+.menulists{background:#19325a;padding:0 30px;transition:.5s;position:relative;z-index:2}
+.menulists li img{display:inline-block}
+.homelink{margin-right:10px}
+.searchlink{margin-left:10px}
+.head_rht{display:inline-block}
+.rightmenu{float:right}
+.rightmenu .noClass{padding:15px 7px 20px}
+.menulists li .brand_lft img{width:100%}
+.head_rht li .hoverimg{position:relative;width:100%;text-align:center;padding:15px 21px 20px}
+.head_rht li .hoverimg:before{transition-delay:1s;background-color:#4682f0;position:absolute;content:'';top:0;text-align:center;width:100%;display:none;z-index:1;left:0;height:61px}
+.head_rht li.aina .hoverimg:before,.head_rht li.mission .hoverimg:before{transition:1s;background-color:#4682f0}
+.head_rht li.abouks .hoverimg:before{background-size:cover;transition:1s}
+.head_rht li:hover .hoverimg:before{display:block;transition:1s}
+section.header li.menu_button.hovered{background-color:#4682f0}
+/* .head_rht li.menu_button{margin-right:-4px} */
+section.header ul ul{padding-left:0}
+section.header .col-sm-3,section.header .col-sm-4{padding-right:15px}
+section.header .col-sm-8,section.header .col-sm-9{padding-left:15px}
+.morebtn a.skyclr:hover{text-decoration:none}
+.megamenu_image{display:flex;justify-content:center;align-items:center;overflow:hidden;min-height:250px}
+.megamenu_image img{flex-shrink:0;min-width:100%;min-height:100%}
+.brand_rht .eduBtns li a.greenclr:hover,.homeslider a.greenclr:hover,.responivebtn .homeslider a.greenclr:hover{background:#1e826e;color:#fff}
+.brand_rht .eduBtns li a.bluecolor,.brand_rht .eduBtns li a.marronclr,.brand_rht .eduBtns li a.skyclr,.brand_rht .eduBtns li a.yellowclr,.homeslider a.skyclr:hover{color:#fff}
+.yellowclr{background:#9b693c;color:#fff}
+.yellowclr:hover{background:#d2964b;text-decoration:none}
+.marronclr{background:#6e1432}
+.marronclr:hover{background:#962846;text-decoration:none}
+.skyclr{background:#4682f0}
+.homeslider a.skyclr:hover,.skyclr:hover{background-color:#19325a;text-decoration:none}
+.btn-primary{background-color:#4682f0;border-color:#4682f0}
+.btn-primary:hover{background-color:#19325a;border-color:#19325a}
+.btn-secondary{color:#4682f0;background-color:#fff;border-color:#4682f0}
+.btn-secondary:hover{color:#fff;background-color:#19325a;border-color:#19325a}
+.btn-light{color:#19325a}
+.btn-light:hover{color:#f8f9fa;background-color:#19325a;border-color:#19325a}
+button.btn-primary:disabled,button.btn-primary[disabled]{background-color:#9f9f9f;border-color:#9f9f9f}
+.btn{font-weight:700;padding:15px 22px;text-transform:uppercase}
+.btn:hover{text-decoration:none}
+.btn-group-lg>.btn,.btn-lg{padding:15px 22px}
+.btn,.btn-group-lg>.btn,.btn-lg{border-radius:0}
+.dropdown-menu a.dropdown-item:hover{background-color:#e3e3e3}
+.dropdown-arrow a:before {content:"⏷ \00a0"}
+.bluecolor{background-color:#19325a}
+.bluecolor:hover{background:#4682ef}
+.greenclr{background:#325550}
+.darkyellow{background:#9b693b}
+.brand_rht .eduBtns li{display:inline-block;padding:0 10px 0 0}
+.brand_rht .eduBtns li a{padding:15px 22px;font-size:15px;text-transform:uppercase}
+.brand_rht .eduBtns li a.join{color:#19325a;border:2px solid #19325a}
+.brand_rht .eduBtns li a.join:hover{color:#4682ef;border:2px solid #4682ef}
+.leftmenu .brand_rht,.rightmenu .abouks{padding-left:0;border-left:none}
+.aboutmenu .brand_inn,.ainamenu .brand_inn,.communitymenu .brand_inn,.educationmenu .brand_inn,.missionmenu .brand_inn{background:#fff}
+.brand_rht .eduBtns li button,.brand_rht .eduBtns li input{border:0;background:0 0}
+.brand_rht .eduBtns li input{border-bottom:1px solid #636466;padding:0 30px 4px 0}
+body input:focus{box-shadow:none;outline:0}
+.edubtm_header,.edubtm_links li a.edubtm_header{font-weight:800;padding-bottom:10px;border-bottom:3px solid #d7d7d7}
+.edubtm_links li .edubtm_header{font-size:15px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";display:block;margin-top:4px;font-weight:800;padding-bottom:10px;border-bottom:3px solid #d7d7d7}
+.edubtm_links{display:flex;padding:15px 0}
+.edubtm_links ul{display:inline-block;padding-right:20px}
+.edubtm_links ul.lastmenu{justify-content:flex-start}
+.edubtm_links li a{font-size:15px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";color:#0d6efd;font-weight:400;display:block;margin-top:4px;min-width:120px}
+.edubtm_links li p{font-size:15px}
+.edubtm_links li a:hover{color:#19325a;cursor:pointer;text-decoration:underline}
+.edubtm_links li a.skyclr{font-weight:800;color:#fff}
+.edubtm_links li.menuhead{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;margin-bottom:7px}
+.edubtm_links li.menuhead,.edubtm_links ul.lastmenu li{width:100%;padding:0 0 7px}
+.eduBtns{padding:30px 0}
+.aboutcont,.aboutmenu .edubtm_links ul{width:280px}
+.applynow{background-color:#d2964b;padding:30px 0}
+.applynow h2{color:#fff;margin-bottom:30px}
+.applynow h3{color:#fff}
+.applynow .applynow-name-container{background-color:#325550;display:inline-block;margin-bottom:10px}
+.applynow a.applynow-name{color:#fff;padding:12px 22px;font-weight:800;font-size:18px;display:block;text-decoration:none;font-family:"Ringside Regular SSm A","Ringside Regular SSm B"}
+.applynow a.applynow-name:hover{background-color:#1e826e}
+.applynow .applynow-button-container{float:right;width:20%}
+.applynow a.applynow-button{color:#fff;padding:12px 22px;font-weight:800;font-size:18px;display:inline-block;text-decoration:none;background-color:#325550}
+.applynow a.applynow-button:hover{background-color:#1e826e}
+.applynow .morebtn{text-align:center;margin-top:30px;margin-bottom:20px}
+.studentsafety{padding:0}
+.studentsafety-background{background:rgba(0,0,0,.5);padding:4%}
+.meaDiv h2,.studentsafety h4{margin-bottom:20px}
+.explore.meaDiv h2{padding-top:0;padding-bottom:0}
+.meaDiv h2,.meaDiv p,.studentsafety h3,.studentsafety h4,.studentsafety p{color:#fff}
+.meaDiv h5,.meaDiv h6{color:#fff;margin-bottom:0}
+.meaDiv p,.studentsafety p{font-size:18px;line-height:27px}
+.meaDiv a{color:#fff;text-decoration:underline}
+.meaDiv a:hover,.studentsafety a:hover{color:#007bff}
+.explore{padding:30px 0 0}
+.explore h2{padding-bottom:38px;padding-top:20px;z-index:3;position:relative}
+.explore-header{font-size:20px;color:#fff;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;padding-top:16px}
+.featimg{height:220px}
+.feat-ks-hawaii{background:url(https://www.ksbe.edu/assets/brand/img/feature3.jpg) center center/cover no-repeat;position:relative}
+.feat-ks-kapalama{background:url(https://www.ksbe.edu/assets/brand/img/feature1.jpg) center center/cover no-repeat;position:relative}
+.feat-ks-maui{background:url(https://www.ksbe.edu/assets/brand/img/feature2.jpg) center center/cover no-repeat;position:relative}
+.feat-ks-hawaii-elementary{background:url(https://www.ksbe.edu/assets/brand/img/campus_hawaii_elementary.jpg) center top/cover no-repeat;position:relative}
+.feat-ks-hawaii-middle{background:url(https://www.ksbe.edu/assets/brand/img/campus_hawaii_middle.jpg) center top/cover no-repeat;position:relative}
+.feat-ks-hawaii-high{background:url(https://www.ksbe.edu/assets/brand/img/campus_hawaii_high.jpg) center top/cover no-repeat;position:relative}
+.feat-ks-hawaii-halau{background:url(https://www.ksbe.edu/assets/brand/img/campus_hawaii_kupukupu.jpg) center top/cover no-repeat;position:relative}
+.feat-ks-hawaii-kauwela{background:url(https://www.ksbe.edu/assets/brand/img/campus_hawaii_kauwela2021.jpg) center top/cover no-repeat;position:relative}
+.feat-ks-kapalama-elementary{background:url(https://www.ksbe.edu/images/site_content_block/KSK_classroom_es1.jpg) center top/cover no-repeat;position:relative}
+.feat-ks-kapalama-middle{background:url(https://www.ksbe.edu/images/site_content_block/Keliimaikai.jpg) center top/cover no-repeat;position:relative}
+.feat-ks-kapalama-high{background:url(https://www.ksbe.edu/assets/site/special_section/test/www/HS_Departments_Founders_Day_12_19_2018_3233.jpg) center top/cover no-repeat;position:relative}
+.feat-ks-kapalama-boarding{background:url(https://www.ksbe.edu/images/site_content_block/16133/students_with_paddle__medium.jpg) center top/cover no-repeat;position:relative}
+.feat-ks-maui-elementary{background:url(https://www.ksbe.edu/assets/brand/img/campus_maui_elementary.jpg) center top/cover no-repeat;position:relative}
+.feat-ks-maui-middle{background:url(https://www.ksbe.edu/assets/brand/img/campus_maui_middle.jpg) center top/cover no-repeat;position:relative}
+.feat-ks-maui-high{background:url(https://www.ksbe.edu/assets/brand/img/campus_maui_high.jpg) center top/cover no-repeat;position:relative}
+.feat-ks-maui-halau{background:url(https://www.ksbe.edu/assets/brand/img/campus_maui_kupukupu.jpg) center top/cover no-repeat;position:relative}
+.feat-hooulu-placeholder{background:url(https://www.ksbe.edu/images/placeholder-landscape.jpg) center top/cover no-repeat;position:relative}
+.feat-hooulu-ancestry{background:url(https://www.ksbe.edu/images/hooulu-ancestry.jpg) center top/cover no-repeat;position:relative}
+.feat-hooulu-age{background:url(https://www.ksbe.edu/images/hooulu-age.jpg) center top/cover no-repeat;position:relative}
+.feat-hooulu-orphan{background:url(https://www.ksbe.edu/images/hooulu-orphan.jpg) center top/cover no-repeat;position:relative}
+.feat-hooulu-custody{background:url(https://www.ksbe.edu/images/hooulu-custody.jpg) center top/cover no-repeat;position:relative}
+.feat-ks-maui-student-support{background:url(https://www.ksbe.edu/assets/brand/img/student-support-services-thumb.jpg) center top/cover no-repeat;position:relative}
+.featimg img{height:100%;width:100%;object-fit:cover;object-position:center top}
+.featurecont{color:#fff;text-align:center;background:#19325a;padding:0 20px;position:absolute;bottom:0;overflow:hidden;width:100%;height:27%;transition:.5s}
+.featurecont h3{padding:17px 0 35px;width:100%;position:relative;font-size:20px!important;line-height:23px!important;color:#fff}
+.explore.boxs .featurecont h3{font-size:26px!important;line-height:30px!important}
+.featurecont h3:before{position:absolute;bottom:-10px;content:'';left:0;right:0;height:2px;width:92%;background:#fff;display:none;margin:0 auto 20px}
+.featurecont p{display:none;text-transform:uppercase;font-family:"Ringside Regular SSm A","Ringside Regular SSm B"}
+.featurecont p a,.featurecont p a:hover{color:#fff}
+.featurecont p span{display:block}
+.featurebox{position:relative;height:300px}
+.featurebox-bottom-margin{margin-bottom:15px}
+.featurebox:hover .featurecont{height:100%}
+.featurebox:hover .featurecont h3:before,.featurebox:hover .featurecont p{display:block}
+.morefeat{padding:30px 0}
+.explore .morefeat{text-align:center}
+.morefeat p,.morefeat ul,.morefeat ul li{display:inline-block}
+.morefeat li a,.morefeat p{font-size:16px}
+.morefeat p{font-weight:800}
+.morefeat ul li a{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";text-transform:uppercase;padding:0 10px}
+.morefeat ul li:first-child a{padding-left:0}
+.morefeat ul li{position:relative}
+.morefeat ul li:before{position:absolute;right:0;content:'';height:15px;width:1px;top:4px;background:#646464}
+.morefeat ul li:last-child:before{content:none}
+.morebtn a{padding:15px 22px;font-size:15px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";text-deocration:none;font-weight:800;display:inline-block;text-align:center;text-transform:uppercase}
+.morebtn a:hover{text-deocration:none}
+a.skywhite{color:#fff;background-color:#4682f0}
+a.skywhite:hover{text-decoration:none;color:#19325a!important;background-color:#fff}
+.btn-ltgold-dkmaroon a{padding:15px 20px;font-size:16px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";text-deocration:none;font-weight:800;display:inline-block;text-align:center;text-transform:uppercase;color:#6e1432;background-color:#d2964b}
+.btn-ltgold-dkmaroon a:hover{background-color:#6e1432;color:#d2964b}
+.coming{background:#6e1432;padding:60px 0;position:relative}
+.coming,.coming .morefeat ul li a,.coming h2,.morebtn a{color:#fff}
+.coming .morebtn{text-align:center;margin-top:20px}
+.coming .morebtn a:hover{background:#fff;color:#6e1432;text-deocration:none}
+.coming .coming-right{background:url('(https://www.ksbe.edu/assets/brand/img/bluepattern-single.png');bottom:-93px;height:430px;left:initial;right:0;width:374px}
+.coming h3,.coming h6{color:#fff}
+.calendr{color:#fff;display:flex;margin-bottom:25px}
+.calendr .datebox{background:#19325a;padding:16px;align-items:center;justify-content:center;align-items:center}
+.ks_infobox .calendr .datebox h4{color:#fff}
+.datedesc{padding-left:15px}
+.datebox h4{font-size:35px;line-height:29px;text-align:center;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;color:#fff;margin-bottom:0}
+.datebox h4 span{display:block;font-size:16px;text-transform:uppercase;margin-bottom:-6px;letter-spacing:1.5px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";color:#fff}
+.datedesc p{font-size:16px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;color:#fff}
+.coming .morefeat ul li::before{background:#fff}
+.coming .row{margin:12px -15px 35px}
+.news_img img{width:100%;max-width:100%;display:block}
+.blogA,.blogB{position:relative;height:240px}
+.blogA .blogimg{height:240px}
+.blogimg img{width:100%;object-fit:cover;object-position:50% 0}
+.blogcont{position:absolute;bottom:0;padding:8px 15px;color:#fff}
+.blogcont:hover{background:#19325a}
+.blogcont p{margin-bottom:0!important}
+.blueblog,.greenblog,.redblog,.skyblog{background:#4682ef}
+.darkblue-background{background:#19325a}
+.dkmaroon-background{background:#6e1432}
+.ltmaroon-background{background:#962846}
+.ltgreen-background{background:#1e826e}
+.dkorange-background{background:#b43c28}
+.ltorange-background{background:#d24632}
+.blogB .blogimg{height:150px}
+.blogB .blogcont{position:absolute;bottom:0;overflow:hidden;width:100%;height:39%;transition:.5s}
+.cred-colorbox{padding:10px 10px 1px}
+.cred-colorbox p{color:#fff;font-size:14px}
+.cred-colorbox a{color:#fff;text-decoration:underline}
+.news .morebtn{text-align:center;margin-top:30px}
+.news .morebtn a{display:inline-block}
+.meaDiv .morebtn a:hover,.news .morebtn a:hover{text-deocration:none}
+.news h3{font-size:13px;line-height:17px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;color:#fff}
+.news p{font-size:12px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";color:#fff;text-transform:uppercase}
+.news small{display:none}
+.newsdiv .row{padding-bottom:15px}
+.meaDiv{background:url(https://www.ksbe.edu/assets/site/special_section/malama_ola/20210718_Oiwi_Leaders_005_KS_07881-1600px.webp) center center/cover no-repeat;padding:60px 0;position:relative}
+.explore.meaDiv{padding-bottom:60px}
+.meaDiv .meapattern{background:url('https://www.ksbe.edu/assets/brand/img/meapattern.png');bottom:initial;top:0;height:270px}
+.innerMenu{padding:12px 20px 35px;background:rgba(0,0,0,.51)}
+.innerMenu ul li{color:#fff;font-size:16px;border-bottom:1px solid #fff;display:block;padding:5px 0;font-family:"Ringside Regular SSm A","Ringside Regular SSm B"}
+.innerMenu ul li span{width:50%;display:inline-block}
+.innerMenu ul li.meaheadMenu{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;font-size:18px;padding-bottom:10px}
+.meaDiv .morefeat{padding:0}
+.meaDiv .morebtn{float:right;display:flex;justify-content:flex-end;margin-top:4px;margin-right:30px}
+.meaDiv .headBtn{margin-bottom:35px}
+.meaDiv .headBtn h2{display:inline-block}
+.meaDiv .headBtn h2,.meaDiv .morefeat ul li a{color:#fff}
+.meaDiv .morefeat ul li:before{background:#fff}
+.socialimg{height:250px}
+.socialimg img{height:100%;width:100%;object-fit:cover}
+.socialDiv{background:#19325a;padding:40px 0 90px;text-align:center}
+.socialIcons{text-align:center}
+.socialIcons img{vertical-align:unset}
+.socialIcons ul li{display:inline-block;margin-left:10px}
+.socialIcons ul li:first-child{margin-left:0}
+.socialIcons ul li a{display:block}
+.socialIcons li a .hoverimg,.socialIcons li a:hover .nohover{display:none}
+.socialIcons li a:hover .hoverimg{display:block}
+.socialSec{padding:40px 0}
+.socialDiv h2{color:#fff}
+.social_icons div{height:60px;width:60px}
+.social_icons a img{width:40px}
+.responsiveshow{background:#19325a;display:none}
+.headSearch{display:none;position:absolute;right:60px;z-index:9999;top:8px;width:570px}
+.header .headSearch form{position:relative;width:570px;background:#f7f7f7;border-radius:4px}
+.header .headSearch form input{border:1px solid #c9cbd5;background:0 0;width:490px;padding:9px 8px;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;font-size:14px;color:#000;border-radius:4px 0 0 4px}
+.header .headSearch form input::placeholder{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;font-size:14px;color:#9398ac}
+.header .headSearch form input:focus{outline:0}
+.header .headSearch form button{position:absolute;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;font-size:15px;color:#fff;right:0;width:80px;border:none;height:100%;border-radius:0 4px 4px 0}
+.header .headSearch form button:focus{outline:0}
+#myInputautocomplete-list{position:absolute;padding:5px 0;background:#fff;width:100%;z-index:99999;border:1px solid #e6e6e8}
+.autocomplete-items div{padding:10px;cursor:pointer;background-color:#fff}
+.autocomplete-items div:hover{background-color:#e9e9e9}
+.autocomplete-active{background-color:#e6e6e8!important;color:#000}
+.article_title{margin:75px 0 45px}
+.art_ul ul{margin:10px 0}
+.art_ul ul li a{font-size:16px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;line-height:20px;color:#000;float:left;margin-right:10px}
+.article_inner h2{font-size:56px;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;line-height:59px;color:#000;margin:40px 0}
+.inner_left h3{font-size:16px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;line-height:20px;color:#000}
+.inner_left ul{padding:20px 0 40px;border-bottom:3px solid #646464;margin-bottom:40px;width:85%}
+.inner_left li a{font-size:16px;line-height:20px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B"}
+.left_lower h5{color:#646464;font-size:16px;line-height:20px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;margin:0}
+.left_lower li a{font-size:16px;line-height:20px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B"}
+.left_lower ul{margin-bottom:15px}
+.inner_right p{font-size:18px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";line-height:27px;color:#646464;font-weight:300}
+.inner_right ul{margin-bottom:16px;margin-left:19px;list-style:disc}
+.inner_right ul li{font-size:18px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";line-height:27px;color:#646464;font-weight:300;list-style:disc}
+.inner_right strong{font-weight:800}
+.article_right h3{font-size:16px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;line-height:20px;color:#000}
+.article_right .related_a h2{font-size:16px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";line-height:24px;color:#646464;padding:5px 0}
+.article_right .related_a a{font-size:16px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;line-height:20px;color:#646464}
+.article_right .related_a a:hover{color:#4682f0}
+.related_a{padding:25px 0}
+.related_a:nth-child(3){padding-top:0}
+.article_a{margin-top:40px}
+.article_right .article_a a{text-decoration:none;font-size:16px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;color:#fff;background:#6d1331;padding:23px 5px;width:100%;display:block;text-align:center}
+.icon_inner ul{display:inline-block}
+.icon_inner ul li{display:inline-block;margin-right:10px}
+.icon_inner{padding:15px 0;border-top:3px solid #b1b1b3;margin-bottom:125px;display:flex;align-items:center}
+.icon_inner p{font-size:16px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;line-height:20px;color:#000;display:inline-block;margin-right:25px}
+.myimg1,.myimg2,.myimg3{background:url("https://www.ksbe.edu/assets/brand/img/bgimg.png") 0 0/cover}
+.article_right{padding:20px 0;border-top:4px solid #19325a}
+.main .slick-dotted.slick-slider{margin-bottom:0}
+.typehead{background:#fff;padding:0}
+.typeright1{background:url(https://www.ksbe.edu/assets/brand/img/green-patt.png) no-repeat}
+.typicll{margin-top:160px}
+.homees1{background-size:cover;background-color:#325550}
+.homeinnText p{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:16px;color:#fff;margin-top:70px}
+.kekula_content{background:#d24632;padding:40px 25px;height:100%}
+.kekula_content h3{font-size:24px;line-height:28px;color:#fff;padding-bottom:10px}
+.kekula{margin-top:158.02px;position:relative}
+.kekula_content p{font-size:18px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:400;line-height:21px;color:#fff;padding:0}
+.kekula_content ul li{font-size:22px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";line-height:28px;color:#fff;padding:0}
+.kekula_contentschool ul li{margin-bottom:15px}
+.kekula_content ul li a{font-size:22px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";line-height:28px;color:#fff}
+.kekula_dark_gold{background:#9b693c;margin-top:181px;position:relative}
+.kekula_content_light_gold{background:#d2964b;padding:40px 25px;height:100%;color:#fff}
+.kekula_img_light_gold{height:100%;background:#d2964b}
+.img_pattern{position:absolute;left:0;bottom:0;z-index:1}
+.kame_inner ul li a{font-size:16px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";line-height:20px;color:#4682f0;text-decoration:none}
+.typeheading .kame_inner ul li a{color:#19325a}
+.kame_light_green{background:#1e826e;padding:15px 0 20px}
+.kame_light_green .kame_inner ul li a{font-size:16px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";line-height:20px;color:#d2d2d2;text-decoration:none}
+.kame_light_green.boxs h2{position:relative;z-index:5}
+.kame_light_green.boxs ul{position:relative;z-index:6}
+.info_inner{padding:40px 0;border-bottom:2px solid #646464}
+.info_left h4{font-size:16px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;text-transform:uppercase;padding-bottom:7px}
+.info_left ul:nth-child(2){padding:15px 0;margin-left:17px}
+.news{padding:40px 0}
+.news_inner h2{font-size:42px;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;line-height:48px;color:#000}
+.news_content h5{font-size:16px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;line-height:20px;color:#646464}
+.news_content h3{font-size:24px;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;line-height:28px;color:#000;padding:5px 0}
+.news_content p{font-size:16px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";line-height:20px;color:#646464}
+.forest{padding-bottom:40px}
+.forest_view{margin-bottom:160px;margin-top:35px}
+.forest_view a{font-size:24px;line-height:28px;background:#d2954a;color:#fff;padding:21px 52px}
+.calender{border-top:8px solid #19325a;margin:0 0 15px}
+.kula_info{padding:40px 0}
+.calender h3{font-size:24px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;line-height:28px;color:#000;padding:15px 0}
+.calen_back{font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;background:#19325a;text-align:center;padding:8px 0}
+.calen_con p{font-size:16px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";line-height:24px}
+.calen_full{display:flex;padding:10px 0}
+.calen_back span{font-size:35px;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;line-height:38px;color:#fff}
+.calen_back h6{font-size:20px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;line-height:28px;color:#fff}
+.calen_con{padding-left:10px}
+.view_cal{padding:20px 0;border-bottom:1px solid #646464}
+.view_cal a{font-size:16px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";line-height:22px;color:#646464}
+.ka_papa h2{font-size:24px;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;line-height:28px;color:#000;padding:15px 0}
+.ka_papa h5,.pri_contnet h5{font-size:20px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;line-height:22px;color:#646464}
+.pri_contnet p{font-size:16px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";line-height:20px;color:#646464}
+.principle{display:flex;align-items:center;justify-content:center;padding:25px 0 0}
+.home_inn.homeinnT .slick-dots{text-align:center}
+.myhome1,.myhome2,.myhome3{background:url('(https://www.ksbe.edu/assets/brand/img/typical_bg1.png') center center/cover no-repeat}
+.typeheadingcampus{background:#4682f0}
+.ctype-right{background:url('(https://www.ksbe.edu/assets/brand/img/footer-patern.png')}
+.eduBtns1,.edubtncampusmain{padding:0}
+.kameha_campus_head h2{color:#000;font-size:42px}
+.kameha_campus_head ul li a{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;display:inline-block;color:#fff;font-size:16px;padding:24px 5px;text-decoration:none;width:334px;text-align:center;margin-bottom:5px;text-transform:uppercase;float:right}
+.ksbtn .eduBtns .darkyellow:hover{background-color:#6d1331;color:#d2954a}
+.ksbtn .eduBtns .greenclr:hover{background:#31545099}
+.kameha_campus{margin-bottom:50px}
+.featurecontnew h3 span{font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:16px;display:block;line-height:28px;text-transform:uppercase}
+.featurecontnew{height:31%}
+.featureboxnew{height:316px}
+.school_areabtn ul li a{width:100%;color:#fff;background-color:#4682ef;margin-bottom:2px}
+.school_areabtn ul li a:hover{background-color:#19325a;color:#4682ef}
+.typicalContnew{padding:55px 0 150px}
+.ksbtn img{margin:0 auto 15px}
+.featurecontCampus h3{font-size:25px}
+.featurecontCampus h3 span{color:#4682ef}
+.kekula{background:#4682f0}
+.kame{background:#19325a;padding:15px 0 20px}
+.kame_inner ul{z-index:4;position:relative}
+.kame_inner ul li{display:inline-block}
+.kame_inner h2{font-size:56px;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;line-height:59px;color:#fff;margin-top:0;margin-bottom:0}
+.info_inner1{padding:40px 0;border-bottom:none}
+.info_inner h3{font-size:42px;font-family:"Chronicle Display A","Chronicle Display B";font-weight:800;line-height:48px;color:#000}
+.info_left ul{padding:30px 0}
+.info_left ul li{display:block;margin-bottom:16px}
+.info_left ul li::before{content:url(https://www.ksbe.edu/assets/brand/img/menuarrow.png);position:absolute;left:0;margin-top:2px}
+.info_left ul li a{font-size:16px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";line-height:20px;color:#646464}
+.info_left ul li a:hover{color:#4682f0}
+.typicalcampus{padding:55px 0 0}
+.linksRel ul li a:hover{color:#4682f0}
+.article_right .article_a a:hover{background-color:#d2954a;color:#6d1331}
+.left_lower li a:hover{color:#4682f0}
+.typeheading .typeright1{top:-80px;z-index:-1}
+.typeheading .typeright12{z-index:1}
+.forest_view a:hover{background:#6d1331}
+.kekula_img{display:flex;height:100%;background:#d24632}
+.bgkekula{display:flex;position:relative;z-index:9}
+.main1{position:relative}
+.homeinnT .slick-next{right:50px}
+.homeinnT .slick-prev{left:29px}
+.homeinnT .slick-dots{bottom:23px}
+.news_content{padding-left:15px}
+.kekula_content1 ul{border-bottom:2px solid #fff;padding-bottom:25px}
+.kekula_content1 ul:last-child{border-bottom:none}
+.view_cal a:hover{color:#4682f0}
+.homeinnText{display:flex;height:100%}
+.typicalCont.typical3{padding:55px 0 240px}
+.news.newscampus{padding:160px 0}
+.margin_bottom_30px{margin-bottom:30px}
+.oiwi-profile-container{position:relative;text-align:center}
+.oiwi-profile-name,.oiwi-profile-name a{color:#fff;font-weight:700;width:100%;line-height:20px}
+.oiwi-profile-name-background{position:absolute;background:#fff;background:linear-gradient(180deg,rgba(255,255,255,0) 0,#000 100%);padding:20px 0 5px;bottom:0;width:100%}
+.oiwi-article-date{text-transform:uppercase;font-size:12px}
+.oiwi-article-link,.oiwi-article-link:hover{color:#fff;font-size:13px;line-height:17px!important;display:block}
+.img-4-3{aspect-ratio:16/9;object-fit:cover}
+.image-object-fit{object-fit:cover;object-position:top}
+
+.flip-card {perspective: 1000px;cursor: pointer;width: 100%;max-width: 600px;}
+.flip-card-inner {position: relative;width: 100%;aspect-ratio: 1 / 1;transition: transform 0.7s;transform-style: preserve-3d;-webkit-transform-style: preserve-3d;}
+.flip-card:hover .flip-card-inner, .flip-card.flipped .flip-card-inner {transform: rotateY(180deg);}
+.flip-card-front, .flip-card-back {position: absolute;inset: 0;backface-visibility: hidden;-webkit-backface-visibility: hidden;overflow: auto;transform: translateZ(0); -webkit-transform: translateZ(0);}
+.flip-card-front {background: #19325a;}
+.flip-card-back {position:absolute;inset:0;transform: rotateY(180deg);overflow:hidden;}
+.flip-photo {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;transform: scaleX(-1);}
+.img-fluid.flip-photo {filter:blur(4px);}
+.flip-overlay {position: absolute;inset: 0;background: rgba(25,50,90,0.8);z-index: 1;pointer-events: none;}
+.flip-photo::selection {display:none;}
+.flip-content {position:absolute;inset:0;overflow-y:auto;z-index:2;}
+.flip-content div a {color:#fff;text-decoration:underline;font-weight:bold;}
+.flip-content div a:hover {color:#32a2ff;}
+.flip-textbox {position:absolute;bottom:0;left:0;padding:18px;}
+.flip-textbox p {margin-bottom:0 !important;color:#fff;font-size:15px;line-height:150%;text-align:left;}
+table.table-details {width:100%;border-collapse:collapse;}
+table.table-details tr {border-top:1px solid rgba(0,0,0,0.1);}
+table.table-details td {vertical-align:top;padding:4px 4px 4px 0;}
+
+@media (min-width:320px){
+.col-five{width:100%;padding:0 15px}
+.mahina-olelo-hawaii-top-background{display:none}
+.mahina-olelo-hawaii-background{display:block;background:url(https://www.ksbe.edu/images/mahina-olelo-hawaii-background7.jpg) center center/cover no-repeat;clear:both;min-height:100px}
+.mahina-olelo-hawaii-phrase,.mahina-olelo-hawaii-prompt{margin-bottom:0!important}
+}
+@media (min-width:577px){
+.col-five{width:50%;padding:0 15px}
+}
+@media (min-width:768px){
+.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9{float:left}
+.col-sm-12{width:100%}
+.col-sm-11{width:91.66666667%}
+.col-sm-10{width:83.33333333%}
+.col-sm-9{width:75%}
+.col-sm-8{width:66.66666667%}
+.col-sm-7{width:58.33333333%}
+.col-sm-6{width:50%}
+.col-sm-5{width:41.66666667%}
+.col-sm-4{width:33.33333333%}
+.col-sm-3{width:25%}
+.col-five{width:50%;padding:0 15px}
+.col-sm-2{width:16.66666667%}
+.col-sm-1{width:8.33333333%}
+.col-sm-pull-12{right:100%}
+.col-sm-pull-11{right:91.66666667%}
+.col-sm-pull-10{right:83.33333333%}
+.col-sm-pull-9{right:75%}
+.col-sm-pull-8{right:66.66666667%}
+.col-sm-pull-7{right:58.33333333%}
+.col-sm-pull-6{right:50%}
+.col-sm-pull-5{right:41.66666667%}
+.col-sm-pull-4{right:33.33333333%}
+.col-sm-pull-3{right:25%}
+.col-sm-pull-2{right:16.66666667%}
+.col-sm-pull-1{right:8.33333333%}
+.col-sm-pull-0{right:auto}
+.col-sm-push-12{left:100%}
+.col-sm-push-11{left:91.66666667%}
+.col-sm-push-10{left:83.33333333%}
+.col-sm-push-9{left:75%}
+.col-sm-push-8{left:66.66666667%}
+.col-sm-push-7{left:58.33333333%}
+.col-sm-push-6{left:50%}
+.col-sm-push-5{left:41.66666667%}
+.col-sm-push-4{left:33.33333333%}
+.col-sm-push-3{left:25%}
+.col-sm-push-2{left:16.66666667%}
+.col-sm-push-1{left:8.33333333%}
+.col-sm-push-0{left:auto}
+.col-sm-offset-12{margin-left:100%}
+.col-sm-offset-11{margin-left:91.66666667%}
+.col-sm-offset-10{margin-left:83.33333333%}
+.col-sm-offset-9{margin-left:75%}
+.col-sm-offset-8{margin-left:66.66666667%}
+.col-sm-offset-7{margin-left:58.33333333%}
+.col-sm-offset-6{margin-left:50%}
+.col-sm-offset-5{margin-left:41.66666667%}
+.col-sm-offset-4{margin-left:33.33333333%}
+.col-sm-offset-3{margin-left:25%}
+.col-sm-offset-2{margin-left:16.66666667%}
+.col-sm-offset-1{margin-left:8.33333333%}
+.col-sm-offset-0{margin-left:0}
+.mahina-olelo-hawaii-background{background:url(https://www.ksbe.edu/images/mahina-olelo-hawaii-background7.jpg) center center/cover no-repeat;clear:both;min-height:100px}
+.mahina-olelo-hawaii-top-background{background:url(https://www.ksbe.edu/images/mahina-olelo-hawaii-background6.jpg) center center/cover no-repeat;clear:both}
+.mahina-olelo-hawaii-landing-box{max-width:800px}
+.mahina-olelo-hawaii-title{max-width:410px;text-align:center;margin:auto;height:fit-content;color:#7e272b}
+.mahina-olelo-hawaii-content{height:100%;width:fit-content;margin-left:30px}
+.mahina-olelo-hawaii-prompt{font-weight:400;color:#7e272b;font-size:16px;text-transform:uppercase;margin-bottom:2px!important;line-height:16px;letter-spacing:1px;padding-left:1px}
+.mahina-olelo-hawaii-phrase{font-size:23px;font-weight:700;color:#7e272b;margin-bottom:0!important;line-height:28px;letter-spacing:-.3px}
+.mahina-olelo-hawaii-landing-title{max-width:500px}
+.mahina-olelo-hawaii-subtitle{font-size:26px;line-height:33px}
+.mahina-olelo-hawaii-landing-text{line-height:33px;font-size:20px}
+}
+@media (min-width:992px){
+.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9{float:left}
+.col-md-12{width:100%}
+.col-md-11{width:91.66666667%}
+.col-md-10{width:83.33333333%}
+.col-md-9{width:75%}
+.col-md-8{width:66.66666667%}
+.col-md-7{width:58.33333333%}
+.col-md-6{width:50%}
+.col-md-5{width:41.66666667%}
+.col-md-4{width:33.33333333%}
+.col-md-3{width:25%}
+.col-five{width:20%;padding:0 15px}
+.col-md-2{width:16.66666667%}
+.col-md-1{width:8.33333333%}
+.col-md-pull-12{right:100%}
+.col-md-pull-11{right:91.66666667%}
+.col-md-pull-10{right:83.33333333%}
+.col-md-pull-9{right:75%}
+.col-md-pull-8{right:66.66666667%}
+.col-md-pull-7{right:58.33333333%}
+.col-md-pull-6{right:50%}
+.col-md-pull-5{right:41.66666667%}
+.col-md-pull-4{right:33.33333333%}
+.col-md-pull-3{right:25%}
+.col-md-pull-2{right:16.66666667%}
+.col-md-pull-1{right:8.33333333%}
+.col-md-pull-0{right:auto}
+.col-md-push-12{left:100%}
+.col-md-push-11{left:91.66666667%}
+.col-md-push-10{left:83.33333333%}
+.col-md-push-9{left:75%}
+.col-md-push-8{left:66.66666667%}
+.col-md-push-7{left:58.33333333%}
+.col-md-push-6{left:50%}
+.col-md-push-5{left:41.66666667%}
+.col-md-push-4{left:33.33333333%}
+.col-md-push-3{left:25%}
+.col-md-push-2{left:16.66666667%}
+.col-md-push-1{left:8.33333333%}
+.col-md-push-0{left:auto}
+.col-md-offset-12{margin-left:100%}
+.col-md-offset-11{margin-left:91.66666667%}
+.col-md-offset-10{margin-left:83.33333333%}
+.col-md-offset-9{margin-left:75%}
+.col-md-offset-8{margin-left:66.66666667%}
+.col-md-offset-7{margin-left:58.33333333%}
+.col-md-offset-6{margin-left:50%}
+.col-md-offset-5{margin-left:41.66666667%}
+.col-md-offset-4{margin-left:33.33333333%}
+.col-md-offset-3{margin-left:25%}
+.col-md-offset-2{margin-left:16.66666667%}
+.col-md-offset-1{margin-left:8.33333333%}
+.col-md-offset-0{margin-left:0}
+#mahina-olelo-hawaii-top-background,.mahina-olelo-hawaii-top-background{background:url(https://www.ksbe.edu/images/mahina-olelo-hawaii-background6.jpg) center center/cover no-repeat;clear:both;display:block}
+.mahina-olelo-hawaii-background{display:none}
+}
+@media (min-width:1200px){
+.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9{float:left}
+.col-lg-12{width:100%}
+.col-lg-11{width:91.66666667%}
+.col-lg-10{width:83.33333333%}
+.col-lg-9{width:75%}
+.col-lg-8{width:66.66666667%}
+.col-lg-7{width:58.33333333%}
+.col-lg-6{width:50%}
+.col-lg-5{width:41.66666667%}
+.col-lg-4{width:33.33333333%}
+.col-lg-3{width:25%}
+.col-lg-2{width:16.66666667%}
+.col-lg-1{width:8.33333333%}
+.col-lg-pull-12{right:100%}
+.col-lg-pull-11{right:91.66666667%}
+.col-lg-pull-10{right:83.33333333%}
+.col-lg-pull-9{right:75%}
+.col-lg-pull-8{right:66.66666667%}
+.col-lg-pull-7{right:58.33333333%}
+.col-lg-pull-6{right:50%}
+.col-lg-pull-5{right:41.66666667%}
+.col-lg-pull-4{right:33.33333333%}
+.col-lg-pull-3{right:25%}
+.col-lg-pull-2{right:16.66666667%}
+.col-lg-pull-1{right:8.33333333%}
+.col-lg-pull-0{right:auto}
+.col-lg-push-12{left:100%}
+.col-lg-push-11{left:91.66666667%}
+.col-lg-push-10{left:83.33333333%}
+.col-lg-push-9{left:75%}
+.col-lg-push-8{left:66.66666667%}
+.col-lg-push-7{left:58.33333333%}
+.col-lg-push-6{left:50%}
+.col-lg-push-5{left:41.66666667%}
+.col-lg-push-4{left:33.33333333%}
+.col-lg-push-3{left:25%}
+.col-lg-push-2{left:16.66666667%}
+.col-lg-push-1{left:8.33333333%}
+.col-lg-push-0{left:auto}
+.col-lg-offset-12{margin-left:100%}
+.col-lg-offset-11{margin-left:91.66666667%}
+.col-lg-offset-10{margin-left:83.33333333%}
+.col-lg-offset-9{margin-left:75%}
+.col-lg-offset-8{margin-left:66.66666667%}
+.col-lg-offset-7{margin-left:58.33333333%}
+.col-lg-offset-6{margin-left:50%}
+.col-lg-offset-5{margin-left:41.66666667%}
+.col-lg-offset-4{margin-left:33.33333333%}
+.col-lg-offset-3{margin-left:25%}
+.col-lg-offset-2{margin-left:16.66666667%}
+.col-lg-offset-1{margin-left:8.33333333%}
+.col-lg-offset-0{margin-left:0}
+}
+@media (max-width:560px){
+.datedesc p{text-align:left}
+}
+.socialSec img{width:100%;height:100%;overflow:hidden;object-fit:cover}
+.datedesc a{color:#fff}
+.maintypcont p,body{font-family:"Ringside Regular SSm A","Ringside Regular SSm B"}
+.general_factbox_header{color:#fff}
+.general_factbox_image{margin:0 20px 20px 0}
+.general_factbox_text{color:#fff}
+.general_factbox_text a,.kekula_content a{color:#fff;text-decoration:underline}
+.general_factbox_text a:hover,.kekula_content a:hover{text-decoration:none}
+.general_factbox_container{display:flex}
+.general_factbox_container p{color:#fff}
+.linksRel ul{border-bottom:1px solid #939495;border-top:none;padding:10px 0}
+.bottomlinkR li{border-bottom:none}
+.about_links_container{clear:both;display:flex}
+.about_links_198px_container{width:50%}
+.maintypcont p{padding:0 0 20px}
+#general_sidebar{font-weight:400;position:relative;display:inline-block;word-wrap:break-word;border-radius:0;max-width:240px;float:right;margin:0 0 20px 20px}
+.general_infobox_container,.general_sidebar{padding:20px;background-color:#e8e8e8;margin-bottom:20px}
+.general_infobox_container p:last-child,.general_sidebar p:last-child,.green_infobox_container p:last-child,.palegold_infobox_container p:last-child{margin-bottom:0!important}
+.green_infobox_container{padding:20px;background-color:#325550;margin-bottom:20px;color:#fff}
+.palegold_infobox_container{padding:20px;background-color:#f6e9ce;margin-bottom:20px;color:#000}
+.boxed-orange{padding:20px;background-color:#b43c28;margin-bottom:20px;color:#fff}
+.boxed-orange p:last-child{margin-bottom:0!important}
+.boxed-orange a{color:#fff;border-bottom:1px dotted #fff}
+.boxed-orange a:hover{border-bottom:1px solid #fff;text-decoration:none}
+.article_sidebar_image_caption{font-size:.9rem;font-weight:400;padding:10px 0 40px;color:#000}
+p{margin-bottom:1rem!important}
+.featurecont p{text-transform:initial;font-size:.9em;line-height:1.5em}
+.rounded{border-radius:0!important}
+.typeheadingcampus .container{z-index:2}
+.typeheading .ctype-right{z-index:1}
+blockquote{display:block;border-width:2px 0;border-style:solid;border-color:#eee;padding:1.5em 0;margin:1.5em 0;position:relative;text-align:center;font-size:1.25rem}
+blockquote:before{content:'\201C';position:absolute;top:0;left:50%;transform:translate(-50%,-50%);background:#fff;width:3rem;height:2rem;font:6em/1.08em 'PT Sans',sans-serif;color:#666;text-align:center}
+blockquote em{display:block;font-size:80%;color:#6c757d;margin-top:1em}
+blockquote p:last-child{margin-bottom:0!important}
+.blockquote-footer{margin-top:1em}
+.logosec{text-align:center}
+.inner_left li.imua_left_nav_section::before{content:url(https://www.ksbe.edu/assets/brand/img/menuarrow.png);position:absolute;left:0}
+.inner_left li.imua_left_nav_section{position:relative;padding-left:15px;line-height:15px;margin-bottom:8px;list-style-type:none}
+.inner_left li.imua_left_nav_section.imua_left_nav_section_child{margin-left:16px}
+.inner_left li.imua_left_nav_section.imua_left_nav_section_child_child{margin-left:32px}
+.inner_left li.imua_left_nav_section_top::before{content:url(https://www.ksbe.edu/assets/brand/img/menuarrow.png);position:absolute;left:0}
+.inner_left li.imua_left_nav_section_top{position:relative;padding-left:15px;line-height:15px;margin-bottom:8px;list-style-type:none}
+.featurecont h4{padding:12px 0}
+.typicalCont .col-sm-9 li{list-style:disc}
+.typicalCont .col-sm-9 li li{list-style:circle}
+.typicalCont .col-sm-9 li li li{list-style:square}
+.typicalCont .col-lg-9 ol,.typicalCont .col-lg-9 ul,.typicalCont .col-md-12 ol,.typicalCont .col-md-12 ul,.typicalCont .col-sm-9 ol,.typicalCont .col-sm-9 ul{padding:0 0 1rem 34px}
+.typicalCont .col-sm-9 ol li{list-style:decimal}
+.typicalCont .col-sm-9 ol li ol li{list-style-type:lower-alpha}
+.typicalCont .col-sm-9 ol li ol li ol li{list-style-type:lower-roman}
+.typicalCont .col-lg-9 ol ol,.typicalCont .col-lg-9 ol ol ol,.typicalCont .col-lg-9 ol ol ol ol,.typicalCont .col-lg-9 ul ul,.typicalCont .col-lg-9 ul ul ul,.typicalCont .col-lg-9 ul ul ul ul,.typicalCont .col-md-12 ol ol.typicalCont .col-md-12 ol ol ol.typicalCont .col-md-12 ol ol ol ol,.typicalCont .col-md-12 ul ul,.typicalCont .col-md-12 ul ul ul,.typicalCont .col-md-12 ul ul ul ul,.typicalCont .col-sm-12 .col-sm-9 ol ol ol,.typicalCont .col-sm-12 .col-sm-9 ol ol ol ol,.typicalCont .col-sm-12 .col-sm-9 ul ul ul,.typicalCont .col-sm-12 .col-sm-9 ul ul ul ul,.typicalCont .col-sm-9 ol ol,.typicalCont .col-sm-9 ul ul{padding:0 0 0 34px}
+.typicalCont .col-sm-9 ul#acc{padding:0}
+#fc_calendar .day_cell .button{width:100%!important;margin:unset!important;padding:unset!important}
+#fc_inner .day_cell .button:hover{background:#d8d8d9!important}
+#fc_inner .day_cell .button{background:#eee!important}
+#fc_calendar .day_block_d{background:#a8a8a8;color:#fff;width:100%}
+.day_numeral{padding:20px 0!important;text-align:center!important}
+.calendar_right_container{float:left}
+.calendar_left_container{width:60px;float:left}
+.calendar_left_container table{border:1px solid #ccc!important}
+#fc_calendar #days_of_week .day_of_week{float:none;width:auto}
+#acc.acc li,#accActive.acc li,#accActive01.acc li,#accActive02.acc li,#accActive03.acc li{list-style:none;margin:0}
+#accActive.acc ul.programs-list li,#accActive01.acc ul.programs-list li,#accActive02.acc ul.programs-list li,#accActive03.acc ul.programs-list li{list-style:disc;margin:0 0 0 15px}
+#acc.acc li li,#accActive.acc li li,#accActive01.acc li li,#accActive02.acc li li,#accActive03.acc li li{list-style:disc;margin:0 1em}
+#options{width:100%;font-size:13px}
+#options a{text-decoration:none}
+#acc,#accActive,#accActive01,#accActive02,#accActive03{width:100%;margin:0 auto}
+#acc #ochre{line-height:18px;font-family:Ringside Wide A,Ringside Wide B;max-width:100%;font-size:18px;color:#fff;padding:8px 5px 7px 45px;font-weight:700;cursor:pointer;background:url(https://www.ksbe.edu/images/expand-arrow.png) no-repeat #bf412b;margin:20px 0 0;letter-spacing:1px}
+#acc #ochre:hover{background-color:#dd8169}
+#acc h3#mustard{line-height:18px;font-family:Ringside Wide A,Ringside Wide B;max-width:100%;font-size:18px;color:#fff;padding:8px 5px 7px 45px;font-weight:700;cursor:pointer;background:url(https://www.ksbe.edu/images/expand-arrow.png) no-repeat #dcc43d;margin:20px 0 0;letter-spacing:1px}
+#acc #mustard:hover{background-color:#ede07d}
+#acc #dk-red{line-height:18px;font-family:Ringside Wide A,Ringside Wide B;max-width:100%;font-size:18px;color:#fff;padding:8px 5px 7px 45px;font-weight:700;cursor:pointer;background:url(https://www.ksbe.edu/images/expand-arrow.png) no-repeat #6c0021;margin:20px 0 0;letter-spacing:1px}
+#acc #dk-red:hover{background-color:#95475f}
+#acc #purple{line-height:18px;font-family:Ringside Wide A,Ringside Wide B;max-width:100%;font-size:18px;color:#fff;padding:8px 5px 7px 45px;font-weight:700;cursor:pointer;background:url(https://www.ksbe.edu/images/expand-arrow.png) no-repeat #50135d;margin:20px 0 0;letter-spacing:1px}
+#acc #purple:hover{background-color:#8f3d9a}
+#acc #teal{line-height:18px;font-family:Ringside Wide A,Ringside Wide B;max-width:100%;font-size:18px;color:#fff;padding:8px 5px 7px 45px;font-weight:700;cursor:pointer;background:url(https://www.ksbe.edu/images/expand-arrow.png) no-repeat #066472;margin:20px 0 0;letter-spacing:1px}
+#acc #teal:hover{background-color:#16a0aa}
+#acc #olive{line-height:18px;font-family:Ringside Wide A,Ringside Wide B;max-width:100%;font-size:18px;color:#fff;padding:8px 5px 7px 45px;font-weight:700;cursor:pointer;background:url(https://www.ksbe.edu/images/expand-arrow.png) no-repeat #927819;margin:20px 0 0;letter-spacing:1px}
+#acc #olive:hover{background-color:#c1af4a}
+#acc #green{line-height:18px;font-family:Ringside Wide A,Ringside Wide B;max-width:100%;font-size:18px;color:#fff;padding:8px 5px 7px 45px;font-weight:700;cursor:pointer;background:url(https://www.ksbe.edu/images/expand-arrow.png) no-repeat #09564a;margin:20px 0 0;letter-spacing:1px}
+#acc #green:hover{background-color:#209489}
+#acc #taupe{line-height:18px;font-family:Ringside Wide A,Ringside Wide B;max-width:100%;font-size:18px;color:#fff;padding:8px 5px 7px 45px;font-weight:700;cursor:pointer;background:url(https://www.ksbe.edu/images/expand-arrow.png) no-repeat #543e33;margin:20px 0 0;letter-spacing:1px}
+#acc #taupe:hover{background-color:#927e72}
+#acc #ksblue{line-height:18px;font-family:Ringside Wide A,Ringside Wide B;max-width:100%;font-size:18px;color:#fff;padding:8px 5px 7px 45px;font-weight:700;text-transform:uppercase;cursor:pointer;background:url(https://www.ksbe.edu/images/expand-arrow.png) no-repeat #19325a;margin:20px 0 0;letter-spacing:1px}
+#acc #ksblue:hover{background-color:#547493}
+#acc .acc-section,#accActive .acc-section,#accActive01 .acc-section,#accActive02 .acc-section,#accActive03 .acc-section{overflow:hidden;background:#fff;width:100%}
+#acc .ochre-acc-content{max-width:100%;background:#f8e2da;padding:15px 15px 0;margin:5px 0 0;clear:both}
+#acc .mustard-acc-content{max-width:100%;background:#f6efcb;padding:15px 15px 0;margin:5px 0 0;clear:both}
+#acc .dk-red-acc-content{max-width:100%;padding:15px 15px 0;background:#f2dce8;margin:5px 0 0}
+#acc .purple-acc-content{max-width:100%;padding:15px 15px 0;background:#f2e1f4;margin:5px 0 0}
+#acc .teal-acc-content{max-width:100%;padding:15px;background:#ddeeef;margin:5px 0 0}
+#acc .olive-acc-content{max-width:100%;padding:15px 15px 0;background:#f4f0d4;margin:5px 0 0}
+#acc .green-acc-content{max-width:100%;padding:15px 15px 0;background:#cbe3df;margin:5px 0 0}
+#acc .taupe-acc-content{max-width:100%;padding:15px 15px 0;background:#e7e1dd;margin:5px 0 0}
+#acc .ksblue-acc-content{max-width:100%;padding:15px 15px 0;background:#d4dce4;margin:5px 0 0}
+#acc .ochre-head{font-size:18px;font-weight:700;color:#bf412b}
+#acc .mustard-head{font-size:18px;font-weight:700;color:#8e5b07}
+#acc .dk-red-head{font-size:18px;font-weight:700;color:#6c0021}
+#acc .purple-head{font-size:18px;font-weight:700;color:#50135d}
+#acc .teal-head{font-size:18px;font-weight:700;color:#066472}
+#acc .olive-head{font-size:18px;font-weight:700;color:#927819}
+#acc .green-head{font-size:18px;font-weight:700;color:#09564a}
+#acc .taupe-head{font-size:18px;font-weight:700;color:#543e33}
+#acc .ksblue-head{font-size:18px;font-weight:700;color:#19325a}
+#acc .teal-box{padding:15px 15px 0;margin:0 0 7px;background-color:#edf6f7;border:2px solid #c0dee0}
+.program-table-float{clear:both;overflow:hidden}
+.program-table{float:left;width:63%}
+.program-table table{border-top:1px solid #e69f8b;border-left:1px solid #e69f8b;border-bottom:1px solid #e69f8b;font-family:'Open Sans',Verdana,Geneva,sans-serif;font-size:11px;color:#423127;width:100%}
+.program-table td,.program-table th{border-bottom:1px solid #e69f8b;border-right:1px solid #e69f8b;padding:2px 4px;text-align:center}
+.program-table .backgray{background-color:#e3d3ad}
+.program-table .backhighlight{background-color:#f6f0e4}
+.program-table th.header{background-color:#e69f8b}
+.program-table th.topheader{font-size:14px;background-color:#f8e2da}
+.program-sidebar{width:220px;text-align:center;border:3px solid #bf412b;padding:10px;float:right}
+.stay-in-the-know{padding:12px;border:1px solid #e8ddc1;background-color:#f6f2e4;min-height:42px;font-size:13px;font-style:italic}
+.row-cols-3 .col-md-4{margin-bottom:40px}
+.gallery-thumbnail,.row-cols-3 .col-md-4 .gallery-thumbnail{margin-bottom:5px;max-width:100%;width:100%}
+.alertbox{background-color:#fc0;padding:10px 0;font-size:24px;line-height:29px;font-weight:800;display:block;text-transform:uppercase}
+.alertbox a{color:#c00}
+.alertbox a:hover{color:#007bff}
+.alertbox p{font-size:18px;line-height:25px;text-transform:none;font-weight:400;padding:0 20px;margin-bottom:0!important}
+.alertbox-subhead{font-size:18px;text-transform:none}
+.inner_left ul ul:last-child{border-bottom:0 solid #646464}
+.header_search_icon{height:12px;width:12px}
+.article_sidebar_infobox_container{background:#4682f0;padding:20px;color:#fff}
+.article_sidebar_infobox_container a,.article_sidebar_infobox_container h3,.article_sidebar_infobox_container h4,.article_sidebar_infobox_container h5,.article_sidebar_infobox_container h6{color:#fff}
+.article_sidebar_infobox_container a{text-decoration:none}
+.article_sidebar_infobox_container a:hover{color:#fff}
+.article_sidebar_infobox_container .application-list a{text-decoration:none;border-bottom:1px dotted #fff}
+.article_sidebar_infobox_container .application-list a:hover{color:#fff;border-bottom:1px solid #fff}
+.button{background:#4682f0;display:block;margin:0 0 10px;text-align:center;width:fit-content}
+.button a,a.button{color:#fff;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:15px;text-decoration:none;font-weight:800;text-transform:uppercase;padding:15px 22px;display:block}
+.button:hover{background:#19325a}
+.button a:hover{color:#fff;text-decoration:none}
+.button-white-alert a,a.button-white-alert{color:#000;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-size:15px;text-decoration:none;font-weight:800;text-transform:uppercase;padding:15px 22px;display:inline-block;background-color:#fff}
+a.button-white-alert:hover{background-color:#19325a;color:#fff;text-decoration:none}
+a.button-white-alert{transition:.35s}
+.temporarybox{background-color:#efefef;padding:16px;font-size:15px;color:#000}
+.temporarybox .button{display:inline-block;margin:10px 0 0}
+.temporarybox .button a:hover{background-color:#19325a;color:#fff}
+#navbar6 .p-3{padding:unset}
+.accordion{width:100%;text-align:left;outline:0;font-family:Ringside Regular SSm A,Ringside Regular SSm B;font-weight:800;font-size:17px;display:block;background-color:#fff;border:0;border-bottom:1px solid #ccc;padding:10px 0;--bs-accordion-border-width:0}
+.accordion:after{content:'\02795';font-size:13px;color:#777;float:right;margin-left:5px}
+.activate:after{content:"\2796"}
+.navigation-panel ul li a{font-size:15px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";font-weight:800;}
+.navigation-panel ul li a:hover{text-decoration:underline}
+.navigation-panel{max-height:0;overflow:hidden;transition:max-height .2s ease-out}
+/*.navigation-panel ul li{margin:10px 0}*/
+.navigation-panel ul li {margin:10px 0 0 10px;list-style-type:none;}
+.typicalCont .col-sm-12 .col-sm-9 .no_bullet li{list-style-type:none}
+.typicalCont .col-sm-12 .col-sm-9 ul.no_bullet{padding:0}
+.col-sm-12 .kekula_img .homeslider{background-position:top center!important}
+.blogB .blogimg,[ifIE]>.blogB{overflow:hidden}
+.blogimg img{height:auto;min-height:150px;min-width:200px}
+.typicalCont .links .links ul{padding:0}
+.kekula .bgkekula .kekula_img{overflow:hidden}
+.kekula .bgkekula .kekula_img img{display:block;max-width:800px}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+.kekula .bgkekula .kekula_img img{height:auto;max-height:533px}
+}
+@media(max-width:1199px){
+.kekula .bgkekula .kekula_img{max-width:1199px}
+.kekula .bgkekula .kekula_img img{height:auto;max-height:512px;max-width:768px}
+.kekula_content p{font-size:1em;line-height:1.25em;padding:0}
+.flip-textbox {padding:30px;}
+.flip-textbox p  {font-size:18px;line-height:160%;}
+}
+@media(max-width:991px){
+.kekula .bgkekula .kekula_img{max-width:991px}
+.kekula .bgkekula .kekula_img img{height:auto;max-height:661px;max-width:991px}
+.kekula_content p{font-size:1em;line-height:1.25em;padding:0}
+.kekula_content ul li,.kekula_content ul li a{font-size:15px;line-height:24px}
+.kekula_content h3{line-height:26px;padding-bottom:5px}
+}
+@media(max-width:767px){
+.bgkekula{display:block}
+.kekula .bgkekula .kekula_img{max-width:767px}
+.kekula .bgkekula .kekula_img img{height:auto;max-height:511px;max-width:767px}
+.kekula_content p{font-size:1em;line-height:1.25em;padding:0}
+.featurebox-bottom-margin{margin-bottom:0}
+}
+@media(max-width:567px){
+.kekula .bgkekula .kekula_img{max-width:567px}
+.kekula .bgkekula .kekula_img img{height:auto;max-height:378px;max-width:567px}
+}
+.video_icon_cont{position:relative;z-index:1}
+.video_icon_cont_left_padding>img:first-child{padding:5px 10px 15px 0}
+.video_icon_cont>img{z-index:2}
+.video_icon_cont>img:first-child{position:absolute;margin:0}
+.video_gallery_container{margin:0 0 15px}
+.video_gallery_feature_title{font-size:30px;font-family:'Chronicle Display A','Chronicle Display B';margin-top:16px}
+.video_gallery_feature_date{font-size:14px;margin-bottom:16px}
+.general_infobox_header{margin:0 0 10px;font-size:1.15em;font-weight:700}
+.flex-container{display:flex;justify-content:space-between}
+.flex-column{flex-grow:1;background-color:#f1e9d7;padding:2%;flex:0 28%;font-size:14px}
+.flex-column+.flex-column{margin-left:2%}
+.two-column-flex-plain{flex-grow:1;padding:0 0 2%;flex:0 48%}
+.two-column-flex-plain+.two-column-flex-plain{margin-left:2%}
+.two-column-flex{flex-grow:1;background-color:#e8e8e8;padding:2%;flex:0 48%;font-size:14px}
+.two-column-flex+.two-column-flex{margin-left:2%}
+.three-column-box{flex-grow:1;flex:0 32%;font-size:15px;background-color:#e8e8e8;padding:2%;text-align:center;margin-bottom:20px}
+.three-column-nobox-center{flex-grow:1;flex:0 28%;font-size:14px;align-items:center;justify-content:center}
+.three-column-nobox-center+.three-column-nobox-center{margin-left:4%}
+.four-column-nobox-center{flex-grow:1;flex:0 23.5%;font-size:14px;align-items:center;justify-content:center;display:flex}
+.four-column-nobox-center+.four-column-nobox-center{margin-left:2%}
+.five-column-flex-nocolor{flex:0 18%;flex-grow:1;text-align:center}
+.five-column-flex-nocolor+.five-column-flex-nocolor{margin-left:2%}
+.heroimg img{width:inherit}
+:target:before{content:"";display:block;height:180px;margin:-180px 0 0}
+.bs-accordion .card{border-radius:0}
+.bs-accordion .card .btn-link{text-transform:uppercase}
+.bs-accordion .card-header:first-child{border-radius:0}
+.leftnav_parent a{color:#000!important;text-decoration:none!important;cursor:default!important}
+.inner_left li.leftnav_parent::before{content:none!important}
+.inner_left li.leftnav_parent{padding-left:0!important;text-transform:uppercase;padding-top:10px;line-height:21px}
+hr.dotted_hr{border-top:1px dotted #ddd;clear:both}
+table.table-styled{width:100%;border-collapse:collapse}
+table.table-styled th,table.table-styled thead th{background-color:#dae6fc;font-weight:700}
+table.table-styled td,table.table-styled th,table.table-styled thead th{padding:6px;border:1px solid #ddd;vertical-align:top}
+table.table-styled2{width:100%;border-collapse:collapse}
+table.table-styled2 th,table.table-styled2 thead th{background-color:#efefef;font-weight:700}
+table.table-styled2 td,table.table-styled2 th,table.table-styled2 thead th{padding:6px;border:1px solid #ddd;vertical-align:top}
+.article_hero_image_caption{padding:10px 0 40px;color:#fff}
+.hero .patternboximg{left:1280px;top:85%;height:170px;display:none;}
+.ainaulu-statewide-box{background-color:#f6f1e5;border:1px solid #e8dcc3;padding:10px 5px;width:100%;margin-bottom:10px;text-align:center}
+.ainaulu-box-header{color:#609e36;font-size:16px;font-weight:700}
+.ainaulu-box-container{overflow:auto;background-color:#ccc}
+.ainaulu-island-box{background-color:#f6f1e5;border:1px solid #e8dcc3;width:100%;padding:10px 5px;text-align:center;margin-bottom:10px}
+.ainaulu-island-box-end{background-color:#f6f1e5;border:1px solid #e8dcc3;width:100%;padding:10px 5px;text-align:center}
+.back-to-school-header{text-align:center;background-color:#1e826e;width:100%;margin-bottom:40px}
+.back-to-school-table table,.back-to-school-table td,.back-to-school-table th{border-collapse:collapse;border:1px solid #f9c105}
+.back-to-school-subheader{background-color:#1e826e;color:#fff;padding:10px 10px 10px 16px;margin-bottom:16px;margin-top:32px;font-size:22px;font-weight:700;letter-spacing:-.5px}
+.back-to-school-3col{padding:5%;background-color:#19325a}
+.back-to-school-3col p:last-child{margin-bottom:0!important}
+.back-to-school-3col a{color:#fff}
+#ks-calendar .button:hover{cursor:pointer}
+#ks-calendar .btn{border-radius:0}
+#ks-calendar{padding:0 0 25px;font-family:'Ringside Regular SSm A','Ringside Regular SSm B'}
+#ks-calendar h3{color:#000}
+#ks-calendar #fc_inner .day_cell .button{background:#6e1432}
+#ks-calendar .day_numeral{color:#fff;font-size:35px;font-family:'Chronicle Display A','Chronicle Display B';letter-spacing:.025em}
+#ks-calendar #fc_inner .day_cell .button:hover{background:#962846}
+#ks-calendar #fc_inner td{border:1px solid #fff}
+#ks-calendar .btn-light:hover{background-color:#3079ed}
+#ks-calendar .btn-light{background-color:#4d90fe}
+#ks-calendar .no-padding,.no-padding{padding:0!important}
+.day_of_week{width:14.2%;float:left;text-align:center;font-size:16px;text-transform:uppercase;font-family:'Ringside Regular SSm A','Ringside Regular SSm B'}
+.ks-calendar-filter-container{padding:0 0 0 5px}
+.ks-calendar-filter{margin-bottom:25px;padding:10px;border-right:3px solid #646464}
+.ks-calendar-filter-ul{padding-bottom:0}
+.ks-calendar-filter-li{list-style:none}
+.ks-uppercase{text-transform:uppercase}
+.featured-event-container{max-width:1170px;background-color:#4f0e24;margin:0 auto;display:flex}
+.featured-event-info{padding:20px;width:50%;color:#fff}
+.featured-event-photo{width:50%;max-width:100%}
+.featured-event-tag{text-transform:uppercase;margin-bottom:10px;font-weight:700}
+.featured-event-header{font-family:Ringside Wide A,Ringside Wide B;font-size:30px;line-height:34px;font-weight:700;margin-bottom:10px}
+.featured-event-text{font-size:20px;margin-bottom:10px}
+.featured-event-info .morebtn a:hover{text-decoration:none}
+.events-details-text{font-size:20px;font-weight:700;line-height:1.5}
+.home-events-datebox{position:relative;display:inline-block;height:48px;background-color:#4682f0;color:#fff;padding:7px 10px}
+.home-events-kaiaulu-background{background-image:url('https://www.ksbe.edu/images/home-events-kaiaulu-background.png');background-size:cover}
+.home-events-date{font-size:18px;line-height:18px;font-weight:700;margin-top:8px}
+.home-events-date-month{font-size:12px;line-height:12px;font-weight:700}
+.home-events-date-day{font-size:22px;line-height:22px;font-weight:700}
+.home-events-header{font-size:20px;font-weight:700;line-height:25px}
+.home-events-time-location{font-size:17px;font-weight:300}
+.home-events-description{font-size:15px;font-weight:300;margin-bottom:0!important}
+.home-events-word-rule{display:flex;flex-direction:row}
+.home-events-word-rule:after{content:"";flex:1 1;border-bottom:2px solid;margin:auto auto 8px 10px}
+.ksdDiv{background:url('https://www.ksbe.edu/assets/site/special_section/ksd/ksdigital_footer.gif') bottom/100% no-repeat #4682f0;padding:40px 0 90px}
+.ksdDiv-Fpatern{background:url('https://www.ksbe.edu/assets/brand/img/footer-patern.png');position:absolute;width:100%;left:0;right:0;height:105px;top:0}
+.ksdDiv_main-header{font-family:RingsideWideMed;font-size:3em;color:#fff;text-decoration:none;line-height:1em;font-weight:700;padding:0 0 20px}
+.ksdDiv_main-body-copy{color:#fff;padding:0 0 40px;font-size:1.25em}
+.ksdDiv .row .col-sm-4,.ksdDiv .row .col-sm-6{text-align:center}
+.ksdDiv .btn-light{border-radius:50px;padding:10px 20px;margin:0 0 20px;color:#4c4c4c;font-size:1.5em;font-family:RingsideWideMed;line-height:1em;font-weight:700}
+.ksdDiv .navbar-dark .navbar-toggler{border-right:none}
+.ksdDiv .navbar{background-color:#19325a;padding:0}
+.article_title .col-sm-9 li{color:#646464;list-style:inherit}
+.boxed-number-left{width:10%}
+.boxed-number{font-size:24px;font-weight:700;color:#fff;background-color:#d2964b;padding:10px 0;line-height:20px;width:60%;text-align:center}
+.boxed-number-text{width:90%}
+.full-width-white-container{background:#fff;padding:60px 0}
+#accordion .card,#accordion2 .card,.full-width-white-container .card{border-radius:0}
+#accordion .card-header,#accordion2 .card-header,.full-width-white-container .card-header{padding:10px 16px!important;border-bottom:0!important}
+.full-width-lightgreen-container ol,.full-width-lightgreen-container ul,.full-width-white-container ol,.full-width-white-container ul{padding-left:40px;margin-bottom:16px}
+.full-width-lightgreen-container ul li,.full-width-white-container ul li{list-style:disc}
+.full-width-lightgreen-container ol li,.full-width-white-container ol li{list-style:decimal}
+.full-width-white-container ul.nav-tabs{padding:0}
+.full-width-white-container ul.nav-tabs li{list-style:none}
+.full-width-white-container .card-header .btn{text-align:left}
+.full-width-palegold-container{background:#f6e9ce;padding:60px 0}
+.full-width-lightorange-container{background:#d24632;padding:60px 0;color:#fff}
+.full-width-lightorange-container h3{color:#fff}
+.full-width-lightorange-container a{color:#fff;text-decoration:underline}
+.full-width-lightorange-container a:hover{color:#ffd324}
+.full-width-lightgold-container{background:#d2964b;padding:60px 0;color:#fff}
+.full-width-lightgold-container h3,.full-width-lightgold-container h6{color:#fff}
+.full-width-lightgreen-container{background:#1e826e;padding:60px 0;color:#fff}
+.full-width-lightgreen-container h3,.full-width-lightgreen-container h6{color:#fff}
+table.table-dotted-rule-lightgold{border-collapse:collapse;border-bottom:1px solid #fff}
+table.table-dotted-rule-lightgold th{border-bottom:1px solid #eed7bb;padding:10px 16px 10px 0;vertical-align:top}
+table.table-dotted-rule-lightgold td{border-bottom:1px dotted #eed7bb;padding:10px 16px 10px 0;vertical-align:top}
+table.table-zebra-stripes-lightgreen{border-collapse:collapse;border-bottom:1px solid #5ba495;width:100%}
+table.table-zebra-stripes-lightgreen tr:nth-child(2n){background-color:#1a7160}
+table.table-zebra-stripes-lightgreen tr{border-bottom:1px solid #5ba495}
+table.table-zebra-stripes-lightgreen td,table.table-zebra-stripes-lightgreen td::before,table.table-zebra-stripes-lightgreen thead th{padding:10px 16px 10px 10px}
+table.table-zebra-stripes-lightgreen th{border-top:1px solid #9ec9c0;border-bottom:1px solid #9ec9c0}
+#research-header{background:url(https://www.ksbe.edu/assets/research/images/si-research-header-background.jpg) 0 0/cover no-repeat;color:#fff;padding:30px 20px;width:100%;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;margin-bottom:40px}
+.research-h1{font-size:40px;line-height:43px;color:#fff;font-weight:700;letter-spacing:-2px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.research-intro{font-size:18px;line-height:25px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin-bottom:40px}
+#research-canoe{margin-bottom:20px}
+.research-front-box-header{font-size:18px;font-weight:700;margin-top:8px;display:block}
+.research-front-box-text{font-size:14px;line-height:19px}
+.research-image-right{width:350px;float:right;margin:0 0 10px 10px}
+.research-box-container{overflow:auto;clear:both}
+.research-mug{width:80px;float:left}
+.research-mug-text{font-size:13px;margin:0 0 0 10px;width:253px;float:left}
+.research-flexbox-spacebetween{display:flex;justify-content:space-between;flex-wrap:wrap}
+.research-flexbox-twocolumn{width:48%;text-align:center;margin-bottom:20px}
+.research-flexbox-fourcolumn{width:23%;text-align:center;margin-bottom:20px}
+.flexbox-fourcolumn-emptydiv{margin:0}
+.research-flexbox-fivecolumn{width:18%;text-align:center}
+.research-header-24px{font-size:24px;font-weight:700;margin-bottom:16px}
+.research-header-20px{font-size:20px;font-weight:700;margin-bottom:16px;line-height:1.3}
+.research-ka-huakai-splash{clear:both;display:block;width:100%;margin-top:180px;text-align:center;position:relative;z-index:0}
+.research-ka-huakai-splash-background{clear:both;display:block;width:100%;margin-top:180px;background:url("(https://www.ksbe.edu/assets/research/ka-huakai-splash-2021.jpg") top center/cover no-repeat;position:relative;z-index:0;min-height:300px}
+.research-ka-huakai-header-text-container{position:absolute;top:50px;left:-50%;right:-50%;z-index:1}
+.research-ka-huakai-text{font-family:'Fira Sans',sans-serif;font-size:100px;color:#19325a;line-height:1.2em;text-align:right;text-transform:uppercase;padding-top:20px}
+.research-ka-huakai-subtext{font-family:'Fira Sans',sans-serif;font-size:36px;color:#000;letter-spacing:0;text-align:right;line-height:0}
+.research-ltgold-box{background-color:#d2964b;padding:20px;text-align:center;margin:40px 0}
+.research-ltgold-box a{color:#fff;text-decoration:underline}
+.bullet_panel_head{background-color:#19325a;padding:16px 16px 16px 51px;clear:both}
+.bullet_panel_head h6{color:#fff;padding:0;margin:0;letter-spacing:-.02rem}
+.bullet_panel_top{background:#efefef;background:linear-gradient(174deg,#efefef 0,#fff 100px);padding:24px 0 24px 48px;margin-bottom:1px;border-left:3px solid #e8e8e8;border-bottom:1px solid #e8e8e8;border-top:3px solid #e8e8e8}
+.bullet_panel_top h5{letter-spacing:-.05rem}
+.bullet_panel{background:#efefef;background:linear-gradient(174deg,#efefef 0,#fff 100px);padding:24px 0 24px 48px;margin-bottom:1px;border-left:3px solid #e8e8e8;border-bottom:1px solid #e8e8e8}
+.bullet_panel p:last-child,.bullet_panel ul{margin-bottom:0!important;padding-bottom:0!important;line-height:1.7}
+.bullet_panel p{line-height:1.7}
+.bullet_panel p.noparaspace{margin-bottom:0!important}
+@media(max-width:480px){
+.kekula .bgkekula .kekula_img{max-width:480px}
+.kekula .bgkekula .kekula_img img{height:auto;max-height:320px;max-width:480px}
+.sp2020_parallax{background-size:auto!important;background-attachment:scroll!important;background-position:center center!important}
+}
+@media (min-width:567px) and (max-width:767px){
+.bgkekula .col-sm-4,.bgkekula .col-sm-8{max-width:100%}
+.sp2020_parallax{background-size:auto!important;background-attachment:scroll!important;background-position:center center!important}
+}
+.foundersday_rose{background:url('(https://www.ksbe.edu/assets/site/special_section/founders_day/foundersday2020_flower.png') top right no-repeat}
+.mobile_pdf_hide{display:none}
+.desktop_pdf_hide{display:block}
+@media (max-width:767px){
+.mobile_pdf_hide{display:block}
+.desktop_pdf_hide{display:none}
+.ksdDiv .d-flex{display:block!important}
+}
+.ks_internships_instagram-feed .socialDiv{background:#19325a}
+.article_body_image_caption,.article_title .article_hero_image_caption{color:#000;padding:10px 0 40px}
+.typicalCont ol li{list-style:decimal}
+.hide{display:none}
+.gs-webResult div.gs-visibleUrl{color:#888!important}
+#rs_matterport .list-group-item:first-child,#rs_matterport .list-group-item:last-child{border-radius:0}
+#rs_matterport .list-group-item.active{background-color:#4682f0;border-color:#4682f0}
+@media(max-width:767px){
+#rs_matterport .col-4,#rs_matterport .col-8{flex:auto!important;max-width:none!important}
+}
+.ks_blue{background-color:#19325a}
+.ks_light_blue{background-color:#4682f0}
+.ks_white{background-color:#fff}
+.ks_gray{background-color:#efefef}
+.ks_green{background-color:#325550}
+.ks_light_green{background-color:#1e826e}
+.ks_gold{background-color:#9b693b}
+.ks_light_gold{background-color:#d29642}
+.ks_light_gold_color{color:#d29642}
+.ks_orange{background-color:#b43c28}
+.ks_light_orange{background-color:#d24632}
+.ks_maroon{background-color:#6e1432}
+.ks_light_maroon{background-color:#962846}
+.ks_infobox,.ks_infobox h1,.ks_infobox h2,.ks_infobox h3,.ks_infobox h4,.ks_infobox h5,.ks_infobox h6,.ks_infobox ol li,.ks_infobox p,.ks_infobox ul li{color:#ededed}
+.ks_infobox.ks_gray,.ks_infobox.ks_gray h1,.ks_infobox.ks_gray h2,.ks_infobox.ks_gray h3,.ks_infobox.ks_gray h4,.ks_infobox.ks_gray h5,.ks_infobox.ks_gray h6,.ks_infobox.ks_gray ol li,.ks_infobox.ks_gray p,.ks_infobox.ks_gray ul li,.ks_infobox.ks_white,.ks_infobox.ks_white h1,.ks_infobox.ks_white h2,.ks_infobox.ks_white h3,.ks_infobox.ks_white h4,.ks_infobox.ks_white h5,.ks_infobox.ks_white h6,.ks_infobox.ks_white ol li,.ks_infobox.ks_white p,.ks_infobox.ks_white ul li{color:#000}
+.ks_infobox a{color:#ededed;text-decoration:none;border-bottom:1px dotted #fff}
+.ks_designed_links,.ks_designed_links h1,.ks_designed_links h2,.ks_designed_links h3,.ks_designed_links h4,.ks_designed_links h5,.ks_designed_links h6,.ks_designed_links ol li,.ks_designed_links p,.ks_designed_links ul li{color:#ededed}
+.ks_designed_links.ks_gray,.ks_designed_links.ks_gray h1,.ks_designed_links.ks_gray h2,.ks_designed_links.ks_gray h3,.ks_designed_links.ks_gray h4,.ks_designed_links.ks_gray h5,.ks_designed_links.ks_gray h6,.ks_designed_links.ks_gray ol li,.ks_designed_links.ks_gray p,.ks_designed_links.ks_gray ul li,.ks_designed_links.ks_white,.ks_designed_links.ks_white h1,.ks_designed_links.ks_white h2,.ks_designed_links.ks_white h3,.ks_designed_links.ks_white h4,.ks_designed_links.ks_white h5,.ks_designed_links.ks_white h6,.ks_designed_links.ks_white ol li,.ks_designed_links.ks_white p,.ks_designed_links.ks_white ul li{color:#000}
+.ks_designed_links a{color:#ededed;text-decoration:none;border-bottom:1px dotted #fff}
+.ks_designed_list h1,.ks_designed_list h2,.ks_designed_list h3,.ks_designed_list h4,.ks_designed_list h5,.ks_designed_list h6,.ks_designed_list ol li,.ks_designed_list p,.ks_designed_list ul li{color:#ededed}
+.ks_designed_list.ks_gray h1,.ks_designed_list.ks_gray h2,.ks_designed_list.ks_gray h3,.ks_designed_list.ks_gray h4,.ks_designed_list.ks_gray h5,.ks_designed_list.ks_gray h6,.ks_designed_list.ks_gray ol li,.ks_designed_list.ks_gray p,.ks_designed_list.ks_gray ul li,.ks_designed_list.ks_white h1,.ks_designed_list.ks_white h2,.ks_designed_list.ks_white h3,.ks_designed_list.ks_white h4,.ks_designed_list.ks_white h5,.ks_designed_list.ks_white h6,.ks_designed_list.ks_white ol li,.ks_designed_list.ks_white p,.ks_designed_list.ks_white ul li{color:#000}
+.ks_designed_list.card a{color:#ededed;text-decoration:none;border-bottom:1px dotted #fff}
+.ks_designed_list.card a:hover{color:#fff;border-bottom:1px solid #fff}
+.ks_designed_list .card-footer,.ks_designed_list .card-footer h1,.ks_designed_list .card-footer h2,.ks_designed_list .card-footer h3,.ks_designed_list .card-footer h4,.ks_designed_list .card-footer h5,.ks_designed_list .card-footer h6,.ks_designed_list .card-footer ol li,.ks_designed_list .card-footer p,.ks_designed_list .card-footer ul li{color:#ededed}
+.ks_designed_list.ks_gray .card-footer,.ks_designed_list.ks_gray .card-footer h1,.ks_designed_list.ks_gray .card-footer h2,.ks_designed_list.ks_gray .card-footer h3,.ks_designed_list.ks_gray .card-footer h4,.ks_designed_list.ks_gray .card-footer h5,.ks_designed_list.ks_gray .card-footer h6,.ks_designed_list.ks_gray .card-footer ol li,.ks_designed_list.ks_gray .card-footer p,.ks_designed_list.ks_gray .card-footer ul li,.ks_designed_list.ks_white .card-footer,.ks_designed_list.ks_white .card-footer h1,.ks_designed_list.ks_white .card-footer h2,.ks_designed_list.ks_white .card-footer h3,.ks_designed_list.ks_white .card-footer h4,.ks_designed_list.ks_white .card-footer h5,.ks_designed_list.ks_white .card-footer h6,.ks_designed_list.ks_white .card-footer ol li,.ks_designed_list.ks_white .card-footer p,.ks_designed_list.ks_white .card-footer ul li{color:#000}
+.ks_designed_list a{color:#ededed;text-decoration:none;border-bottom:1px dotted #fff}
+.ks_designed_list p.ks_article_date{color:#757575}
+.ks_infobox .ks_designed_list.card a{color:#ededed;text-decoration:none;border-bottom:1px dotted #fff}
+.ks_infobox .ks_designed_list.card a:hover{color:#fff;border-bottom:1px solid #fff}
+.ks_infobox.ks_gray .ks_designed_list.card h1,.ks_infobox.ks_gray .ks_designed_list.card h2,.ks_infobox.ks_gray .ks_designed_list.card h3,.ks_infobox.ks_gray .ks_designed_list.card h4,.ks_infobox.ks_gray .ks_designed_list.card h5,.ks_infobox.ks_gray .ks_designed_list.card h6,.ks_infobox.ks_gray .ks_designed_list.card ol li,.ks_infobox.ks_gray .ks_designed_list.card p,.ks_infobox.ks_gray .ks_designed_list.card ul li,.ks_infobox.ks_white .ks_designed_list.card h1,.ks_infobox.ks_white .ks_designed_list.card h2,.ks_infobox.ks_white .ks_designed_list.card h3,.ks_infobox.ks_white .ks_designed_list.card h4,.ks_infobox.ks_white .ks_designed_list.card h5,.ks_infobox.ks_white .ks_designed_list.card h6,.ks_infobox.ks_white .ks_designed_list.card ol li,.ks_infobox.ks_white .ks_designed_list.card p,.ks_infobox.ks_white .ks_designed_list.card ul li{color:#ededed}
+.ks_infobox.ks_gray .ks_designed_list.card.ks_gray h1,.ks_infobox.ks_gray .ks_designed_list.card.ks_gray h2,.ks_infobox.ks_gray .ks_designed_list.card.ks_gray h3,.ks_infobox.ks_gray .ks_designed_list.card.ks_gray h4,.ks_infobox.ks_gray .ks_designed_list.card.ks_gray h5,.ks_infobox.ks_gray .ks_designed_list.card.ks_gray h6,.ks_infobox.ks_gray .ks_designed_list.card.ks_gray ol li,.ks_infobox.ks_gray .ks_designed_list.card.ks_gray p,.ks_infobox.ks_gray .ks_designed_list.card.ks_gray ul li,.ks_infobox.ks_gray .ks_designed_list.card.ks_white h1,.ks_infobox.ks_gray .ks_designed_list.card.ks_white h2,.ks_infobox.ks_gray .ks_designed_list.card.ks_white h3,.ks_infobox.ks_gray .ks_designed_list.card.ks_white h4,.ks_infobox.ks_gray .ks_designed_list.card.ks_white h5,.ks_infobox.ks_gray .ks_designed_list.card.ks_white h6,.ks_infobox.ks_gray .ks_designed_list.card.ks_white ol li,.ks_infobox.ks_gray .ks_designed_list.card.ks_white p,.ks_infobox.ks_gray .ks_designed_list.card.ks_white ul li{color:#000}
+.ks_infobox.ks_gray .ks_designed_list.card a,.ks_infobox.ks_white .ks_designed_list.card a{color:#ededed;text-decoration:none;border-bottom:1px dotted #fff}
+.ks_infobox.ks_gray .ks_designed_list.card a:hover,.ks_infobox.ks_white .ks_designed_list.card a:hover{color:#fff;text-decoration:none;border-bottom:1px solid #fff}
+.ks_infobox .ks_designed_list.card.ks_gray a,.ks_infobox .ks_designed_list.card.ks_white a{color:#0d6efd;border-bottom:none}
+.ks_infobox .ks_designed_list.card.ks_gray .button a,.ks_infobox .ks_designed_list.card.ks_gray .morebtn a,.ks_infobox .ks_designed_list.card.ks_white .button a,.ks_infobox .ks_designed_list.card.ks_white .morebtn a{color:#fff}
+.ks_infobox .ks_designed_list.card.ks_gray a:hover,.ks_infobox .ks_designed_list.card.ks_white a:hover{color:#19325a;text-decoration:underline;border-bottom:none}
+.ks_infobox .ks_designed_list.card.ks_gray .button a:hover,.ks_infobox .ks_designed_list.card.ks_gray .morebtn a:hover,.ks_infobox .ks_designed_list.card.ks_white .button a:hover,.ks_infobox .ks_designed_list.card.ks_white .morebtn a:hover{color:#fff;text-decoration:none}
+.ks_designed_list.ks_designed_list_calendar .calendr .datedesc a{border-bottom:none}
+.ks_designed_list.ks_designed_list_calendar .calendr .datedesc a:hover{border-bottom:none}
+.ks_infobox .ks_designed_list.ks_designed_list_calendar .calendr .datedesc p{color:#ededed}
+.ks_infobox .ks_designed_list.ks_designed_list_calendar .calendr .datedesc a{color:#ededed;text-decoration:none;border-bottom:1px dotted #fff}
+.ks_infobox .ks_designed_list.ks_designed_list_calendar .calendr .datedesc a:hover{color:#fff;border-bottom:1px solid #fff}
+.ks_infobox.ks_gray .ks_designed_list.ks_designed_list_calendar .calendr .datedesc p,.ks_infobox.ks_white .ks_designed_list.ks_designed_list_calendar .calendr .datedesc p{color:#000}
+.ks_infobox.ks_gray .ks_designed_list.ks_designed_list_calendar .calendr .datedesc a,.ks_infobox.ks_white .ks_designed_list.ks_designed_list_calendar .calendr .datedesc a{color:#0d6efd;border-bottom:none}
+.ks_infobox.ks_gray .ks_designed_list.ks_designed_list_calendar .calendr .datedesc a:hover,.ks_infobox.ks_white .ks_designed_list.ks_designed_list_calendar .calendr .datedesc a:hover{color:#19325a;text-decoration:underline}
+.ks_designed_links a:hover,.ks_designed_list a:hover,.ks_infobox a:hover{color:#fff;border-bottom:1px solid #fff}
+.ks_designed_links.ks_gray a,.ks_designed_links.ks_white a,.ks_designed_list.ks_gray a,.ks_designed_list.ks_white a,.ks_infobox.ks_gray a,.ks_infobox.ks_white a{color:#0d6efd;border-bottom:none}
+.ks_designed_links.ks_gray a:hover,.ks_designed_links.ks_white a:hover,.ks_designed_list.ks_gray a:hover,.ks_designed_list.ks_white a:hover,.ks_infobox.ks_gray a:hover,.ks_infobox.ks_white a:hover{color:#19325a;text-decoration:underline;border-bottom:none}
+.ks_image,.ks_image .mobile_text_color h1,.ks_image .mobile_text_color h2,.ks_image .mobile_text_color h3,.ks_image .mobile_text_color h4,.ks_image .mobile_text_color h5,.ks_image .mobile_text_color h6,.ks_image .mobile_text_color ol li,.ks_image .mobile_text_color p,.ks_image .mobile_text_color ul li,.ks_image h1,.ks_image h2,.ks_image h3,.ks_image h4,.ks_image h5,.ks_image h6,.ks_image ol li,.ks_image p,.ks_image ul li{color:#ededed}
+.ks_image.ks_white,.ks_image.ks_white h1,.ks_image.ks_white h2,.ks_image.ks_white h3,.ks_image.ks_white h4,.ks_image.ks_white h5,.ks_image.ks_white h6,.ks_image.ks_white ol li,.ks_image.ks_white p,.ks_image.ks_white ul li{color:#828282}
+.ks_image.ks_gray,.ks_image.ks_gray h1,.ks_image.ks_gray h2,.ks_image.ks_gray h3,.ks_image.ks_gray h4,.ks_image.ks_gray h5,.ks_image.ks_gray h6,.ks_image.ks_gray ol li,.ks_image.ks_gray p,.ks_image.ks_gray ul li{color:#000}
+.ks_image.ks_white .mobile_text_color h1,.ks_image.ks_white .mobile_text_color h2,.ks_image.ks_white .mobile_text_color h3,.ks_image.ks_white .mobile_text_color h4,.ks_image.ks_white .mobile_text_color h5,.ks_image.ks_white .mobile_text_color h6,.ks_image.ks_white .mobile_text_color ol li,.ks_image.ks_white .mobile_text_color p,.ks_image.ks_white .mobile_text_color ul li,.mobile_text_color .ks_image.ks_white .mobile_text_color{color:#828282}
+.ks_image.ks_gray .mobile_text_color,.ks_image.ks_gray .mobile_text_color h1,.ks_image.ks_gray .mobile_text_color h2,.ks_image.ks_gray .mobile_text_color h3,.ks_image.ks_gray .mobile_text_color h4,.ks_image.ks_gray .mobile_text_color h5,.ks_image.ks_gray .mobile_text_color h6,.ks_image.ks_gray .mobile_text_color ol li,.ks_image.ks_gray .mobile_text_color p,.ks_image.ks_gray .mobile_text_color ul li{color:#000}
+.ks_image a{color:#ededed;transition:.35s;text-decoration:none;border-bottom:1px dotted #fff}
+.ks_image a:hover{color:#fff;border-bottom:1px solid #fff}
+.ks_image.ks_gray a,.ks_image.ks_white a{color:#0d6efd;border-bottom:none}
+.ks_image.ks_gray a:hover,.ks_image.ks_white a:hover{color:#19325a;text-decoration:underline}
+.ks_image_overlay.card .text-light a{color:#ededed!important;text-decoration:none!important;border-bottom:1px dotted #fff!important}
+.ks_image_overlay.card .text-light a:hover{color:#fff!important;border-bottom:1px solid #fff!important}
+.button.ks_light_green a:hover,.button.ks_light_green:hover{background-color:#325550;color:#fff;text-decoration:none;border-bottom:none;transition:.35s}
+.ks_designed_list .button a,.ks_infobox .button a{color:#fff;border:none}
+.ks_designed_list .button a:hover,.ks_infobox .button a:hover{color:#fff;text-decoration:none;border-bottom:none}
+.ks_designed_list.ks_light_blue .button a,.ks_designed_list.ks_light_green .button a,.ks_infobox.ks_light_blue .button a,.ks_infobox.ks_light_green .button a{background-color:#19325a}
+.ks_designed_list.ks_blue .button a:hover,.ks_designed_list.ks_light_blue .button a:hover,.ks_designed_list.ks_light_green .button a:hover,.ks_infobox.ks_blue .button a:hover,.ks_infobox.ks_light_blue .button a:hover,.ks_infobox.ks_light_green .button a:hover{background-color:#fff;color:#19325a}
+.ks_infobox.ks_gray .button a:hover{background-color:#19325a;color:#fff}
+.ks_designed_list .button,.ks_designed_list .card-body .button,.ks_designed_list .card-footer .button,.ks_infobox .button{width:fit-content}
+.ks_half_width_clear{width:50%}
+@media only screen and (max-width:768px){
+.ks_half_width_clear{width:100%}
+}
+.ks_half_width_left{float:left;width:443px;margin-right:15px;margin-bottom:15px}
+@media only screen and (max-width:992px){
+.ks_half_width_left{width:355px}
+}
+@media only screen and (max-width:768px){
+.ks_half_width_left{float:none;width:100%;margin-right:0}
+}
+.ks_half_width_right{float:right;width:443px;margin-left:15px;margin-bottom:15px}
+@media only screen and (max-width:992px){
+.ks_half_width_right{width:355px}
+}
+@media only screen and (max-width:768px){
+.ks_half_width_right{float:none;width:100%;margin-left:0}
+}
+.ks_infobox.ks_light_blue.ks_half_width ol,.ks_infobox.ks_light_blue.ks_half_width ol li,.ks_infobox.ks_light_blue.ks_half_width ul,.ks_infobox.ks_light_blue.ks_half_width ul li{padding-left:0;margin-left:0;list-style:none}
+.ks_infobox.ks_light_blue.ks_half_width ol li,.ks_infobox.ks_light_blue.ks_half_width ul li{padding-bottom:1em}
+.ks_infobox.ks_light_blue.ks_half_width ol,.ks_infobox.ks_light_blue.ks_half_width ul{padding-bottom:0}
+.ks_infobox.ks_light_blue.ks_half_width ol li a,.ks_infobox.ks_light_blue.ks_half_width ul li a{font-weight:700}
+.ks_infobox.ks_light_blue.ks_half_width ol li a em,.ks_infobox.ks_light_blue.ks_half_width ol li em a,.ks_infobox.ks_light_blue.ks_half_width ul li a em,.ks_infobox.ks_light_blue.ks_half_width ul li em a{font-weight:400}
+.ks_designed_links p{font-weight:700}
+.ks_partial_width_left{float:left;clear:left;margin-right:15px;margin-bottom:15px}
+.ks_partial_width_right{float:right;clear:right;margin-left:15px;margin-bottom:15px}
+.ks_partial_width_left.ks_white{float:left;margin-right:30px}
+.ks_partial_width_right.ks_white{float:right;margin-left:30px}
+.ks_one_quarter_width{width:25%}
+@media only screen and (max-width:992px){
+.ks_one_quarter_width{width:33%}
+}
+@media only screen and (max-width:768px){
+.ks_one_quarter_width{width:100%}
+.ks_one_quarter_width.no_caption{width:33%}
+}
+.ks_one_third_width{width:33%}
+@media only screen and (max-width:992px){
+.ks_one_third_width{width:50%}
+}
+@media only screen and (max-width:768px){
+.ks_one_third_width{width:100%}
+.ks_one_third_width.no_caption{width:50%}
+}
+.ks_one_half_width{width:50%}
+.ks_image img{width:100%}
+.ks_image.ks_white{padding-top:0!important;padding-right:0!important;padding-left:0!important}
+.ks_image.ks_image_full_width a,.ks_image.no_caption a{border-bottom:none}
+.ks_image.ks_partial_width_left.no_caption,.ks_image.ks_partial_width_right.no_caption{padding-bottom:0!important}
+.ks_designed_links.card .card-img-overlay a{color:#ededed;text-decoration:none;border-bottom:1px dotted #fff}
+.ks_designed_links.card .card-img-overlay a:hover{color:#fff;border-bottom:1px solid #fff}
+.ks_image_overlay.card .card-img-overlay{height:-moz-fit-content;height:fit-content}
+.ks_image_overlay.card .card-img-overlay .col-6.bg-dark,.ks_image_overlay.card .card-img-overlay .col-6.bg-light,.ks_image_overlay.card .card-img-overlay .col.bg-dark,.ks_image_overlay.card .card-img-overlay .col.bg-light,.ks_image_overlay.card .card-img-overlay.bg-dark,.ks_image_overlay.card .card-img-overlay.bg-light{--bs-bg-opacity:0.6!important}
+.ks_designed_list.card.ks_white .card-body,.ks_designed_list.card.ks_white .card-footer{padding-left:0;padding-right:0}
+.ks_designed_list .card-footer{background-color:inherit;border-top:none;padding-top:0}
+.ks_designed_list a.ks_designed_list_column_image{border-bottom:none}
+.ks_designed_list.ks_designed_list_card{min-width:400px!important;max-width:440px!important}
+.ks_designed_list.ks_designed_list_card.ks_white .card-body{padding-top:0;padding-left:15px}
+.ks_designed_links.card .card-img{transition:.35s;opacity:.3}
+.ks_designed_links.card:focus .card-img,.ks_designed_links.card:hover .card-img{opacity:.5}
+.ks_designed_links.card .card-img.no-img{background-image:url('(https://www.ksbe.edu/assets/brand/img/white.gif');background-repeat:repeat;height:100%;width:100%;min-height:140px;opacity:0}
+.ks_designed_links.card:focus .card-img.no-img,.ks_designed_links.card:hover .card-img.no-img{opacity:.2}
+.ks_designed_list.ks_designed_list_calendar{background-color:inherit}
+.ks_designed_list.ks_designed_list_calendar .col{min-width:380px;max-width:440px}
+.ks_designed_list.ks_designed_list_calendar .calendr .datebox,.ks_designed_list.ks_designed_list_calendar .calendr .datebox h4{color:#fff}
+.ks_designed_list.ks_designed_list_calendar .calendr .datedesc p,.ks_designed_list.ks_designed_list_calendar.ks_gray .calendr .datebox h4,.ks_designed_list.ks_designed_list_calendar.ks_gray .calendr .datebox h4 span,.ks_designed_list.ks_designed_list_calendar.ks_white .calendr .datebox h4,.ks_designed_list.ks_designed_list_calendar.ks_white .calendr .datebox h4 span{color:#000}
+.ks_designed_list.ks_designed_list_calendar .calendr .datedesc a{color:#0d6efd}
+.ks_designed_list.ks_designed_list_calendar .calendr .datedesc a:hover{color:#19325a}
+.ks_designed_list.ks_designed_list_calendar.ks_blue .calendr .datebox{background-color:#19325a}
+.ks_designed_list.ks_designed_list_calendar.ks_light_blue .calendr .datebox{background-color:#4682f0}
+.ks_designed_list.ks_designed_list_calendar.ks_white .calendr .datebox{background-color:#fff}
+.ks_designed_list.ks_designed_list_calendar.ks_gray .calendr .datebox{background-color:#efefef}
+.ks_designed_list.ks_designed_list_calendar.ks_green .calendr .datebox{background-color:#325550}
+.ks_designed_list.ks_designed_list_calendar.ks_light_green .calendr .datebox{background-color:#1e826e}
+.ks_designed_list.ks_designed_list_calendar.ks_gold .calendr .datebox{background-color:#9b693b}
+.ks_designed_list.ks_designed_list_calendar.ks_light_gold .calendr .datebox{background-color:#d29642}
+.ks_designed_list.ks_designed_list_calendar.ks_orange .calendr .datebox{background-color:#b43c28}
+.ks_designed_list.ks_designed_list_calendar.ks_light_orange .calendr .datebox{background-color:#d24632}
+.ks_designed_list.ks_designed_list_calendar.ks_maroon .calendr .datebox{background-color:#6e1432}
+.ks_designed_list.ks_designed_list_calendar.ks_light_maroon .calendr .datebox{background-color:#962846}
+.ks_designed_list.ks_designed_list_boxed_number h4,.ks_designed_list.ks_designed_list_boxed_number h6,.ks_designed_list.ks_designed_list_boxed_number p{color:#fff}
+.ks_designed_list.ks_designed_list_boxed_number.ks_gray h4,.ks_designed_list.ks_designed_list_boxed_number.ks_gray h6,.ks_designed_list.ks_designed_list_boxed_number.ks_gray p,.ks_designed_list.ks_designed_list_boxed_number.ks_white h4,.ks_designed_list.ks_designed_list_boxed_number.ks_white h6,.ks_designed_list.ks_designed_list_boxed_number.ks_white p{color:#000}
+.ks_infobox.ks_kalo_heart_right{padding-left:20px;padding-right:215px;background-repeat:repeat-y;background-position:right}
+.ks_infobox.ks_kalo_heart_left{padding-left:125px;padding-right:15px;background-repeat:repeat-y;background-position:-100px}
+@media only screen and (max-width:768px){
+.ks_designed_list.ks_designed_list_calendar .col{min-width:unset}
+.ks_infobox.ks_kalo_heart_right{padding-right:15px;background-image:none!important}
+.ks_infobox.ks_kalo_heart_left{padding-left:15px;background-image:none!important}
+}
+.ks_infobox.ks_kalo_heart_left.ks_blue,.ks_infobox.ks_kalo_heart_right.ks_blue{background-image:url('(https://www.ksbe.edu/assets/brand/img/kalo_heart_outline_light_blue_200.png')}
+.ks_infobox.ks_kalo_heart_left.ks_light_blue,.ks_infobox.ks_kalo_heart_left.ks_white,.ks_infobox.ks_kalo_heart_right.ks_light_blue,.ks_infobox.ks_kalo_heart_right.ks_white{background-image:url('(https://www.ksbe.edu/assets/brand/img/kalo_heart_outline_blue_200.png')}
+.ks_infobox.ks_kalo_heart_left.ks_gray,.ks_infobox.ks_kalo_heart_right.ks_gray{background-image:url('(https://www.ksbe.edu/assets/brand/img/kalo_heart_outline_green_200.png')}
+.ks_infobox.ks_kalo_heart_left.ks_green,.ks_infobox.ks_kalo_heart_right.ks_green{background-image:url('(https://www.ksbe.edu/assets/brand/img/kalo_heart_outline_white_200.png')}
+.ks_infobox.ks_kalo_heart_left.ks_light_green,.ks_infobox.ks_kalo_heart_right.ks_light_green{background-image:url('(https://www.ksbe.edu/assets/brand/img/kalo_heart_outline_green_200.png')}
+.ks_infobox.ks_kalo_heart_left.ks_gold,.ks_infobox.ks_kalo_heart_right.ks_gold{background-image:url('(https://www.ksbe.edu/assets/brand/img/kalo_heart_outline_white_200.png')}
+.ks_infobox.ks_kalo_heart_left.ks_light_gold,.ks_infobox.ks_kalo_heart_right.ks_light_gold{background-image:url('(https://www.ksbe.edu/assets/brand/img/kalo_heart_outline_gold_200.png')}
+.ks_infobox.ks_kalo_heart_left.ks_light_maroon,.ks_infobox.ks_kalo_heart_left.ks_light_orange,.ks_infobox.ks_kalo_heart_left.ks_maroon,.ks_infobox.ks_kalo_heart_left.ks_orange,.ks_infobox.ks_kalo_heart_right.ks_light_maroon,.ks_infobox.ks_kalo_heart_right.ks_light_orange,.ks_infobox.ks_kalo_heart_right.ks_maroon,.ks_infobox.ks_kalo_heart_right.ks_orange{background-image:url('(https://www.ksbe.edu/assets/brand/img/kalo_heart_outline_white_200.png')}
+.ks_infobox.ks_blue .ks_blue .card-body,.ks_infobox.ks_gold .ks_gold .card-body,.ks_infobox.ks_gray .ks_gray .card-body,.ks_infobox.ks_green .ks_green .card-body,.ks_infobox.ks_light_blue .ks_light_blue .card-body,.ks_infobox.ks_light_gold .ks_light_gold .card-body,.ks_infobox.ks_light_green .ks_light_green .card-body,.ks_infobox.ks_light_maroon .ks_light_maroon .card-body,.ks_infobox.ks_light_orange .ks_light_orange .card-body,.ks_infobox.ks_maroon .ks_maroon .card-body,.ks_infobox.ks_orange .ks_orange .card-body{padding-left:0;padding-right:0}
+.ks_infobox.ks_blue .ks_white .card-body,.ks_infobox.ks_gold .ks_white .card-body,.ks_infobox.ks_gray .ks_white .card-body,.ks_infobox.ks_green .ks_white .card-body,.ks_infobox.ks_light_blue .ks_white .card-body,.ks_infobox.ks_light_gold .ks_white .card-body,.ks_infobox.ks_light_green .ks_white .card-body,.ks_infobox.ks_light_maroon .ks_white .card-body,.ks_infobox.ks_light_orange .ks_white .card-body,.ks_infobox.ks_maroon .ks_white .card-body,.ks_infobox.ks_orange .ks_white .card-body{padding-left:15px;padding-right:15px}
+.ks_tabs.nav-tabs .nav-item.show .nav-link,.ks_tabs.nav-tabs .nav-link.active{color:#000;border-color:#d2d2d2 #d2d2d2 #fff;transition:none}
+.ks_tabs.nav-tabs .nav-item.show .nav-link:hover,.ks_tabs.nav-tabs .nav-link.active:hover{color:#000;border-color:#d2d2d2 #d2d2d2 #fff;text-decoration:none}
+.ks_tabs.nav-tabs{border-bottom-color:#d2d2d2}
+.ks_tabs.nav-tabs .nav-link{transition:.35s}
+.ks_tabs.nav-tabs .nav-link:hover{color:#19325a;border-color:#d2d2d2;text-decoration:underline}
+.ks_tabs .nav.flex-column.nav-pills{min-width:150px;background-color:inherit;border-right:1px solid #d2d2d2}
+.ks_tabs .nav-pills .nav-link{border:1px solid #fff;transition:.35s}
+.ks_tabs .nav-pills .nav-link:hover{color:#19325a;border-color:#d2d2d2;text-decoration:underline}
+.ks_tabs .nav-pills .nav-link.active,.nav-pills .show>.nav-link{background-color:inherit;color:#000;border-color:#d2d2d2 #fff #d2d2d2 #d2d2d2;margin-right:-1px;transition:none}
+.ks_tabs .nav-pills .nav-link.active:hover,.nav-pills .show>.nav-link:hover{text-decoration:none}
+.ks_accordion.accordion .accordion-button:focus{outline:0;box-shadow:none}
+.ks_accordion.accordion{font-weight:400;font-size:1rem;border:none}
+.ks_accordion.accordion:after,.ks_accordion.activate:after{content:none}
+.ks_accordion.accordion .accordion-item{border-bottom:1px solid #fff}
+.ks_accordion.accordion.ks_gray .accordion-item{border-bottom-width:2px}
+.ks_accordion.accordion h6 button.accordion-button{font-size:24px;line-height:27px;font-weight:800;margin-bottom:16px}
+.ks_accordion.accordion button.accordion-button span{color:#ededed;transition:.35s;border-bottom:1px solid transparent;padding-right:3px}
+.ks_accordion.accordion button.accordion-button:hover span{color:#fff;border-bottom:1px solid #fff}
+.ks_accordion.accordion button.accordion-button::after,.ks_accordion.accordion button.accordion-button:not(.collapsed)::after{background-image:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>")}
+.ks_accordion.accordion.ks_gray button.accordion-button span,.ks_accordion.accordion.ks_white button.accordion-button span{color:#0d6efd;transition:.35s;border-bottom:none;text-decoration:none}
+.ks_accordion.accordion.ks_gray button.accordion-button:hover span,.ks_accordion.accordion.ks_white button.accordion-button:hover span{color:#19325a;border-bottom:none;text-decoration:underline}
+.ks_accordion.accordion.ks_gray button.accordion-button::after,.ks_accordion.accordion.ks_gray button.accordion-button:not(.collapsed)::after,.ks_accordion.accordion.ks_white button.accordion-button::after,.ks_accordion.accordion.ks_white button.accordion-button:not(.collapsed)::after{background-image:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");opacity:50%}
+.ks_accordion.accordion.ks_blue button.accordion-button{background-color:#19325a}
+.ks_accordion.accordion.ks_light_blue button.accordion-button{background-color:#4682f0}
+.ks_accordion.accordion.ks_white button.accordion-button{background-color:#fff}
+.ks_accordion.accordion.ks_gray button.accordion-button{background-color:#efefef}
+.ks_accordion.accordion.ks_green button.accordion-button{background-color:#325550}
+.ks_accordion.accordion.ks_light_green button.accordion-button{background-color:#1e826e}
+.ks_accordion.accordion.ks_gold button.accordion-button{background-color:#9b693b}
+.ks_accordion.accordion.ks_light_gold button.accordion-button{background-color:#d29642}
+.ks_accordion.accordion.ks_orange button.accordion-button{background-color:#b43c28}
+.ks_accordion.accordion.ks_light_orange button.accordion-button{background-color:#d24632}
+.ks_accordion.accordion.ks_maroon button.accordion-button{background-color:#6e1432}
+.ks_accordion.accordion.ks_light_maroon button.accordion-button{background-color:#962846}
+.ks_carousel .ks_carousel_number_indicator{display:block;position:absolute;z-index:1;top:0;right:0;background-color:rgba(0,0,0,.5);color:#fff;padding:5px;font-size:13px}
+.ks_carousel .carousel-control-prev-icon{background-image:url('(https://www.ksbe.edu/assets/brand/img/sliderlft.png')}
+.ks_carousel .carousel-control-next-icon{background-image:url('(https://www.ksbe.edu/assets/brand/img/sliderrht.png')}
+.ks_carousel .carousel-control-next,.ks_carousel .carousel-control-prev{width:10%;opacity:1}
+.ks_carousel .carousel-control-next-icon,.ks_carousel .carousel-control-prev-icon{display:inline-block;width:39px;height:39px}
+.ks_carousel .carousel-control-next:hover,.ks_carousel .carousel-control-prev:hover{opacity:1}
+.img-responsive{max-width:100%;height:auto}
+.coming.ks_gray .morefeat ul li a{color:#0d6efd}
+.coming.ks_gray .morefeat ul li a:hover{color:#19325a}
+.coming.ks_gray .morefeat ul li::before{background:#646464}
+html{scroll-behavior:smooth}
+video{-o-object-fit:cover;object-fit:cover;position:absolute;height:533px;width:100%;top:0;left:0;z-index:-1}
+.callout{position:relative;display:flex;justify-content:center;align-items:center;flex-direction:column;height:100%;text-align:center;z-index:10;margin:auto}
+.homeward{background-size:cover;padding:150px 0 120px;position:relative}
+.brand_hover_blue_simple{position:absolute;display:none;background:#4682f0;padding:15px}
+.menu_simple .brand_inn{background:#fff}
+.textblock-left-over-photo{z-index:2;position:absolute;background-color:#19325a;padding:24px;color:#fff;top:50%;left:0;transform:translate(0,-50%);width:115%;font-weight:300}
+.textblock-right-over-photo{z-index:2;position:absolute;background-color:#19325a;padding:24px;color:#fff;top:50%;left:-15%;transform:translate(0,-50%);width:115%;font-weight:300}
+#mahina-olelo-hawaii-background{background:url(https://www.ksbe.edu/images/mahina-olelo-hawaii-background5.jpg) center center/cover no-repeat;clear:both}
+.mahina-olelo-hawaii-landing-box{max-width:800px}
+.mahina-olelo-hawaii-title{max-width:410px;text-align:center;margin:auto;height:fit-content;color:#424242}
+.mahina-olelo-hawaii-content{height:100%;width:fit-content;margin-left:30px}
+.mahina-olelo-hawaii-prompt{font-weight:400;color:#424242;font-size:16px;text-transform:uppercase;margin-bottom:2px!important;line-height:16px;letter-spacing:1px;padding-left:1px}
+.mahina-olelo-hawaii-phrase{font-size:23px;font-weight:700;color:#424242;margin-bottom:0!important;line-height:28px;letter-spacing:-.3px}
+.mahina-olelo-hawaii-landing-title{max-width:500px}
+.mahina-olelo-hawaii-subtitle{font-size:26px;line-height:33px}
+.mahina-olelo-hawaii-landing-text{line-height:33px;font-size:20px}
+.typicalCont .boxs .col-sm-12 ul li{margin:0 0 0 15px}
+@media only screen and (max-width:767px){
+.lahaina-375px-show,.lahaina-575px-show,.lahaina-desktop-show{display:none!important}
+.lahaina-767px-show{display:flex!important}
+.lahaina-767px-show img{padding:300px 0 0}
+.lahaina-parallax-bg{overflow:hidden!important}
+.lahaina-parallax-bg img{width:100%!important;height:160rem!important;max-width:unset!important}
+.lahaina-parallax h1{font-size:4rem!important;line-height:4rem!important}
+.lahaina-parallax .lahaina-300px-spacer{padding-top:50px!important}
+.lahaina-parallax .lahaina-450px-spacer{padding-top:225px!important}
+.lahaina-parallax-header-text{padding:0!important}
+.lahaina-parallax-header-image{padding:0 .5rem 0 0!important}
+.lahaina-share-manao .container{padding:0!important}
+.lahaina-share-moolelo .col{padding:1rem}
+.lahaina-quote{padding:0!important}
+.lahaina-parallax .section1 .card-body,.lahaina-parallax .section1 .col-sm-8,.lahaina-parallax .section2 .card-body,.lahaina-parallax .section3 .card-body,.lahaina-parallax .section4 .card-body{padding:0}
+.lahaina-parallax .col-sm-6{width:auto!important}
+}
+@media only screen and (max-width:575px){
+.lahaina-375px-show,.lahaina-767px-show,.lahaina-desktop-show{display:none!important}
+.lahaina-575px-show{display:flex!important}
+.lahaina-575px-show img{padding:250px 0 0}
+.lahaina-parallax-bg img{width:100%!important;height:unset!important;max-width:575px!important}
+.lahaina-parallax-header-image{padding:0 0 .5rem!important}
+.lahaina-share-moolelo .col{padding:1rem 1rem 0 0}
+}
+@media only screen and (max-width:375px){
+.lahaina-575px-show,.lahaina-767px-show,.lahaina-desktop-show{display:none!important}
+.lahaina-375px-show{display:flex!important}
+.lahaina-375px-show img{padding:325px 0 0}
+.lahaina-parallax-bg img{width:100%!important;height:unset!important;max-width:375px!important}
+.lahaina-parallax-header-image{padding:0 0 .5rem!important}
+.lahaina-share-moolelo .col{padding:1rem 1rem 0 0}
+}
+.lahaina-hero-video-spacer{padding-top:153px}
+@media only screen and (max-width:991px){
+.lahaina-hero-video-spacer{padding-top:60px}
+}
+@media only screen and (max-width:767px){
+.lahaina-hero-video-spacer{padding-top:24px}
+.lahaina-parallax h1{font-size:3rem!important;line-height:3rem!important}
+}
+
+@media only screen and (max-width:597px){
+.lahaina-parallax h1{font-size:3rem!important;line-height:3rem!important}
+}
+@media only screen and (max-width:512px){
+.lahaina-parallax h5{font-size:24px!important;line-height:28px!important}
+}
+@media only screen and (max-width:469px){
+.lahaina-parallax h5{font-size:24px!important;line-height:28px!important}
+}
+.video-container-bg{border-top:1px solid #333;border-bottom:1px solid #333;padding-top:8rem!important;padding-bottom:8rem!important}
+@media only screen and (max-width:767px){
+.video-container-bg{padding-top:4rem!important;padding-bottom:4rem!important}
+}
+.pencil-graphic-container{background:url('https://www.ksbe.edu/images/lahiana-pencil-background-200px.jpg') center/1176px no-repeat #0f220e;text-align:center;padding:25px;color:#e2d6b4;min-height:100px;box-shadow:inset 0 0 10px #000}
+.pencil-graphic-heading{font-size:1.4em;text-shadow:#000 1px 0 10px;font-family:'Ringside Regular SSm A','Ringside Regular SSm B';font-weight:700;line-height:1em;letter-spacing:-.3px;padding:0 0 2px}
+.pencil-graphic-link{text-shadow:#000 1px 0 10px;font-family:'Ringside Regular SSm A','Ringside Regular SSm B';color:#e2d6b4;letter-spacing:-.3px}
+.pencil-graphic-link:hover{color:#e2d6b4}
+.pencil-graphic-link-container{line-height:1.25em}
+@media only screen and (max-width:991px){
+.pencil-graphic-container{margin:-20px 0 0;background-size:cover}
+}
+.ks-fadeout img{opacity:1;transition:1s}
+.ks-fadeout img:hover{opacity:.5;transition:1s}
+.ks-related-stories{font-family:'Ringside Regular SSm A','Ringside Regular SSm B';font-size:1.25rem}
+@media (max-width:576px){
+.mcp__homeward{padding:90px 0 120px!important}
+.mcp__homeslider p{margin:0!important}
+.mcp__homeslider h1{line-height:35px!important}
+.flip-textbox {padding:20px;}
+.flip-textbox p  {font-size:16px;}
+}
+@media (min-width:767px){
+#ksmaui-refresh .video-container{height:850px}
+#ksmaui-refresh video{height:833px}
+#ksmaui-refresh .homeslider{height:833px!important}
+}
+#imua-story-template h2,#imua-story-template h6{animation:3s forwards fadeInAnimation}
+@keyframes fadeInAnimation{
+0%{opacity:0}
+100%{opacity:1}
+}
+#imua-story-template .video-container-bg .vc-content{z-index:1;position:relative;padding:10px}
+#imua-story-template video{top:auto;height:auto;width:100%}
+.imua-image-left-half{margin-left:-35px;margin-top:7px}
+.imua-text-left-half{margin-left:-40px;margin-bottom:20px;padding:0 25px 0 6px}
+@media (max-width:1199px){
+.imua-image-left-half,.imua-text-left-half{margin-left:0}
+}
+.imua-image-container-full,.imua-image-full{clear:both}
+.imua-text-full{font-family:'Ringside Regular SSm A','Ringside Regular SSm B';line-height:27px;color:#646464;font-weight:300}
+#imua-hero-image{background:url('https://www.ksbe.edu/images/articles/imua/www-imua-treatment-seedsofchange-v6.jpg') center/cover fixed;border:none;padding-top:10rem!important;padding-bottom:10rem!important}
+#imua-hero-image-2{background:url('https://www.ksbe.edu/images/articles/imua/www-imua-treatment-ka-malu-ulu-o-lele-10.jpg') center/cover fixed;border:none;padding-top:10rem!important;padding-bottom:10rem!important}
+@supports (-webkit-touch-callout:none){
+#imua-hero-image,#imua-hero-image-2{background-attachment:scroll!important}
+}
+.imua-hero-image-padding-top{padding-top:150px}
+.imua-hero-image-padding-top-alt{padding-top:325px}
+.imua-hero-image-padding-bottom{padding-top:100px}
+@media (max-width:767px){
+.imua-hero-image-padding-bottom,.imua-hero-image-padding-top{padding-top:0}
+#imua-hero-image,#imua-hero-image-2{background-size:cover;background-repeat:no-repeat}
+}
+#imua-story-template .typeright1{background:url('https://www.ksbe.edu/assets/brand/img/blue-patt-v2.png') no-repeat}
+
+
+
+@media (min-width:992px){
+.imua-image-container-full{padding:3em 0}
+.imua-story-date{padding:2em 0 0}
+#imua-story-template .imua-story-video,#imua-story-template figure{margin-bottom:4rem!important}
+}
+#imua2-hero-section-white-gradient{position:relative;height:100vh;overflow:hidden;background:linear-gradient(180deg,#fff 0,rgba(255,255,255,0) 100%)}
+#imua2-hero-section-black-gradient{position:relative;height:100vh;overflow:hidden;background:linear-gradient(180deg,#000 0,rgba(0,0,0,0) 100%)}
+#imua2-hero-section-no-gradient{position:relative;height:100vh;overflow:hidden}
+#imua2-hero-section-black-gradient h2,#imua2-hero-section-black-gradient h6{color:#fff;text-shadow:0 0 5px #19325a}
+#imua2-hero-section-white-gradient h2,#imua2-hero-section-white-gradient h6{color:#19325a;text-shadow:0 0 5px #fff}
+#imua2-hero-content{height:100%}
+.imua2-subtitle{font-family:'Ringside Regular SSm A','Ringside Regular SSm B'}
+.section-article-imua-bgcolor .inner_right ul li{color:#fff}
+.section-article-imua .container .position-relative p{font-size:2em;text-shadow:0 0 2px #19325a}
+@media (max-width:992px){
+.section-article-imua{margin:0 -15vw 50px!important;padding:80px!important}
+.section-article-imua .container .position-relative p{font-size:1em;text-shadow:0 0 2px #19325a}
+}
+@media (max-width:575px){
+.section-article-imua{margin:0 0 50px!important}
+}
+#imua-title{margin-bottom:.1em}
+#imua-subtitle{opacity:.8}
+#hero-section{position:relative;height:100vh;overflow:hidden}
+#imua2-hero-image{position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:center;background-image:url('https://www.ksbe.edu/_apps/image-bridge/www-imua-treatment-seedsofchange-v4__full-width-1000px/jpeg/21643');z-index:-1}
+.imua-story-body .reveal,.imua-story-body .reveal_ingraph{width:100%;height:auto;display:block;opacity:0}
+.imua-story-body .fancybox-caption{position:absolute;bottom:0;left:50%;transform:translateX(-50%);margin-bottom:40px}
+.imua-story-body .section-article-imua{position:relative;height:100vh;display:flex;align-items:center;justify-content:center;width:-webkit-fill-available;width:-moz-available;margin:0 -30.85vw}
+.imua-story-body .bg-article-imua{position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;background-size:cover;background-position:center;background-repeat:no-repeat;will-change:background-position}
+.imua-story-body .section-article-imua-bgcolor{position:relative;width:100vw;left:50%;transform:translateX(-50%);box-sizing:border-box;padding-top:40px;padding-bottom:40px;display:block}
+.imua-story-body .imua-image-right-half{float:right;width:100%;margin-left:25px;margin-bottom:8px}
+.imua-story-body .imua-text-right-half{float:right;clear:right;width:100%;margin-left:25px;margin-bottom:20px;margin-top:0;text-align:right}
+@media (max-width:1199.98px){
+.imua-story-body .imua-image-right-half,.imua-story-body .imua-text-right-half{float:none;width:100%;margin-left:0;text-align:left}
+}
+.imua-story-body .section-article-imua-alt{position:relative;height:100vh;display:flex;align-items:center;justify-content:center;width:-webkit-fill-available;width:-moz-available;margin-bottom:4rem}
+.imua-story-body .imua-body-image-left-half{float:left;width:auto;max-width:50%;padding:0 24px 24px 0;margin:7px 0 0 -35px}
+.imua-story-body .imua-body-image-left-mug,.imua-story-body .imua-body-image-left-quarter{float:left;width:auto;max-width:25%;padding:0 24px 24px 0;margin:7px 0 0 -35px}
+.imua-story-body .imua-body-image-right-half{float:right;width:auto;max-width:50%;padding:0 0 24px 24px;margin:7px -35px 0 0}
+.imua-story-body .imua-body-image-right-mug,.imua-story-body .imua-body-image-right-quarter{float:right;width:auto;max-width:25%;padding:0 0 24px 24px;margin:7px -35px 0 0}
+@media (max-width:992px){
+.imua-story-body .imua-body-image-left-half,.imua-story-body .imua-body-image-left-mug,.imua-story-body .imua-body-image-left-quarter,.imua-story-body .imua-body-image-right-half,.imua-story-body .imua-body-image-right-mug,.imua-story-body .imua-body-image-right-quarter{max-width:100%;margin:0;padding:0 0 24px}
+}
+.imua-story-body .section-article-imua-alt-white-copy{background-color:rgba(0,0,0,.65);max-width:40%}
+.imua-story-body .section-article-imua-alt-white-copy p{color:#fff;font-size:1.25rem}
+.imua-story-body .section-article-imua-alt-black-copy{background-color:rgba(255,255,255,.8);max-width:40%}
+.imua-story-body .section-article-imua-alt-black-copy p{color:#333;font-size:1.25rem}
+#imua-story-template #imua-title{font-size:4rem;line-height:4rem}
+.imua-story-body p{font-size:18px;font-family:"Ringside Regular SSm A","Ringside Regular SSm B";line-height:27px;color:#646464;font-weight:300}
+#imua-story-template .topfooter{float:inherit}
+.ks-hero-h1{position:absolute;top:75%;left:50%;transform:translate(-50%,-50%);z-index:1}
+.ks-socialmedia-grid{overflow:hidden;object-fit:cover;object-position:center;width:100%;height:100%}
+.ks-hero-h1-black{color:#000}
+.ks-hero-h1-blue{color:#19325a}
+.ks-hero-h1-white{color:#fff}
+div#megamenu_image_about{background-image:url('https://www.ksbe.edu/assets/brand/img/pauahi-kamehameha-about.webp');background-size:cover;background-position:top center}
+@media (max-width:767px){
+.section-article-imua{margin:0 0 50px!important}
+#ksk .head_lft a img,#ksh .head_lft a img{width:200px}
+/*#ksk .header .head{padding-top:0}*/
+}
+#ksh .hoverimg a::before{content:"⏷ \00a0"}
+#ksh .menu_simple .brand_inn{background:0 0!important}
+#ksh .brand_hover_blue_simple{position:absolute;display:none;background:#4682f0;padding:0}
+#ksh .edubtm_links li a{color:#fff}
+#ksh .edubtm_links li a:hover{text-decoration:underline;color:#fff}
+#ksh .edubtm_links ul{padding-right:0}
+#ksh .brand_rht li{padding:2px 5px}
+#ksh .main99 .ks_light_blue{background-color:#0d1a30}
+#20251223b .accordion-button{border-top:1px solid #ddd;border-bottom:0;border-left:0;border-right:0;padding:16px 0 14px!important}
+#20251223b .accordion-button:not(.collapsed){background-color:none!important}
+#20251223b .accordion-body{padding:16px 0!important}
+#20251223b .accordion,#20251223b .accordion-button,#20251223b .accordion-item{background-color:transparent!important}
+#20251223b .ks_accordion.accordion .accordion-item .accordion-header .accordion-button:focus span,#20251223b .ks_accordion.accordion .accordion-item .accordion-header .accordion-button:hover span{color:#000!important}
+#20251223b .ks_accordion.accordion .accordion-item .accordion-header .accordion-button,#20251223b .ks_accordion.accordion .accordion-item .accordion-header .accordion-button:not(.collapsed){background-color:transparent!important}
+#20251223b .ks_accordion.accordion .accordion-item .accordion-header .accordion-button:not(.collapsed){color:#000!important;background-color:transparent!important}
+#20251223b .ks_accordion.accordion .accordion-item .accordion-header .accordion-button::after,.ks_accordion.accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")!important}
+#20251223b .ks_accordion.accordion button.accordion-button span{color:unset}
+#20251223b .accord-list ul li{list-style:disc}
+#20251223b .accord-list ul{padding:0 0 0 34px}
+#20251223b .accord-list ul li li{list-style:circle}
+#20251223b .accord-list ul li li li{list-style:square}
+#20251223b .accord-list ol{padding:0 0 1rem 34px}
+#20251223b .accord-list ol li{list-style:decimal}
+#20251223b .accord-list ol li ol li{list-style-type:lower-alpha}
+#20251223b .accord-list ol li ol li ol li{list-style-type:lower-roman}
+#20251223b .accord-list ol ol,#20251223b .accord-list ul ul,.accord-list ul ul ul,.accord-list ul ul ul ul,ol ol ol,ol ol ol ol{padding:0 0 0 34px}
+#20251223a .ks_accordion button{padding:16px 0 14px!important}
+#ksm .typical .typeheading .img_pattern{display:none}
+@media (max-width:991px){
+#wwwHomepageHero .mcp__homeslider h1{font-size:45px;line-height:47px}
+.mcp__patternboximg{display:none}
+}
+.socialDiv .socialSec #instafeed p{display:none}
+
+
+/* ═══════════════════════════════════════════════════════
+   NAV OVERRIDE STYLES
+   Bootstrap provides layout scaffolding only.
+   Text/font styles intentionally omitted — handled by
+   www-main-styles.css.
+═══════════════════════════════════════════════════════ */
+
+/* ── Outer bar ────────────────────────────────────────── */
+.menulists {
+  background: #19325a;
+  padding: 0 30px;
+  position: relative;
+  z-index: 2;
+  transition: .5s ease;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+/* ── Layout regions ───────────────────────────────────── */
+.head_rht {
+  display: inline-block;
+  position: static;
+}
+.head_rht.leftmenu {
+  flex: 1;
+}
+.head_rht.rightmenu {
+  float: right;
+  margin-left: auto;
+  width: fit-content;
+}
+
+/* All intermediates must be position:static so mega-menu
+   position:fixed resolves against the viewport */
+   .menulists .nav-item,
+   .menulists .navbar-nav {
+   position: static;
+}
+.head_rht.rightmenu .nav-item {
+  position: static !important;
+  align-self: center;
+}
+
+/* Flex row for left nav items */
+.head_rht .navbar-nav {
+  flex-direction: row;
+  align-items: stretch;
+}
+
+/* ── To keep top nav text from wrapping ───────────────── */
+.head_rht li .hoverimg a,
+.head_rht.rightmenu .nav-item.noClass a {
+  white-space: nowrap;
+}
+
+/* ── Right menu spacing ───────────────────────────────── */
+.head_rht.rightmenu .noClass {
+  padding: 15px 21px 20px;
+}
+
+/* ── Hover highlight overlay ──────────────────────────── */
+.head_rht li .hoverimg {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 15px 21px 20px;
+  cursor: pointer;
+}
+.head_rht li .hoverimg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 61px;
+  width: 100%;
+  display: none;
+  z-index: 1;
+  background-color: #4682f0;
+  transition-delay: 0s;
+}
+.head_rht li.is-open .hoverimg::before {
+  display: block;
+  transition: 1s;
+}
+
+/* ── Mega-menu panel ──────────────────────────────────── */
+.mega-menu {
+  display: none;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  background: #4682f0;
+  padding: 15px;
+  z-index: 9999;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translateY(0);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;  /* prevents hidden panels intercepting mouse events */
+}
+
+/* Invisible bridge prevents cursor falling into gap
+   between nav bar bottom and panel top */
+.mega-menu::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+}
+
+/* Active panel state */
+.nav-item.has-mega.is-open > .mega-menu {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* White inner panel */
+.mega-menu .brand_inn {
+  background: #fff;
+  width: 100%;
+}
+.educationmenu .brand_inn,
+.missionmenu .brand_inn,
+.ainamenu .brand_inn,
+.communitymenu .brand_inn,
+.aboutmenu .brand_inn {
+  background: #fff;
+}
+
+
+/* KSH simple dropdown panels — no image column, auto width */
+@media (min-width: 1141px) {
+  .mega-menu.menu_simple {
+    position: fixed !important;
+    width: auto;
+    right: auto;
+    min-width: 280px;
+  }
+}
+.mega-menu.menu_simple .brand_inn {
+  background: #fff;
+}
+
+/* ── Link column layout ───────────────────────────────── */
+.edubtm_links {
+  display: flex;
+  padding: 15px 0;
+  flex-wrap: wrap;
+}
+.edubtm_links ul {
+  display: inline-block;
+  padding-right: 20px;
+  list-style: none;
+  margin: 0;
+}
+.edubtm_links ul.lastmenu li,
+.edubtm_links li.menuhead {
+  width: 100%;
+  padding: 0 0 7px;
+}
+.eduBtns {
+  padding: 30px 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
+.eduBtns li {
+  display: inline-block;
+  padding: 0 10px 0 0;
+}
+
+/* ── Utility ──────────────────────────────────────────── */
+.noleft { padding-left: 0 !important; }
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 1140px) {
+  .head_rht.leftmenu,
+  .head_rht.rightmenu,
+  .head_rht.headstu {
+    display: none;
+  }
+  .head_rht li .hoverimg {
+    padding: 15px 12px 20px;
+  }
+  .mega-menu {
+    position: static;
+    box-shadow: none;
+  }
+  .mobile-single-link ul li {
+  	list-style-type:none;
+    margin:15px 0 0 0;
+    font-weight:bold;
+    font-size:17px;
+  }
+  .edubtm_header {
+  	border-bottom:0;
+  }
+  .navigation-panel ul li {
+  	margin:10px 0 0 10px;
+    list-style-type:none;
+  }
+}

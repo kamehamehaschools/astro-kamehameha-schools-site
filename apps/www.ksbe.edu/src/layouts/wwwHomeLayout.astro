@@ -1,0 +1,20 @@
+---
+import BaseHead from "../components/baseHead.astro";
+import BaseFooter from "../components/baseFooter.astro";
+import wwwHomeSchema from "../components/schemas/wwwHome.json";
+
+const { title } = Astro.props;
+const description = "Kamehameha Schools offers a variety of educational programs and scholarship services for Hawaiian learners of all ages across the state. Learn more about application windows and deadlines for the upcoming school year for preschool, K-12, summer, college and beyond.";  
+---
+<!doctype html>
+<html lang="en">
+<head>
+    <BaseHead title={title} description={description} canonical={Astro.url.href} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(wwwHomeSchema)} />
+    <link href="https://www.ksbe.edu/assets-styles/www-frontpage-only" rel="stylesheet" />
+  </head>
+    <body>
+    <slot />
+    <BaseFooter />
+    </body>
+</html>

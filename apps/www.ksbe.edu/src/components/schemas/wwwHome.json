@@ -1,0 +1,85 @@
+     {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Kamehameha Schools",
+        "url": "https://www.ksbe.edu",
+        "logo": "https://www.ksbe.edu/assets/brand/img/ks-logo.webp",
+        "description": "Kamehameha Schools offers a variety of educational programs and scholarship services for Hawaiian learners of all ages across the state. Learn more about application windows and deadlines for the upcoming school year for preschool, K-12, summer, college and beyond.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "567 South King St.",
+          "addressLocality": "Honolulu",
+          "addressRegion": "HI",
+          "postalCode": "96813",
+          "addressCountry": "US",
+          "name": "Kawaiaha‘o Plaza"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-808-523-6200",
+          "contactType": "Main Office"
+        },
+        "sameAs": [
+          "https://www.ksbe.edu/apply",
+          "https://www.ksbe.edu/apply/financial-aid",
+          "https://www.ksbe.edu/verification",
+          "https://www.ksbe.edu/student-safety-and-well-being",
+          "https://www.pauahi.org/give-with-pauahi",
+          "https://www.ksbe.edu/about-us/join-our-mailing-list",
+          "https://www.ksbe.edu/careers"
+        ],
+        "subOrganization": [
+          {
+            "@type": "School",
+            "name": "KS Hawai‘i",
+            "url": "https://www.ksbe.edu/education/hawaii",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "16-716 Volcano Rd.",
+              "addressLocality": "Kea‘au",
+              "addressRegion": "HI",
+              "postalCode": "96749",
+              "addressCountry": "US"
+            },
+            "telephone": "+1-808-982-0000"
+          },
+          {
+            "@type": "School",
+            "name": "KS Kapālama",
+            "url": "https://www.ksbe.edu/education/kapalama",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "1887 Makuakāne St.",
+              "addressLocality": "Honolulu",
+              "addressRegion": "HI",
+              "postalCode": "96817",
+              "addressCountry": "US"
+            },
+            "telephone": "+1-808-842-8211"
+          },
+          {
+            "@type": "School",
+            "name": "KS Maui",
+            "url": "https://www.ksbe.edu/education/maui",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "275 ‘A‘apueo Pkwy",
+              "addressLocality": "Pukalani",
+              "addressRegion": "HI",
+              "postalCode": "96768",
+              "addressCountry": "US"
+            },
+            "telephone": "+1-808-572-3100"
+          },
+          {
+            "@type": "Preschool",
+            "name": "KS Preschools",
+            "url": "https://www.ksbe.edu/education/preschools"
+          },
+          {
+            "@type": "Organization",
+            "name": "KS Kaiāulu",
+            "url": "https://www.kaiaulu.ksbe.edu"
+          }
+        ]
+      }
